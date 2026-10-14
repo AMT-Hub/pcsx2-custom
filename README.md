@@ -28,6 +28,10 @@ Configure the custom updater with:
 
 The feed and packages are signed with the project release key. The public verification key is in `updater/public-key.xml`. The signing key is never distributed here. Optional automatic checks run when the updater opens; installation requires user action. Local installation and rollback remain available. Leave official PCSX2 automatic updates disabled.
 
+## Nightly discovery
+
+The [daily discovery workflow](https://github.com/AMT-Hub/pcsx2-custom/actions/workflows/nightly-discovery.yml) checks official nightlies at 06:23 UTC and records source compatibility assessments in a [separate report branch](https://github.com/AMT-Hub/pcsx2-custom/tree/nightly-discovery-reports). New candidates remain review-required; matching file hashes do not approve an update. It does not build, sign or publish candidates. See [discovery and review instructions](ci/README.md#daily-discovery-and-reporting).
+
 ## Source
 
 - `emulator/`: exact feature patches, pinned upstream commit and Windows build process. Public packaging produces an unsigned runtime without needing personal data.
