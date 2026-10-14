@@ -10,7 +10,7 @@
   "local_actual_patched_sorting_method_tests": "passed",
   "test_setup_restore_tests": "passed on PowerShell 7 Linux with fixture files; same method previously accepted by user on Windows",
   "windows_feature_acceptance": "passed-user-reported",
-  "signed_update_rollback_acceptance": "pending",
+  "signed_update_rollback_acceptance": "blocked: user reports 2.9.126 launches while updater selects 2.9.127",
   "release_approved": false,
   "feed_changed": false,
   "notes": [
@@ -48,7 +48,7 @@
     "runtime": "Original compiled runtime bytes unchanged; all 285 manifest entries verified.",
     "status": "delivered; Windows feature and prepare/restore acceptance passed-user-reported"
   },
-  "next_step": "In the restored test copy, install the signed ZIP through PCSX2-Update.exe / Install local ZIP, launch and confirm 2.9.127, then close, roll back and launch the previous version. Publish to the approved feed only after that acceptance.",
+  "next_step": "Use the recovered updater-compatible launcher in the test copy, launch directly from that folder and confirm 2.9.127; then roll back and confirm the prior version. Keep the approved feed unchanged until the mismatch is resolved.",
   "signed_local_test": {
     "id": "nightly-2_9_127-ci1-test1",
     "label": "GitHub-built custom nightly 2.9.127 (CI1 updater test)",
@@ -71,10 +71,32 @@
       "all_file_hashes_sizes_and_crc": "passed",
       "portable_path": "../../..",
       "manifest_schema_and_path_constraints": "passed",
-      "windows_updater_install_launch_rollback_launch": "pending user test"
+      "windows_updater_install_launch_rollback_launch": "blocked by selected/launched version mismatch"
     },
     "published": false,
     "feed_changed": false,
     "delivery": "Download saved for user testing; no GitHub release or approved-feed change."
+  },
+  "launcher_investigation": {
+    "date": "2026-10-14",
+    "user_report": "After installing the local signed ZIP, launching Custom-PCSX2.exe still showed version 2.9.126.",
+    "screenshot": {
+      "current": "nightly-2_9_127-ci1-test1",
+      "previous": "legacy",
+      "installation_folder": "PCSX2-Nightly-Test",
+      "result": "Selected GitHub-built custom nightly 2.9.127 (CI1 updater test). Previous runtime retained."
+    },
+    "package_exe_sha256": "9f4a6068296e2670b9fc906a02147f55561dc5225f18b938d7c2a2ec691f319d",
+    "package_embedded_version": "v2.9.127",
+    "hypothesis": "A pre-updater launcher ignores active.txt and always starts shader-prototype; launching a different installation via a shortcut can also cause this symptom. The user's launcher bytes/process path have not been inspected.",
+    "repair": {
+      "file": "PCSX2-Updater-Launcher-Repair-test1.zip",
+      "bytes": 908051,
+      "sha256": "69251ba788aacdd8ac0b26c6216115a97a4572141c7914310b4659ae816d4deb",
+      "launcher_sha256": "4fab61885b8aa0fa413255b5d1927d6a785ef52e99e68203dc52d08828f147f9",
+      "source": "Unchanged original Custom-PCSX2.exe from PCSX2-Controlled-Updater-0.1.0-test1.zip",
+      "status": "Delivered for isolated test; resolution pending"
+    },
+    "prevention_followup": "Consider checking launcher compatibility in updater preflight; no updater/source changes included in this repair."
   }
 }
