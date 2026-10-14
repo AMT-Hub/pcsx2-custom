@@ -1,0 +1,20 @@
+# Never commit private release material or personal emulator data.
+*.pem
+*.pfx
+*.p12
+*.key
+**/bios/
+**/memcards/
+**/sstates/
+**/inis/
+**/gamesettings/
+**/inputprofiles/
+*Personal*.zip
+*PRIVATE*.zip
+# Generated build files and release assets belong outside source control.
+**/work/
+**/__pycache__/
+*.pyc
+*.log
+*.zip
+*.7z
