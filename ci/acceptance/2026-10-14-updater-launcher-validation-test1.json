@@ -1,0 +1,29 @@
+{
+  "component": "PCSX2 Controlled Updater",
+  "version": "0.3.0-launcher-validation-test1",
+  "base_approved_commit": "b517155d07ef184f81b00680ecba99e043139b44",
+  "tested_source_commit": "2b864ae260185a4bc4e7d587465095d6fef5501f",
+  "branch": "test-updater-launcher-validation-0.3.0",
+  "pull_request": 3,
+  "windows_tests": {
+    "run_id": 38650333591,
+    "url": "https://github.com/AMT-Hub/pcsx2-custom/actions/runs/38650333591",
+    "conclusion": "success",
+    "checks_passed": 38,
+    "powershell_version": "5.1.20348.5622",
+    "scope": "Real engine/feed functions with ephemeral signed fixture packages and the hash-pinned accepted launcher; no launcher/emulator EXEs executed."
+  },
+  "manual_windows_ui_and_game_acceptance": "pending user testing",
+  "archive": {
+    "filename": "PCSX2-Updater-0.3.0-Launcher-Validation-test1.zip",
+    "bytes": 975022,
+    "sha256": "7b01fbe3f777b9d8f5e5f6e399b715954441fee73a2f2620d14b471ff8fd85e3"
+  },
+  "accepted_launcher_sha256": "4fab61885b8aa0fa413255b5d1927d6a785ef52e99e68203dc52d08828f147f9",
+  "deployment": "Side-by-side scripts invoked by Test-PCSX2-Update.cmd in a separate PCSX2-Nightly-Test copy. Existing normal updater files and EXEs are not overwritten.",
+  "main_branch_changed": false,
+  "approved_release_changed": false,
+  "approved_feed_changed": false,
+  "runtime_selection_note": "Test operations change the selected runtime in the test copy. Removing the test scripts does not undo those selections.",
+  "follow_up": "Await three user checks before promoting the updater; leave the approved build untouched."
+}
