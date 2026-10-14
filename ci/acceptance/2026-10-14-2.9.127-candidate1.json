@@ -9,7 +9,7 @@
   "source_patch_application": "passed",
   "local_actual_patched_sorting_method_tests": "passed",
   "test_setup_restore_tests": "passed on PowerShell 7 Linux with fixture files; same method previously accepted by user on Windows",
-  "windows_feature_acceptance": "pending",
+  "windows_feature_acceptance": "passed-user-reported",
   "signed_update_rollback_acceptance": "pending",
   "release_approved": false,
   "feed_changed": false,
@@ -31,8 +31,22 @@
     "file": "PCSX2-Nightly-2.9.127-Candidate1-Test-Kit.zip",
     "bytes": 129034904,
     "sha256": "3bb3e9f1e603a27ce202193623e82addfa7b0598f4f9a73a034833c27b5ecbe6",
-    "status": "verified; Windows acceptance pending"
+    "status": "original download replaced by a verified recovered kit; Windows acceptance passed-user-reported"
   },
   "approved_release_unchanged": "nightly-2.9.126-ci1-test1",
-  "approved_feed_sha256_unchanged": "6a07bbc290f6174caa9695d2e4ab08dc7d85f82682af9752314e1b27c0af342f"
+  "approved_feed_sha256_unchanged": "6a07bbc290f6174caa9695d2e4ab08dc7d85f82682af9752314e1b27c0af342f",
+  "windows_test_kit_prepare_restore_acceptance": "passed-user-reported",
+  "user_acceptance_report": {
+    "date": "2026-10-14",
+    "report": "The test checks were successful and I was able to update to a newer nightly version and then revert to the previous version.",
+    "scope": "Acceptance of the delivered isolated 2.9.127 Candidate1 test kit and its prepare/restore cycle. A signed 2.9.127 updater package has not yet been delivered; normal controlled-updater install/rollback acceptance remains pending."
+  },
+  "recovered_test_kit": {
+    "file": "PCSX2-Nightly-2.9.127-Candidate1-Test-Kit-Recovered.zip",
+    "bytes": 129555791,
+    "sha256": "b7da00117125608c02d10f079d537120d1bed3f60cdb69b86fa25993570d0f51",
+    "runtime": "Original compiled runtime bytes unchanged; all 285 manifest entries verified.",
+    "status": "delivered; Windows feature and prepare/restore acceptance passed-user-reported"
+  },
+  "next_step": "Prepare a signed updater package from these exact accepted runtime bytes; test normal Windows PCSX2-Update.exe install, launch, rollback and launch before feed publication."
 }
