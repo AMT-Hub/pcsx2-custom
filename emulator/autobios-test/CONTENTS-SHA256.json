@@ -1,0 +1,11 @@
+{
+  "Build.cmd": "e8dc1ef20f303d6e454af5977f83189e682835ed7ea2f679a011f534a1fd2b5f",
+  "README.txt": "a34c31b340b33be3b5337ffa78dcab7ab15394b6adde4c460dc53338abaaba0d",
+  "apply-patch.py": "cac4ffe9254468a37cdb0fb2676972ee224841d3e5600c3ada85a564239df368",
+  "auto-bios.patch": "4d69001de4f66868e8dcc609fb44307d6ccc2b263c2932133534a7879384b3c5",
+  "build.py": "94ea0c4f7956a0b7991b556f5525afaf877da8ae8f3a4c33f6dde9d9298431a5",
+  "patch/pcsx2/AutoBios.h": "5d92b3c48a231231174b0b62e220d06758306963758cb95e0f6f10e1f677bf3d",
+  "patch/pcsx2/AutoBiosPolicy.h": "b679407c726bf690fde9459d7b9ccef3c1a209620ba9f66e6d2da486d6b80d83",
+  "tests/policy.cpp": "35d53ac6b51bc3243aa3d5af241607572b92ba0f7aaa4802867732b113fbfc0b",
+  "upstream-sha256.json": "8b3117b8f6aaf082852f253f04aa8a8ea9a2db71f2dd1c189a6c32352c6864fc"
+}

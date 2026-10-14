@@ -1,0 +1,14 @@
+{
+  "upstream_commit": "a77a07903152617d81f0fbefc1c297fbcd26dac5",
+  "patches_applied": [
+    "Auto BIOS",
+    "ShaderGlass bridge",
+    "Sorting Title",
+    "disable updater"
+  ],
+  "bios_policy_tests": "passed",
+  "actual_nightly_sorting_tests": "passed",
+  "bundled_profile_database_changes": [],
+  "windows_compile": "pending",
+  "windows_runtime_tests": "pending"
+}

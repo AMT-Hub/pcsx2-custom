@@ -1,0 +1,4 @@
+# action	region	serial (* for regional default)	CRC (* only with regional default)	boot (full/fast/any)	SHA1	reason
+prefer	USA	SCUS-97124	1B3976AB	full	f9a5d629a036b99128f7cb530c6e3ca016e9c8b7	User repeated full-boot success on PCSX2 2.8.2; 2026-10-13
+avoid	USA	SCUS-97124	1B3976AB	full	f9229fe159d0353b9f0632f3fdc66819c9030458	User repeated full-boot failure after BIOS setup; 2026-10-13
+prefer	USA	*	*	any	f9a5d629a036b99128f7cb530c6e3ca016e9c8b7	Provisional USA default; not proven best for all games

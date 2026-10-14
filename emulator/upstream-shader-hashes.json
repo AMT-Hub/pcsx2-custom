@@ -1,0 +1,10 @@
+{
+  "pcsx2/pcsx2-qt/MainWindow.cpp": "9d641aba12be80a96fbd9060875af137800d81ab9cb687e2dd8b7e70f10cd3e7",
+  "pcsx2/pcsx2-qt/DisplayWidget.cpp": "a02e657cc1fdd50f48b68602df0463bc886f096e7753525a4f7c458dfb547c9d",
+  "pcsx2/pcsx2-qt/QtHost.cpp": "37e9b3f09d42c7bb5e1a71bef3aa1ee2d2ff8630e4f7d6aa5248c0d6c79fd9ed",
+  "shaderglass/ShaderGlass/WinMain.cpp": "e70f84f8e38b46a15d72517efe41e9b2a2fa0644897658f24ef25a61640514d2",
+  "shaderglass/ShaderGlass/CaptureManager.cpp": "aebc8ae21cc2994b6135adcbcbca9de97233c716c42e95120b2cde22131510a6",
+  "shaderglass/ShaderGlass/ShaderGlass.cpp": "77b5e9ada0586c56b8aeac6c14ae5cb09303ae2f6a8fdf7bb3684d99a00d1894",
+  "shaderglass/ShaderGlass/ShaderGlass.h": "0b4c48b58a49d7f1d5a8c98f29ce5ea9887d77b179c2855c0db93d9981db8026",
+  "shaderglass/ShaderGlass/ShaderGlass.vcxproj": "4dc2dced2bb08061a2a069c2021d126b0238d533eb08eb1b9c2d59d5b2809dab"
+}

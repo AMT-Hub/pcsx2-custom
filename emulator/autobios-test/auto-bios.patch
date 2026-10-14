@@ -1,0 +1,74 @@
+--- a/pcsx2/VMManager.cpp
++++ b/pcsx2/VMManager.cpp
+@@ -42,6 +42,7 @@
+ #include "Vif_Dynarec.h"
+ #include "VMManager.h"
+ #include "ps2/BiosTools.h"
++#include "AutoBios.h"
+ 
+ #include "common/Console.h"
+ #include "common/Error.h"
+@@ -1407,6 +1408,10 @@
+ 
+ 	ScopedGuard unlock_cdvd = &cdvdUnlock;
+ 
++	// Resolve before source setup: the probe uses and closes the shared CDVD API.
++	const bool auto_bios_enabled = AutoBios::Enabled();
++	const std::string auto_bios_path = auto_bios_enabled ? AutoBios::Resolve(boot_params) : std::string();
++
+ 	// resolve source type
+ 	if (boot_params.source_type.has_value())
+ 	{
+@@ -1435,7 +1440,7 @@
+ 	if (!GSDumpReplayer::IsReplayingDump())
+ 	{
+ 		Console.WriteLn("Loading BIOS...");
+-		if (!LoadBIOS())
++		if (!LoadBIOS(auto_bios_path, !auto_bios_enabled))
+ 		{
+ 			Error::SetStringFmt(error,
+ 				TRANSLATE_FS("VMManager",
+--- a/pcsx2/ps2/BiosTools.h
++++ b/pcsx2/ps2/BiosTools.h
+@@ -117,7 +117,7 @@
+ extern bool IsBIOS(const char* filename, u32& version, std::string& description, u32& region, std::string& zone);
+ extern bool IsBIOSAvailable(const std::string& full_path);
+ 
+-extern bool LoadBIOS();
++extern bool LoadBIOS(const std::string& override_path = {}, bool allow_auto_search = true);
+ extern void CopyBIOSToMemory();
+ 
+ // Values in [][0] are the names on BIOSes v1.70 and below.
+--- a/pcsx2/ps2/BiosTools.cpp
++++ b/pcsx2/ps2/BiosTools.cpp
+@@ -314,13 +314,18 @@
+ // Exceptions:
+ //   BadStream - Thrown if the primary bios file (usually .bin) is not found, corrupted, etc.
+ //
+-bool LoadBIOS()
++bool LoadBIOS(const std::string& override_path, bool allow_auto_search)
+ {
+ 	pxAssertMsg(eeMem->ROM, "PS2 system memory has not been initialized yet.");
+ 
+-	std::string path = EmuConfig.FullpathToBios();
++	std::string path = override_path.empty() ? EmuConfig.FullpathToBios() : override_path;
+ 	if (path.empty() || !FileSystem::FileExists(path.c_str()))
+ 	{
++		if (!allow_auto_search)
++		{
++			Console.Error("Auto BIOS: the selected fallback BIOS is unavailable. Select a valid BIOS in Settings.");
++			return false;
++		}
+ 		if (!path.empty())
+ 		{
+ 			Console.Warning("Configured BIOS '%s' does not exist, trying to find an alternative.",
+@@ -340,7 +345,8 @@
+ 	if (filesize <= 0)
+ 		return false;
+ 
+-	LoadBiosVersion(fp.get(), BiosVersion, BiosDescription, BiosRegion, BiosZone, BiosSerial);
++	if (!LoadBiosVersion(fp.get(), BiosVersion, BiosDescription, BiosRegion, BiosZone, BiosSerial))
++		return false;
+ 
+ 	BiosRom.resize(Ps2MemSize::Rom);
+ 

@@ -1,0 +1,15 @@
+{
+  "pcsx2/VMManager.cpp": "57532cc8ee102995e3ce8138bb45cfa83854f67affe9a4b86f9f81cbc3043e95",
+  "pcsx2/ps2/BiosTools.h": "7aa9e339f2f3efdc4b59c6a8d8f608b0dcca4170fcaf42299570d564be14ac83",
+  "pcsx2/ps2/BiosTools.cpp": "49d52e3ccc98037ef62f6405748f1884a76357afe338885c1acfbe6a747ca552",
+  "pcsx2-qt/MainWindow.cpp": "9d641aba12be80a96fbd9060875af137800d81ab9cb687e2dd8b7e70f10cd3e7",
+  "pcsx2-qt/MainWindow.h": "9790442d27fc8603e696d1aa81fbcc208dfd396391d666f42114a2dff5cb59a8",
+  "pcsx2-qt/DisplayWidget.cpp": "a02e657cc1fdd50f48b68602df0463bc886f096e7753525a4f7c458dfb547c9d",
+  "pcsx2-qt/QtHost.cpp": "37e9b3f09d42c7bb5e1a71bef3aa1ee2d2ff8630e4f7d6aa5248c0d6c79fd9ed",
+  "pcsx2-qt/AutoUpdaterDialog.cpp": "629f3d675e82ad19e1bb4a2a8059a6d88b32db3947f2677949b69bbe0f2bf997",
+  "pcsx2/GameList.cpp": "dd0b071b8a590e4f198b8ff09375db61c3bd63ec84ec596a7fe93a5674110d5a",
+  "pcsx2/GameList.h": "4a3392d4701da9efd1c965718bf74a8e463c507c756b01eb9fae299b23ba2cc0",
+  "pcsx2-qt/Settings/GameSummaryWidget.cpp": "94cc3351e4a637da23b9b8a19ee7f6de3cdf14ebc93bd655f82f98b9ab503044",
+  "pcsx2-qt/GameList/GameListWidget.cpp": "1ffe8da8dc25575b38f5a3edf89cb494d015347751fe500955f314cd4d31e4c3",
+  "pcsx2-qt/GameList/GameListWidget.h": "41b135ab43db859839acd8e4bb074842ea488d3bb5cb30bd012dd0db7e1596a7"
+}

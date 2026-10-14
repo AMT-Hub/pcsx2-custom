@@ -1,0 +1,7 @@
+#include <windows.h>
+1 RT_MANIFEST "app.manifest"
+101 ICON "AppIcon.ico"
+STRINGTABLE
+BEGIN
+101 "PCSX2"
+END
