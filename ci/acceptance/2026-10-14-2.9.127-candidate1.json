@@ -10,8 +10,8 @@
   "local_actual_patched_sorting_method_tests": "passed",
   "test_setup_restore_tests": "passed on PowerShell 7 Linux with fixture files; same method previously accepted by user on Windows",
   "windows_feature_acceptance": "passed-user-reported",
-  "signed_update_rollback_acceptance": "partial: selected 2.9.127 launch confirmed after launcher replacement; gameplay and rollback launch pending",
-  "release_approved": false,
+  "signed_update_rollback_acceptance": "passed-user-reported",
+  "release_approved": true,
   "feed_changed": false,
   "notes": [
     "2.9.127 uses unchanged custom feature implementation.",
@@ -48,7 +48,7 @@
     "runtime": "Original compiled runtime bytes unchanged; all 285 manifest entries verified.",
     "status": "delivered; Windows feature and prepare/restore acceptance passed-user-reported"
   },
-  "next_step": "Launch a game on the selected 2.9.127 runtime, then close PCSX2, roll back using PCSX2-Update.exe and confirm the same Custom-PCSX2.exe launches the previous version and a game. Keep the approved feed unchanged pending those results.",
+  "next_step": "Publish the unchanged tested signed package, corresponding source, launcher repair and a higher-sequence signed feed. Document that the updater-compatible Custom-PCSX2.exe must be retained in each installation.",
   "signed_local_test": {
     "id": "nightly-2_9_127-ci1-test1",
     "label": "GitHub-built custom nightly 2.9.127 (CI1 updater test)",
@@ -71,7 +71,7 @@
       "all_file_hashes_sizes_and_crc": "passed",
       "portable_path": "../../..",
       "manifest_schema_and_path_constraints": "passed",
-      "windows_updater_install_launch_rollback_launch": "2.9.127 launch passed-user-reported with repaired launcher; game launch and rollback launch pending"
+      "windows_updater_install_launch_rollback_launch": "passed-user-reported after restoring the updater-compatible launcher"
     },
     "published": false,
     "feed_changed": false,
@@ -95,14 +95,25 @@
       "sha256": "69251ba788aacdd8ac0b26c6216115a97a4572141c7914310b4659ae816d4deb",
       "launcher_sha256": "4fab61885b8aa0fa413255b5d1927d6a785ef52e99e68203dc52d08828f147f9",
       "source": "Unchanged original Custom-PCSX2.exe from PCSX2-Controlled-Updater-0.1.0-test1.zip",
-      "status": "User confirmed replacement launcher starts selected 2.9.127; gameplay and rollback checks pending."
+      "status": "accepted: selected version, game launch and rollback launch passed-user-reported"
     },
     "prevention_followup": "Consider checking launcher compatibility in updater preflight; no updater/source changes included in this repair.",
     "resolution": {
       "date": "2026-10-14",
       "user_report": "It did show as 2.9.127 with the Custom-PCSX2.exe you provided.",
       "result": "Replacing the launcher with the recovered updater-compatible EXE resolved the selected/launched version mismatch.",
-      "verified_scope": "User confirmed version 2.9.127 launches with the replacement launcher. Game launch and subsequent normal updater rollback/launch have not yet been confirmed for this repaired installation."
+      "verified_scope": "User confirmed 2.9.127 launch, game launch, rollback to 2.9.126 and game launch after rollback using the recovered updater-compatible launcher."
     }
+  },
+  "normal_updater_acceptance": {
+    "date": "2026-10-14",
+    "user_report": "This test was successful.",
+    "requested_test": "Launch a game on 2.9.127; close PCSX2; roll back through PCSX2-Update.exe; use the same Custom-PCSX2.exe to confirm 2.9.126 and launch a game.",
+    "result": "passed-user-reported",
+    "required_launcher_sha256": "4fab61885b8aa0fa413255b5d1927d6a785ef52e99e68203dc52d08828f147f9"
+  },
+  "publication": {
+    "status": "approved by acceptance; release/feed preparation in progress",
+    "published": false
   }
 }
