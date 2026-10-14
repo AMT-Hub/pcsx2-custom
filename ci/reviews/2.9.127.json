@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "reviewed_at": "2026-10-14",
+  "base_tag": "v2.9.126",
+  "base_commit": "a77a07903152617d81f0fbefc1c297fbcd26dac5",
+  "candidate_tag": "v2.9.127",
+  "candidate_commit": "e35cb2c87590bc3d127b3bb4dd222b01e598c9a4",
+  "upstream_commits": 1,
+  "changed_files": [
+    "pcsx2/GS/Renderers/Common/GSDevice.cpp",
+    "pcsx2/GS/Renderers/Common/GSDevice.h",
+    "pcsx2/GS/Renderers/Common/GSTexture.cpp",
+    "pcsx2/GS/Renderers/DX11/GSDevice11.cpp",
+    "pcsx2/GS/Renderers/DX12/GSDevice12.cpp",
+    "pcsx2/GS/Renderers/HW/GSRendererHW.cpp",
+    "pcsx2/GS/Renderers/Metal/GSDeviceMTL.mm",
+    "pcsx2/GS/Renderers/OpenGL/GSDeviceOGL.cpp"
+  ],
+  "summary": "Cache depth-stencil as render-target copies for DX/OpenGL; invalidate cached copies on source changes. Shared device/texture and renderer lifecycle changes, plus Metal feature flag. No direct changes to Qt surfaces, BIOS loading, game list, config, input, build files or dependencies. Vulkan uses the shared renderer, so graphics acceptance is still required.",
+  "integration_files": {
+    "count": 13,
+    "changed": [],
+    "existing_hashes_retained": true
+  },
+  "dependency_hashes_unchanged": true,
+  "official_archive": {
+    "name": "pcsx2-v2.9.127-windows-x64-Qt.7z",
+    "sha256": "d780d14e3951705c3a4f51d30e1e3c894ef40db4024f5bce36bf29740222554a",
+    "size": 31951981
+  },
+  "feature_implementation_changes": [],
+  "checks": {
+    "original_gate_rejected_new_commit": "passed",
+    "integration_hashes": "passed",
+    "all_feature_patches_apply": "passed",
+    "bios_policy_cpp_tests": "passed",
+    "actual_patched_sort_method_cpp_tests": "passed",
+    "candidate_gate_unit_tests": "passed (4 tests, including changed hash, wrong tag, dirty source and unreviewed commit rejection)"
+  },
+  "build_permitted": true,
+  "windows_build": "pending",
+  "windows_acceptance": "pending",
+  "release_approved": false,
+  "approved_feed_changed": false
+}
