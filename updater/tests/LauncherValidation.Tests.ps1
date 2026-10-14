@@ -49,7 +49,15 @@ function Make-Package([string]$Id,[string]$Version) {
     [IO.File]::WriteAllBytes((Join-Path $stage 'manifest.json'),$bytes)
     [IO.File]::WriteAllBytes((Join-Path $stage 'manifest.sig'),$rsa.SignData($bytes,[Security.Cryptography.CryptoConfig]::MapNameToOID('SHA256')))
     $zip=Join-Path $packages ($Id+'.zip')
-    [IO.Compression.ZipFile]::CreateFromDirectory($stage,$zip)
+    # .NET Framework's CreateFromDirectory emits backslashes on Windows.
+    # Production packages deliberately require portable forward-slash names.
+    $archive=[IO.Compression.ZipFile]::Open($zip,[IO.Compression.ZipArchiveMode]::Create)
+    try {
+        foreach($file in @(Get-ChildItem -LiteralPath $stage -Recurse -File)) {
+            $relative=$file.FullName.Substring($stage.Length+1).Replace('\','/')
+            $null=[IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive,$file.FullName,$relative)
+        }
+    } finally { $archive.Dispose() }
     return $zip
 }
 try {
@@ -69,6 +77,11 @@ try {
         Expect-Blocked { [IO.File]::Delete((Join-Path $install 'Custom-PCSX2.exe')) } '*used by another process*' 'Verified launcher cannot be deleted while held'
     } finally { $handle.Dispose() }
     Restore-Launcher
+    $unreadable=[IO.File]::Open((Join-Path $install 'Custom-PCSX2.exe'),[IO.FileMode]::Open,[IO.FileAccess]::ReadWrite,[IO.FileShare]::None)
+    try {
+        Check (!(Get-LauncherStatus).Compatible) 'Unreadable launcher reports blocked status without crashing the UI helper'
+        Expect-Blocked { Install-Package 'not-opened.zip' } 'Launcher validation blocked*' 'Unreadable launcher blocks install before opening package'
+    } finally { $unreadable.Dispose() }
     $a=Make-Package 'nightly-2_9_126-fixture-a' '2.9.126'
     $b=Make-Package 'nightly-2_9_127-fixture-b' '2.9.127'
     $script:NetworkCalls=0;$script:ChangeLauncherDuringDownload=$false

@@ -251,10 +251,13 @@ function Install-Package([string]$Package) {
         Write-Selection $m.id $state.Current
         return "Selected $($m.label). Previous runtime retained. Settings backup: $backup"
     } finally {
-        if ($archive) {$archive.Dispose()}; if ($stream) {$stream.Dispose()}
-        if ($stage -and (Test-Path -LiteralPath $stage)) { Remove-Item -LiteralPath $stage -Recurse -Force }
-        if ($launcher) { $launcher.Dispose() }
-        $lock.Dispose()
+        try {
+            if ($archive) {$archive.Dispose()}; if ($stream) {$stream.Dispose()}
+            if ($stage -and (Test-Path -LiteralPath $stage)) { Remove-Item -LiteralPath $stage -Recurse -Force }
+        } finally {
+            if ($launcher) { $launcher.Dispose() }
+            $lock.Dispose()
+        }
     }
 }
 function Rollback-Runtime {
