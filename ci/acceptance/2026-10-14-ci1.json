@@ -21,8 +21,23 @@
     "isolated_test_kit": "PCSX2-GitHub-Build-2.9.126-test1-Kit.zip",
     "test_kit_sha256": "10905f78176213d381be4a41833caad34d4c3dddb26b59393cc945c8cd716902",
     "prepare_and_restore": "Screenshots showed READY and RESTORED success messages.",
-    "scope": "This records user-reported runtime acceptance and the isolated test kit's prepare/restore cycle. It does not yet record normal controlled-updater installation or rollback acceptance for this CI runtime.",
-    "test_portable_path": "The isolated test temporarily used ../../ in portable.txt. The signed runtime retains the original CI artifact's ../../.. path for the updater's runtime directory."
+    "scope": "User-reported custom functionality, isolated CI test prepare/restore, normal Windows controlled-updater installation, launch, rollback and launch after rollback all passed.",
+    "test_portable_path": "The isolated test temporarily used ../../ in portable.txt. The signed runtime retains the original CI artifact's ../../.. path for the updater's runtime directory.",
+    "normal_updater_cycle": {
+      "date": "2026-10-14",
+      "user_report": "Both launches worked.",
+      "install_screenshot": {
+        "current": "nightly-2_9_126-ci1-test1",
+        "previous": "legacy",
+        "result": "Selected GitHub-built custom nightly 2.9.126 (CI1 updater test). Previous runtime retained."
+      },
+      "rollback_screenshot": {
+        "current": "legacy",
+        "previous": "nightly-2_9_126-ci1-test1",
+        "result": "Selected previous runtime (legacy). Your current settings and saves are unchanged."
+      },
+      "result": "passed-user-reported-and-updater-state-confirmed"
+    }
   },
   "signed_local_test": {
     "id": "nightly-2_9_126-ci1-test1",
@@ -36,11 +51,32 @@
       "signature_and_complete_zip": "passed",
       "all_runtime_hashes_and_sizes": "passed",
       "unchanged_updater_Read_Release_and_Assert_Runtime": "passed with PowerShell 7 on Linux",
-      "windows_normal_updater_install_and_rollback": "pending user test",
-      "installed_shader_dependency_checks": "pending normal updater installation"
+      "windows_normal_updater_install_and_rollback": "passed-user-reported; both updater transitions confirmed in screenshots",
+      "installed_shader_dependency_checks": "passed as part of successful Install-Package, which enforces these checks"
     },
-    "public_release": "not published",
-    "live_feed": "unchanged; still points to nightly-2_9_126-updater-test1"
+    "public_release": "published as the latest approved release",
+    "live_feed": "revision 2 selects nightly-2_9_126-ci1-test1"
   },
-  "next_step": "In the restored PCSX2-CI-Test copy, use PCSX2-Update.exe > Install local ZIP, test Custom-PCSX2.exe, then Roll back and test again. Record that result before publishing a new signed feed."
+  "next_step": "The accepted CI1 runtime is available through Check for updates and Download and install. Future nightly versions still require source review, feature acceptance and approval before entering this feed.",
+  "publication": {
+    "release_id": 412733248,
+    "release_url": "https://github.com/AMT-Hub/pcsx2-custom/releases/tag/nightly-2.9.126-ci1-test1",
+    "tag": "nightly-2.9.126-ci1-test1",
+    "published_at": "2026-10-14T13:33:12Z",
+    "draft": false,
+    "prerelease": false,
+    "latest_verified": true,
+    "feed_sequence": 2,
+    "feed_url": "https://github.com/AMT-Hub/pcsx2-custom/releases/latest/download/approved-feed.json",
+    "feed_expires_utc": "2027-01-12T13:28:35.010585+00:00",
+    "feed_sha256": "6a07bbc290f6174caa9695d2e4ab08dc7d85f82682af9752314e1b27c0af342f",
+    "checksums_sha256": "706692b30bd5a1f830c482f822742ac17dc872534bae0c4a219112d320443148",
+    "verification": [
+      "Existing updater Read-Feed accepted the prepared feed signature, schema, expiry and increasing revision.",
+      "GitHub hosted SHA-256 digests match all four prepared assets.",
+      "GitHub latest-release API and browser latest redirect select this published release."
+    ],
+    "verification_limit": "A fresh downloaded feed copy could not be recovered from the cloud browser for independent byte comparison; hosted asset digests were used. The online updater route had passed user acceptance for the preceding release.",
+    "prior_release_retained": "nightly-2.9.126-approved-1"
+  }
 }
