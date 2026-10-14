@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "date": "2026-10-14",
+  "candidate": "GitHub-built custom nightly 2.9.126, CI1",
+  "build": {
+    "repository": "AMT-Hub/pcsx2-custom",
+    "source_commit": "d0fa85b44e1bf1e6c93e8b2cdd7a8793c2e444f9",
+    "upstream_commit": "a77a07903152617d81f0fbefc1c297fbcd26dac5",
+    "workflow_run": 38561773573,
+    "workflow_url": "https://github.com/AMT-Hub/pcsx2-custom/actions/runs/38561773573",
+    "artifact_id": 11892278151,
+    "artifact_name": "UNSIGNED-runtime-38561773573",
+    "artifact_zip_sha256": "f2fa7e009d102022d3e370b8b7ea417a4572e5b7445b26054a421acd4ec43bbc",
+    "runtime_zip_sha256": "644b5a75bb6ababc9e5a26824767cdfd6210e2130375196ed5520fbbe337ef28",
+    "runtime_exe_sha256": "b55e4493ad530c3606bc49c1bcfb8d0c6c2c04c48bd08421f49cddaca650cfb3",
+    "runtime_file_count": 285
+  },
+  "acceptance": {
+    "feature_testing": "passed-user-reported",
+    "report": "User confirmed Custom-PCSX2.exe functionality worked before and after the CI test cycle.",
+    "isolated_test_kit": "PCSX2-GitHub-Build-2.9.126-test1-Kit.zip",
+    "test_kit_sha256": "10905f78176213d381be4a41833caad34d4c3dddb26b59393cc945c8cd716902",
+    "prepare_and_restore": "Screenshots showed READY and RESTORED success messages.",
+    "scope": "This records user-reported runtime acceptance and the isolated test kit's prepare/restore cycle. It does not yet record normal controlled-updater installation or rollback acceptance for this CI runtime.",
+    "test_portable_path": "The isolated test temporarily used ../../ in portable.txt. The signed runtime retains the original CI artifact's ../../.. path for the updater's runtime directory."
+  },
+  "signed_local_test": {
+    "id": "nightly-2_9_126-ci1-test1",
+    "label": "GitHub-built custom nightly 2.9.126 (CI1 updater test)",
+    "filename": "PCSX2-Nightly-2.9.126-CI1-Signed-Update-test1.zip",
+    "bytes": 129404881,
+    "sha256": "30bf8bc578567169a75970341dc9a7b11cdd6ff93d2f1b0c9affa95db0c86ab4",
+    "payload": "All 285 runtime files are byte-identical to the accepted CI artifact.",
+    "dependency_requirements": "Carried unchanged from the signature-verified previously accepted nightly-2_9_126-updater-test1 manifest.",
+    "verification": {
+      "signature_and_complete_zip": "passed",
+      "all_runtime_hashes_and_sizes": "passed",
+      "unchanged_updater_Read_Release_and_Assert_Runtime": "passed with PowerShell 7 on Linux",
+      "windows_normal_updater_install_and_rollback": "pending user test",
+      "installed_shader_dependency_checks": "pending normal updater installation"
+    },
+    "public_release": "not published",
+    "live_feed": "unchanged; still points to nightly-2_9_126-updater-test1"
+  },
+  "next_step": "In the restored PCSX2-CI-Test copy, use PCSX2-Update.exe > Install local ZIP, test Custom-PCSX2.exe, then Roll back and test again. Record that result before publishing a new signed feed."
+}
