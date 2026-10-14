@@ -1,0 +1,89 @@
+name: Assess and build custom nightly candidate
+on:
+  workflow_dispatch:
+    inputs:
+      upstream_tag:
+        description: 'Official PCSX2 tag to assess (unreviewed versions stop for review)'
+        required: true
+        default: v2.9.126
+        type: string
+  push:
+    branches: [candidate-pipeline-test1]
+permissions:
+  contents: read
+concurrency:
+  group: candidate-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  assess:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    outputs:
+      build_permitted: ${{ steps.gate.outputs.build_permitted }}
+    env:
+      CANDIDATE_TAG: ${{ inputs.upstream_tag || 'v2.9.126' }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Test gate and validate requested tag
+        run: |
+          python3 -m unittest discover -s ci -p 'test_*.py' -v
+          python3 ci/assess_candidate.py --tag "$CANDIDATE_TAG"
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: PCSX2/pcsx2
+          ref: ${{ env.CANDIDATE_TAG }}
+          path: candidate-source
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Compare candidate with reviewed build inputs
+        id: gate
+        run: python3 ci/assess_candidate.py --tag "$CANDIDATE_TAG" --source candidate-source
+      - name: Save assessment
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: candidate-assessment-${{ github.run_id }}
+          path: candidate-report.*
+          retention-days: 30
+          if-no-files-found: warn
+  build:
+    needs: assess
+    if: needs.assess.outputs.build_permitted == 'true'
+    runs-on: windows-2022
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.13'
+      - name: Download hash-pinned official archive
+        working-directory: emulator
+        run: |
+          python -c "from pathlib import Path; import build, assemble; build.download('https://github.com/PCSX2/pcsx2/releases/download/v2.9.126/' + assemble.NIGHTLY, Path(assemble.NIGHTLY), assemble.EXPECTED)"
+      - name: Compile reviewed custom runtime and run BIOS policy tests
+        working-directory: emulator
+        run: python build.py
+      - name: Save build log
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: windows-build-log-${{ github.run_id }}
+          path: emulator/Build.log
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Save unsigned candidate
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: UNSIGNED-runtime-${{ github.run_id }}
+          path: |
+            emulator/PCSX2-Nightly-2.9.126-runtime-UNSIGNED.zip
+            emulator/RUNTIME-SHA256.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Record approval boundary
+        run: |
+          'Unsigned build only. Windows game/shader/input/taskbar and update/rollback acceptance plus separate signing are required before publication.' >> $env:GITHUB_STEP_SUMMARY
