@@ -30,6 +30,61 @@ function File-Hash([string]$Path) {
     try { return ([BitConverter]::ToString($h.ComputeHash($s))).Replace('-','').ToLowerInvariant() }
     finally { $s.Dispose(); $h.Dispose() }
 }
+function Open-CompatibleLauncher {
+    # Exact accepted bytes, not a filename/version-string heuristic. Do not execute
+    # an unrecognised launcher to discover its capabilities. Add future builds only
+    # after their runtime-selection behaviour has been reviewed and accepted.
+    $expected='4fab61885b8aa0fa413255b5d1927d6a785ef52e99e68203dc52d08828f147f9'
+    $path=Join-Path $script:Root 'Custom-PCSX2.exe'
+    $stream=$null
+    try {
+        Assert-PlainPath $path
+        if (![IO.File]::Exists($path)) { throw 'Custom-PCSX2.exe is missing.' }
+        # Hold this read handle throughout a state-changing operation on Windows:
+        # another process cannot replace/delete/write the verified EXE meanwhile.
+        $stream=[IO.File]::Open($path,[IO.FileMode]::Open,[IO.FileAccess]::Read,[IO.FileShare]::Read)
+        $sha=[Security.Cryptography.SHA256]::Create()
+        try { $actual=([BitConverter]::ToString($sha.ComputeHash($stream))).Replace('-','').ToLowerInvariant() }
+        finally { $sha.Dispose() }
+        if ($actual -cne $expected) { throw 'Custom-PCSX2.exe is not the accepted updater-compatible launcher. An older launcher can ignore the selected version.' }
+        return $stream
+    } catch {
+        if ($stream) { $stream.Dispose() }
+        throw ("Launcher validation blocked the operation. "+$_.Exception.Message+"`r`nInstallation: "+$script:Root+"`r`nClose PCSX2 and this updater. Restore the tested Custom-PCSX2.exe, or back up the existing EXE and extract PCSX2-Updater-Launcher-Repair-test1.zip from the approved GitHub release into this folder. Reopen the updater afterwards. Do not substitute pcsx2-qt.exe.")
+    }
+}
+function Assert-CompatibleLauncher {
+    $handle=Open-CompatibleLauncher
+    $handle.Dispose()
+}
+function Get-LauncherStatus {
+    try {
+        Assert-CompatibleLauncher
+        return [pscustomobject]@{ Compatible=$true; Message='Launcher: compatible (accepted Custom-PCSX2.exe).' }
+    } catch {
+        return [pscustomobject]@{ Compatible=$false; Message=$_.Exception.Message }
+    }
+}
+function Get-RuntimeDisplayName([string]$Id) {
+    if (!$Id) { return 'None' }
+    if ($Id -ceq 'legacy') { return 'PCSX2 2.9.126 (original custom runtime)' }
+    try {
+        if (!(Valid-Id $Id)) { throw 'Invalid runtime identifier.' }
+        $dir=Join-Path $script:Runtimes $Id; Assert-PlainPath $dir
+        foreach ($file in @('.release-manifest.json','.release-signature.bin','PCSX2-ShaderPrototype.exe')) {
+            $path=Join-Path $dir $file; Assert-PlainPath $path
+            if (![IO.File]::Exists($path)) { throw 'Missing runtime file.' }
+        }
+        $m=Read-Release ([IO.File]::ReadAllBytes((Join-Path $dir '.release-manifest.json'))) ([IO.File]::ReadAllBytes((Join-Path $dir '.release-signature.bin')))
+        if ($m.id -cne $Id) { throw 'Runtime identity mismatch.' }
+        # This is a selection label, not a claim that the emulator is running.
+        # Full payload verification remains in install and rollback.
+        if ($Id -cmatch '^nightly-([0-9]+)_([0-9]+)_([0-9]+)(-|$)') {
+            return "PCSX2 $($Matches[1]).$($Matches[2]).$($Matches[3]) ($Id)"
+        }
+        return [string]$m.label
+    } catch { return "$Id (runtime metadata unavailable)" }
+}
 function Valid-Id([string]$Id) { return ($Id -cmatch '^[A-Za-z0-9][A-Za-z0-9_-]{0,79}$') }
 function Read-Selection {
     $p = Join-Path $script:Control 'active.txt'; Assert-PlainPath $p
@@ -150,9 +205,9 @@ function Read-Installed([string]$Id) {
     return $m
 }
 function Install-Package([string]$Package) {
-    $lock=Acquire-UpdateLock; $archive=$null; $stream=$null; $stage=$null
+    $lock=Acquire-UpdateLock; $archive=$null; $stream=$null; $stage=$null; $launcher=$null
     try {
-        Assert-NotRunning; $state=Read-Selection
+        Assert-NotRunning; $launcher=Open-CompatibleLauncher; $state=Read-Selection
         $stream=[IO.File]::Open($Package,[IO.FileMode]::Open,[IO.FileAccess]::Read,[IO.FileShare]::Read)
         if ($stream.Length -gt 1073741824) { throw 'Package is too large.' }
         $archive=New-Object IO.Compression.ZipArchive($stream,[IO.Compression.ZipArchiveMode]::Read,$true)
@@ -198,13 +253,14 @@ function Install-Package([string]$Package) {
     } finally {
         if ($archive) {$archive.Dispose()}; if ($stream) {$stream.Dispose()}
         if ($stage -and (Test-Path -LiteralPath $stage)) { Remove-Item -LiteralPath $stage -Recurse -Force }
+        if ($launcher) { $launcher.Dispose() }
         $lock.Dispose()
     }
 }
 function Rollback-Runtime {
-    $lock=Acquire-UpdateLock
+    $lock=Acquire-UpdateLock; $launcher=$null
     try {
-        Assert-NotRunning; $state=Read-Selection; $prev=$state.Previous
+        Assert-NotRunning; $launcher=Open-CompatibleLauncher; $state=Read-Selection; $prev=$state.Previous
         if (!$prev) { throw 'No previous runtime has been recorded.' }
         if ($prev -eq 'legacy') {
             $p=Join-Path $script:Root 'custom-pcsx2/shader-prototype/PCSX2-ShaderPrototype.exe'; Assert-PlainPath $p
@@ -213,5 +269,5 @@ function Rollback-Runtime {
         $backup=Snapshot-Settings $state.Current $prev
         Write-Selection $prev $state.Current
         return "Selected previous runtime ($prev). Your current settings and saves are unchanged. Backup: $backup"
-    } finally { $lock.Dispose() }
+    } finally { if ($launcher) { $launcher.Dispose() }; $lock.Dispose() }
 }
