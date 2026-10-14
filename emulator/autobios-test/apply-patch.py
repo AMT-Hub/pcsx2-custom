@@ -1,4 +1,4 @@
-"""Apply to a separate, clean PCSX2 v2.9.126 Git checkout. Never edits an installation."""
+"""Apply to a separate checkout matching upstream-sha256.json. Never edits an installation."""
 import hashlib
 import json
 import pathlib
@@ -16,7 +16,7 @@ for name, digest in expected.items():
     # Git may check out CRLF on Windows. Normalise only for source verification.
     data = path.read_bytes().replace(b'\r\n', b'\n')
     if hashlib.sha256(data).hexdigest() != digest:
-        raise SystemExit(f'Wrong or edited upstream file: {name}. Use a clean v2.9.126 checkout.')
+        raise SystemExit(f'Wrong or edited upstream file: {name}. Use the clean, reviewed checkout named in build.py.')
 for path in (kit / 'patch').rglob('*.h'):
     dst = root / path.relative_to(kit / 'patch')
     if dst.exists():

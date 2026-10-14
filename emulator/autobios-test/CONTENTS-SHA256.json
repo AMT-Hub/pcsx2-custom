@@ -1,11 +1,10 @@
 {
-  "Build.cmd": "e8dc1ef20f303d6e454af5977f83189e682835ed7ea2f679a011f534a1fd2b5f",
   "README.txt": "a34c31b340b33be3b5337ffa78dcab7ab15394b6adde4c460dc53338abaaba0d",
-  "apply-patch.py": "cac4ffe9254468a37cdb0fb2676972ee224841d3e5600c3ada85a564239df368",
+  "apply-patch.py": "a02500025cbc8ef5d98281d37d96e20b4435b26e525f771b8ab76dd3715c00c4",
   "auto-bios.patch": "4d69001de4f66868e8dcc609fb44307d6ccc2b263c2932133534a7879384b3c5",
-  "build.py": "94ea0c4f7956a0b7991b556f5525afaf877da8ae8f3a4c33f6dde9d9298431a5",
-  "patch/pcsx2/AutoBios.h": "5d92b3c48a231231174b0b62e220d06758306963758cb95e0f6f10e1f677bf3d",
-  "patch/pcsx2/AutoBiosPolicy.h": "b679407c726bf690fde9459d7b9ccef3c1a209620ba9f66e6d2da486d6b80d83",
-  "tests/policy.cpp": "35d53ac6b51bc3243aa3d5af241607572b92ba0f7aaa4802867732b113fbfc0b",
-  "upstream-sha256.json": "8b3117b8f6aaf082852f253f04aa8a8ea9a2db71f2dd1c189a6c32352c6864fc"
+  "patch/pcsx2/AutoBios.h": "c061ed447a01e444c2544ac800ab3789dcc0e55a4c387fcb84e9ea1d3d81c4e8",
+  "patch/pcsx2/AutoBiosIdentity.h": "1d4365d9fe93a7bf693bb6369f2793beae6fd195cfbc673889c61129c0a974cb",
+  "patch/pcsx2/AutoBiosPolicy.h": "f87c84cfea46b366824c049d8bce5462cc4665622433489129f5a58fe90dd97f",
+  "tests/policy.cpp": "9b6486971ad3f8b8c628fc0240d9062aface72ca004383e3f635cc127f8dea22",
+  "upstream-sha256.json": "2a711fab28a536e7a8e95a2e16c41f94f5a4002ee91525d8f55260b6fd397539"
 }

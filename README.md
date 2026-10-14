@@ -10,7 +10,7 @@ Custom emulator features include compatibility-aware regional BIOS selection, in
 
 Release packages are **runtime updates for an existing matching custom installation**, not standalone PCSX2 installations. They require the expected ShaderGlass worker/profile and custom launcher. BIOS firmware and game images are not included. Existing controller profiles and game settings remain in the user's portable data folder.
 
-The 0.1.0 local updater and this emulator runtime passed user acceptance. The 0.2.0 online-feed client remains a test pending Windows/live-host acceptance. Compilation and signatures alone do not prove compatibility across all games and GPUs.
+The 2.9.126 runtime and 0.2.0 online-feed updater passed user acceptance, including update and rollback. See ci/acceptance/2026-10-14-ci1.json for the accepted GitHub build. This branch prepares a separate 2.9.127 candidate; it does not change the approved release or feed. Compilation and signatures alone do not prove compatibility across all games and GPUs.
 
 ## Feed
 

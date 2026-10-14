@@ -24,9 +24,13 @@ class GateTests(unittest.TestCase):
 
     def test_new_commit_never_autoapproved(self):
         baseline = gate.literal(gate.REPO / 'emulator/build.py', 'COMMIT')
-        for sha, tag, changes, permitted in [(baseline, 'v2.9.126', [], True), ('f'*40, 'v2.9.127', [], False),
-                                              (baseline, 'v2.9.126', [{'file': 'x'}], False),
-                                              (baseline, 'v2.9.127', [], False)]:
+        archive = gate.literal(gate.REPO / 'emulator/assemble.py', 'NIGHTLY')
+        reviewed_tag = archive.removeprefix('pcsx2-').removesuffix('-windows-x64-Qt.7z')
+        unreviewed_tag = 'v2.9999.999999'
+        for sha, tag, changes, permitted in [(baseline, reviewed_tag, [], True), ('f'*40, unreviewed_tag, [], False),
+                                              ('f'*40, reviewed_tag, [], False),
+                                              (baseline, reviewed_tag, [{'file': 'x'}], False),
+                                              (baseline, unreviewed_tag, [], False)]:
             with patch.object(subprocess, 'check_output', side_effect=[sha, sha, '']), patch.object(gate, 'compare', return_value=changes):
                 result = gate.assess(Path('unused'), tag)
                 self.assertEqual(result['build_permitted'], permitted)

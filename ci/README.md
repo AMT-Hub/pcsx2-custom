@@ -1,10 +1,10 @@
-# Candidate pipeline test1
+# Reviewed nightly candidate pipeline
 
 The approved 2.9.126 runtime and online updater 0.2.0-test1 passed user-reported update, feature and rollback acceptance on 14 October 2026. A missing launcher was restored by the user; its cause remains unresolved. This pipeline does not modify those accepted binaries or the live feed.
 
 ## Use
 
-In GitHub Actions, run **Assess and build custom nightly candidate**, entering an official tag such as `v2.9.126`. Manual dispatch becomes available after the workflow reaches the default branch. For initial validation, a push to `candidate-pipeline-test1` assesses and builds the reviewed baseline automatically.
+In GitHub Actions, run **Assess and build custom nightly candidate**, entering an official tag such as `v2.9.127`. Manual dispatch becomes available after the workflow reaches the default branch. On this candidate branch, a push to `candidate-nightly-2.9.127` assesses and builds the reviewed 2.9.127 source automatically. This is not approval for the live feed.
 
 The assessment records the exact upstream commit and compares all 13 reviewed integration files with their stored hashes. New tags/commits are marked **review-required**, even if those files match: dependency changes or changes elsewhere can still affect behaviour. No unreviewed upstream code is compiled or executed. An assessment job can succeed while correctly reporting review-required; the Windows build is then skipped.
 
@@ -15,7 +15,7 @@ Download the assessment, build log and (on success) **UNSIGNED-runtime** artifac
 ## Approving a newer nightly
 
 1. Assess the selected tag. Review its report and upstream changes.
-2. Port patches and review source/build inputs in a separate branch. Update the pinned commit/tag, integration hashes, dependency hashes and packaging names together after review. The Windows download step is deliberately pinned too.
+2. Port patches and review source/build inputs in a separate branch. Update the pinned commit/tag, integration hashes, dependency hashes and packaging names together after review. The official download URL and runtime filename are derived from the pinned archive name to keep their versions consistent. The workflow default must still match the reviewed tag.
 3. Build without a signing key. A green build is not proof of game, shader, cursor or taskbar compatibility.
 4. Prepare an isolated test installation and test region/BIOS selection (including fallback), ShaderGlass windowed/fullscreen/pause/shortcuts, controller hotkeys, sorting titles, launcher arguments/taskbar, update and rollback. Record exact artifact SHA-256 and results.
 5. Sign accepted bytes using the offline publisher tools. Publish a new immutable runtime ID/tag/package and a higher-sequence signed feed, with corresponding source/licences. Keep unapproved candidates out of the approved feed.

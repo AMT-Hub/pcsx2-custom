@@ -13,7 +13,7 @@ import zipfile
 ROOT = Path(__file__).resolve().parent
 WORK = ROOT / 'work'
 SOURCE = WORK / 'pcsx2'
-COMMIT = 'a77a07903152617d81f0fbefc1c297fbcd26dac5'
+COMMIT = 'e35cb2c87590bc3d127b3bb4dd222b01e598c9a4'
 DEPS_SHA = 'a3133c7841e8fbdab6f4d1d5ad8efec31fb1ecda95ffed39f4d1f36bb7eb0007'
 FFMPEG_SHA = 'c4f8a5093997445fbb08c694be289b36eed660e46e02078d9371a2481453ae5a'
 RELEASES = 'https://github.com/PCSX2/pcsx2-windows-dependencies/releases/download/'
@@ -158,8 +158,8 @@ def main():
         raise RuntimeError('Run Build.cmd on Windows with Visual Studio 2022 installed.')
     if '(' in str(ROOT) or ')' in str(ROOT) or len(str(ROOT)) > 85:
         raise RuntimeError('Extract the kit to a short path such as D:\\PCSX2Build (no parentheses).')
-    say('Custom PCSX2 Nightly 2.9.126 test1; ' + COMMIT)
     import assemble
+    say('Custom PCSX2 Nightly ' + assemble.VERSION + ' candidate1; ' + COMMIT)
     assemble.check_inputs(ROOT)
     say('Python: ' + sys.version.split()[0])
     vswhere = Path(os.environ.get('ProgramFiles(x86)', r'C:\Program Files (x86)')) / 'Microsoft Visual Studio/Installer/vswhere.exe'
@@ -203,7 +203,7 @@ def main():
             say('Preserved incomplete source checkout: ' + str(backup))
             say('Creating a fresh pinned checkout; existing dependency downloads are retained.')
     if not SOURCE.exists():
-        run([git, '-c', 'core.autocrlf=false', 'clone', '--depth', '1', '--branch', 'v2.9.126',
+        run([git, '-c', 'core.autocrlf=false', 'clone', '--depth', '1', '--branch', assemble.TAG,
              'https://github.com/PCSX2/pcsx2.git', SOURCE])
     verify_checkout(git)
     shader_source = prepare_shader(git)
@@ -297,7 +297,7 @@ def main():
     for name in ['QtPlugins/platforms/qwindows.dll', 'Qt6Core.dll', 'resources/GameIndex.yaml', 'avcodec-62.dll']:
         if not (stage / name).is_file():
             raise RuntimeError('Missing runtime file: ' + name)
-    metadata = {'nightly_port': '2.9.126-test1', 'pcsx2_commit': COMMIT,
+    metadata = {'nightly_port': assemble.VERSION + '-candidate1', 'pcsx2_commit': COMMIT,
                 'shaderglass_commit': SHADER_COMMIT,
                 'dependencies_sha256': DEPS_SHA, 'ffmpeg_sha256': FFMPEG_SHA,
                 'status': 'compiled; Windows acceptance tests required'}
@@ -305,11 +305,11 @@ def main():
     official = WORK / 'official-nightly'
     if official.exists():
         shutil.rmtree(official)  # Generated files inside this isolated kit only.
-    run([seven, 'x', '-y', '-o' + str(official), ROOT / 'pcsx2-v2.9.126-windows-x64-Qt.7z'])
+    run([seven, 'x', '-y', '-o' + str(official), ROOT / assemble.NIGHTLY])
     # Use the patch archive shipped with the selected nightly, not a moving URL.
     shutil.copy2(official / 'resources/patches.zip', stage / 'resources/patches.zip')
     assemble.package(ROOT, stage, official)
-    say('SUCCESS: PCSX2-Nightly-2.9.126-runtime-UNSIGNED.zip')
+    say('SUCCESS: ' + assemble.RUNTIME_NAME)
     say('Review and test this runtime before signing an update package.')
     say('Output is not signed and cannot be installed through the controlled updater yet.')
 
