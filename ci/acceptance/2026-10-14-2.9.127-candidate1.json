@@ -1,0 +1,38 @@
+{
+  "candidate_version": "2.9.127",
+  "candidate_source_commit": "aeb9326b54747a50cc8985eb81add7b6a1502dd2",
+  "upstream_commit": "e35cb2c87590bc3d127b3bb4dd222b01e598c9a4",
+  "run_id": 38575297072,
+  "run_url": "https://github.com/AMT-Hub/pcsx2-custom/actions/runs/38575297072",
+  "windows_build": "passed",
+  "windows_bios_policy_tests": "passed",
+  "source_patch_application": "passed",
+  "local_actual_patched_sorting_method_tests": "passed",
+  "test_setup_restore_tests": "passed on PowerShell 7 Linux with fixture files; same method previously accepted by user on Windows",
+  "windows_feature_acceptance": "pending",
+  "signed_update_rollback_acceptance": "pending",
+  "release_approved": false,
+  "feed_changed": false,
+  "notes": [
+    "2.9.127 uses unchanged custom feature implementation.",
+    "Windows BIOS policy files match the approved 2.9.126 package byte-for-byte; comparison to repository source normalises only CRLF."
+  ],
+  "github_artifact_sha256": "d2404c490f3c3fc00319051b7aaac8d480ec7db0d1490ba82924264314c7392d",
+  "unsigned_runtime_sha256": "a9b482926cc050018e3187b5def74019cdfe688d8785f4a605a2bd67ed9d84e0",
+  "runtime_file_count": 285,
+  "changed_runtime_files_vs_approved": [
+    "BUILD-INFO.json",
+    "PCSX2-ShaderPrototype.exe",
+    "updater.exe",
+    "resources/patches.zip"
+  ],
+  "unchanged_runtime_files": 281,
+  "test_kit": {
+    "file": "PCSX2-Nightly-2.9.127-Candidate1-Test-Kit.zip",
+    "bytes": 129034904,
+    "sha256": "3bb3e9f1e603a27ce202193623e82addfa7b0598f4f9a73a034833c27b5ecbe6",
+    "status": "verified; Windows acceptance pending"
+  },
+  "approved_release_unchanged": "nightly-2.9.126-ci1-test1",
+  "approved_feed_sha256_unchanged": "6a07bbc290f6174caa9695d2e4ab08dc7d85f82682af9752314e1b27c0af342f"
+}

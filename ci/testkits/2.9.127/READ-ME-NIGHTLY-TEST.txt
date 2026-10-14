@@ -1,0 +1,55 @@
+PCSX2 NIGHTLY 2.9.127 - ISOLATED ACCEPTANCE TEST
+
+This advances the custom emulator from 2.9.126 to 2.9.127, compiled on GitHub.
+No Visual Studio is required. This is a test kit for your existing custom
+installation; it is not a standalone emulator or an updater-installable ZIP.
+The approved update feed remains unchanged.
+
+1. Close PCSX2 and the updater.
+2. Copy your entire WORKING custom nightly installation into a separate folder
+   named exactly PCSX2-Nightly-Test. Keep your original folder.
+3. Extract the CONTENTS of this ZIP into PCSX2-Nightly-Test, beside its existing
+   Custom-PCSX2.exe. Merge custom-pcsx2 folders when prompted.
+4. Run Prepare-Nightly-Test.cmd. It must report READY. If it stops, send the
+   message rather than continuing.
+5. Launch Custom-PCSX2.exe from this copy. Check Help > About shows 2.9.127.
+6. Perform the checks below. Then close PCSX2, run Restore-Nightly-Test.cmd,
+   and confirm Custom-PCSX2.exe launches your previous version again.
+
+CHECKS
+- Jak and Daxter USA: full BIOS boot, quit and launch a second time; both launches
+  should use the compatible US BIOS and reach the game without the old error.
+- Silent Hill 2 Europe: automatic European BIOS selection and normal boot.
+- ShaderGlass: windowed and Vulkan fullscreen startup; filtered pause menu with
+  the cursor visible/usable; shortcuts suppressed; normal game exit/relaunch.
+- Xbox controls and Guide-button pause shortcut.
+- Existing Sorting Titles retained, new edits saved and game list sorted correctly.
+- Custom launcher/taskbar identity. If you use LaunchBox, also test launching a
+  game with the EXE in this copy, keeping your normal LaunchBox entry unchanged.
+- Briefly play a familiar game and look for new graphics glitches or crashes.
+
+Keep Renderer = Vulkan and Allow Exclusive Fullscreen = Disallowed. Official
+PCSX2 updates remain disabled by the custom build.
+
+Do not use PCSX2-Update.exe while this unsigned runtime test is prepared.
+Use Restore-Nightly-Test.cmd first. Once these checks pass, the same compiled
+bytes can be signed for the next install/rollback test. Publication to the
+approved feed happens only after acceptance.
+
+The setup preserves the copy's original shader-prototype runtime and exact
+runtime selection, verifies every candidate file and the installed ShaderGlass
+worker/profile, and refuses a running emulator. The runtime portable.txt path
+is adjusted for this temporary test layout; EXE/DLL bytes are unmodified.
+Settings/saves remain in the test copy. If you use absolute data-folder paths
+outside the portable root, change them to locations inside the test copy before
+playing so the copy does not write to the original saves/settings.
+
+SOURCE AND PROVENANCE
+GitHub run: https://github.com/AMT-Hub/pcsx2-custom/actions/runs/38575297072
+Candidate review: https://github.com/AMT-Hub/pcsx2-custom/pull/2
+Custom source: aeb9326b54747a50cc8985eb81add7b6a1502dd2
+PCSX2 source: e35cb2c87590bc3d127b3bb4dd222b01e598c9a4
+Complete custom source and licences are included in the corresponding-source
+ZIP under custom-pcsx2/nightly-test-2.9.127. Upstream source/dependency pins are
+in its emulator/build.py. TEST-INFO.json records the artifact and runtime hashes.
+No BIOS images, games, saves, launcher EXE or private signing key are included.
