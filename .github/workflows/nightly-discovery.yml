@@ -1,0 +1,75 @@
+name: Discover official PCSX2 nightlies
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main, feature/nightly-discovery-reporting]
+    paths:
+      - '.github/workflows/nightly-discovery.yml'
+      - 'ci/discover_nightlies.py'
+      - 'ci/test_nightly_discovery.py'
+      - 'ci/assess_candidate.py'
+      - 'emulator/build.py'
+      - 'emulator/assemble.py'
+      - 'emulator/nightly-upstream-sha256.json'
+  pull_request:
+    paths:
+      - '.github/workflows/nightly-discovery.yml'
+      - 'ci/discover_nightlies.py'
+      - 'ci/test_nightly_discovery.py'
+      - 'ci/assess_candidate.py'
+      - 'emulator/build.py'
+      - 'emulator/assemble.py'
+      - 'emulator/nightly-upstream-sha256.json'
+permissions:
+  contents: read
+concurrency:
+  group: nightly-discovery-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  test-and-assess:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Test discovery and existing review gate
+        run: python3 -m unittest discover -s ci -p 'test_*.py' -v
+      - name: Read-only live discovery
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 ci/discover_nightlies.py
+      - name: Save discovery run
+        if: always() && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: nightly-discovery-check-${{ github.run_id }}
+          path: discovery-output/
+          retention-days: 30
+          if-no-files-found: warn
+  record-reports:
+    needs: test-and-assess
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Discover and record reports on the dedicated branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 ci/discover_nightlies.py --publish
+      - name: Save published discovery run
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: nightly-discovery-record-${{ github.run_id }}
+          path: discovery-output/
+          retention-days: 30
+          if-no-files-found: warn
