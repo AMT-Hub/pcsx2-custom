@@ -12,7 +12,7 @@
   "windows_feature_acceptance": "passed-user-reported",
   "signed_update_rollback_acceptance": "passed-user-reported",
   "release_approved": true,
-  "feed_changed": false,
+  "feed_changed": true,
   "notes": [
     "2.9.127 uses unchanged custom feature implementation.",
     "Windows BIOS policy files match the approved 2.9.126 package byte-for-byte; comparison to repository source normalises only CRLF."
@@ -33,13 +33,11 @@
     "sha256": "3bb3e9f1e603a27ce202193623e82addfa7b0598f4f9a73a034833c27b5ecbe6",
     "status": "original download replaced by a verified recovered kit; Windows acceptance passed-user-reported"
   },
-  "approved_release_unchanged": "nightly-2.9.126-ci1-test1",
-  "approved_feed_sha256_unchanged": "6a07bbc290f6174caa9695d2e4ab08dc7d85f82682af9752314e1b27c0af342f",
   "windows_test_kit_prepare_restore_acceptance": "passed-user-reported",
   "user_acceptance_report": {
     "date": "2026-10-14",
     "report": "The test checks were successful and I was able to update to a newer nightly version and then revert to the previous version.",
-    "scope": "Acceptance of the delivered isolated 2.9.127 Candidate1 test kit and its prepare/restore cycle. A signed 2.9.127 updater package has not yet been delivered; normal controlled-updater install/rollback acceptance remains pending."
+    "scope": "Historical first acceptance of the isolated 2.9.127 Candidate1 test kit and its prepare/restore cycle. Normal signed updater acceptance subsequently passed as recorded below."
   },
   "recovered_test_kit": {
     "file": "PCSX2-Nightly-2.9.127-Candidate1-Test-Kit-Recovered.zip",
@@ -48,7 +46,7 @@
     "runtime": "Original compiled runtime bytes unchanged; all 285 manifest entries verified.",
     "status": "delivered; Windows feature and prepare/restore acceptance passed-user-reported"
   },
-  "next_step": "Publish the unchanged tested signed package, corresponding source, launcher repair and a higher-sequence signed feed. Document that the updater-compatible Custom-PCSX2.exe must be retained in each installation.",
+  "next_step": "2.9.127 is published and approved. Future nightlies require a separate assessment, build, feature acceptance and signed updater/rollback test before promotion.",
   "signed_local_test": {
     "id": "nightly-2_9_127-ci1-test1",
     "label": "GitHub-built custom nightly 2.9.127 (CI1 updater test)",
@@ -73,9 +71,9 @@
       "manifest_schema_and_path_constraints": "passed",
       "windows_updater_install_launch_rollback_launch": "passed-user-reported after restoring the updater-compatible launcher"
     },
-    "published": false,
-    "feed_changed": false,
-    "delivery": "Download saved for user testing; no GitHub release or approved-feed change."
+    "published": true,
+    "feed_changed": true,
+    "delivery": "The unchanged tested package is published in release nightly-2.9.127-ci1-test1 and offered by signed approved feed revision 3."
   },
   "launcher_investigation": {
     "date": "2026-10-14",
@@ -113,7 +111,57 @@
     "required_launcher_sha256": "4fab61885b8aa0fa413255b5d1927d6a785ef52e99e68203dc52d08828f147f9"
   },
   "publication": {
-    "status": "approved by acceptance; release/feed preparation in progress",
-    "published": false
-  }
+    "status": "published and verified",
+    "published": true,
+    "release_id": 413241371,
+    "tag": "nightly-2.9.127-ci1-test1",
+    "url": "https://github.com/AMT-Hub/pcsx2-custom/releases/tag/nightly-2.9.127-ci1-test1",
+    "published_at": "2026-10-14T22:34:19Z",
+    "source_commit": "aeb9326b54747a50cc8985eb81add7b6a1502dd2",
+    "latest_release_verified": true,
+    "previous_release_retained": "nightly-2.9.126-ci1-test1",
+    "feed": {
+      "sequence": 3,
+      "expires_utc": "2027-01-12T22:29:28.187276+00:00",
+      "sha256": "731efcdcff27b64f1f3ab47122c0bd47c7852433cd76cc39f5b10c92a5e72bb0",
+      "url": "https://github.com/AMT-Hub/pcsx2-custom/releases/latest/download/approved-feed.json",
+      "signature_verification": "passed against existing updater public key",
+      "download_verification": "Fresh download through latest/download/approved-feed.json matched the locally signature-verified bytes"
+    },
+    "assets": [
+      {
+        "name": "PCSX2-Nightly-2.9.127-CI1-Signed-Update-test1.zip",
+        "bytes": 129409203,
+        "sha256": "3af3af7a41f4057e738c22171725a35e958f377c280bd75f225a69353878783e",
+        "github_digest_verified": true
+      },
+      {
+        "name": "PCSX2-2.9.127-Corresponding-Source.zip",
+        "bytes": 147299,
+        "sha256": "9146cfe0e939605efe2b96372bc9aa36825ba733c5814c240abb68edc684a4ea",
+        "github_digest_verified": true
+      },
+      {
+        "name": "PCSX2-Updater-Launcher-Repair-test1.zip",
+        "bytes": 908051,
+        "sha256": "69251ba788aacdd8ac0b26c6216115a97a4572141c7914310b4659ae816d4deb",
+        "github_digest_verified": true
+      },
+      {
+        "name": "approved-feed.json",
+        "bytes": 1162,
+        "sha256": "731efcdcff27b64f1f3ab47122c0bd47c7852433cd76cc39f5b10c92a5e72bb0",
+        "github_digest_verified": true
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "bytes": 412,
+        "sha256": "b38af241afe98d42f925d05decbfa348bf328270de86bbd27693745ba3b8c109",
+        "github_digest_verified": true
+      }
+    ],
+    "launcher_requirement": "Retain the updater-compatible Custom-PCSX2.exe in each custom nightly installation. The repair is required only where an older launcher remains; automatic launcher-compatibility preflight has not been added."
+  },
+  "previous_approved_release": "nightly-2.9.126-ci1-test1",
+  "previous_approved_feed_sha256": "6a07bbc290f6174caa9695d2e4ab08dc7d85f82682af9752314e1b27c0af342f"
 }
