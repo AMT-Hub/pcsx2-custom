@@ -8,7 +8,7 @@ try {
  $baseline=Join-Path $script:Root 'custom-pcsx2/shader-prototype/PCSX2-ShaderPrototype.exe'
  if (!(Test-Path -LiteralPath $baseline) -or (File-Hash $baseline) -ne '8dd5588d650a75be428ef25571d2fe0b94a58202c766729f2b4d4b8a35ea420d'){throw 'This test requires your accepted custom nightly 2.9.126 installation and controlled updater.'}
  $script:Job=$null;$script:Available=$null
- $form=New-Object Windows.Forms.Form;$form.Text='PCSX2 Controlled Updater 0.3.0 - launcher validation test1'
+ $form=New-Object Windows.Forms.Form;$form.Text='PCSX2 Controlled Updater 0.3.0'
  $form.ClientSize=New-Object Drawing.Size(720,650);$form.StartPosition='CenterScreen';$form.FormBorderStyle='FixedDialog';$form.MaximizeBox=$false
  $form.Font=New-Object Drawing.Font('Segoe UI',10)
  $form.Icon=[Drawing.Icon]::ExtractAssociatedIcon((Join-Path $script:Root 'PCSX2-Update.exe'))

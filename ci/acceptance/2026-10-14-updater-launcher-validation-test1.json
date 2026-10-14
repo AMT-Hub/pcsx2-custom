@@ -13,7 +13,6 @@
     "powershell_version": "5.1.20348.5622",
     "scope": "Real engine/feed functions with ephemeral signed fixture packages and the hash-pinned accepted launcher; no launcher/emulator EXEs executed."
   },
-  "manual_windows_ui_and_game_acceptance": "pending user testing",
   "archive": {
     "filename": "PCSX2-Updater-0.3.0-Launcher-Validation-test1.zip",
     "bytes": 975022,
@@ -21,9 +20,35 @@
   },
   "accepted_launcher_sha256": "4fab61885b8aa0fa413255b5d1927d6a785ef52e99e68203dc52d08828f147f9",
   "deployment": "Side-by-side scripts invoked by Test-PCSX2-Update.cmd in a separate PCSX2-Nightly-Test copy. Existing normal updater files and EXEs are not overwritten.",
-  "main_branch_changed": false,
   "approved_release_changed": false,
   "approved_feed_changed": false,
   "runtime_selection_note": "Test operations change the selected runtime in the test copy. Removing the test scripts does not undo those selections.",
-  "follow_up": "Await three user checks before promoting the updater; leave the approved build untouched."
+  "follow_up": "Accepted for normal updater use. PR #3 records source promotion. The separately delivered overlay must be extracted once into an existing custom nightly installation; the runtime feed does not distribute updater-script changes.",
+  "manual_windows_ui_update_rollback_launch_acceptance": "passed-user-reported",
+  "user_acceptance": {
+    "date": "2026-10-14",
+    "report": "Test launches between update and rollback were successful, and PCSX2 successfully updated and rolledback.",
+    "screenshots_verified": [
+      "Compatible launcher recognised; selected custom runtime 2.9.127 and original custom 2.9.126 rollback target displayed.",
+      "Missing launcher reported with repair instructions; Download and install, Install local ZIP and Roll back disabled; Check for updates remained enabled."
+    ],
+    "scope": "User-reported updater install/rollback and intervening PCSX2 launches, plus reviewed UI screenshots. No additional emulator feature implementation was changed."
+  },
+  "test_delivery_changed_main": false,
+  "promotion": {
+    "accepted": true,
+    "version": "0.3.0",
+    "pull_request": 3,
+    "normal_entry_point": "PCSX2-Update.exe",
+    "code_delta_from_test": "Only the updater window title loses the test suffix. Engine.ps1 and Feed.ps1 match the accepted test archive byte-for-byte.",
+    "archive": {
+      "filename": "PCSX2-Updater-0.3.0-Accepted-Overlay.zip",
+      "bytes": 25193,
+      "sha256": "213bdef20b57da16e95d1856259314203132ed041cff8dcb477a31e047eb2ad8"
+    },
+    "archive_verification": "ZIP entry set, CRC and extracted bytes verified. Package builder requires the exact accepted test ZIP and rejects any additional code changes.",
+    "runtime_release_and_feed_unchanged": true,
+    "settings_and_runtime_selection_included": false,
+    "source_merge_status": "Approved for merge; PR #3 merge status is authoritative."
+  }
 }
