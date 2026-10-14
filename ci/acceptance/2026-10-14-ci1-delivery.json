@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-14",
+  "runtime_id": "nightly-2_9_126-ci1-test1",
+  "delivery": "GitHub draft release; not published",
+  "draft_url": "https://github.com/AMT-Hub/pcsx2-custom/releases/tag/untagged-405d8ef0ca1d9592c3b6",
+  "intended_tag": "nightly-2.9.126-ci1-test1",
+  "target_commit": "d0fa85b44e1bf1e6c93e8b2cdd7a8793c2e444f9",
+  "assets": [
+    {
+      "name": "PCSX2-Nightly-2.9.126-CI1-Signed-Update-test1.zip",
+      "bytes": 129404881,
+      "sha256": "30bf8bc578567169a75970341dc9a7b11cdd6ff93d2f1b0c9affa95db0c86ab4"
+    },
+    {
+      "name": "PCSX2-CI-Test-Corresponding-Source.zip",
+      "bytes": 140004,
+      "sha256": "fe36f0f399e879107ae062eea8084fd00cf3263f5a45d904ba3dd5fbaab16d36"
+    }
+  ],
+  "verification": "GitHub displayed asset SHA-256 digests match the local verified files.",
+  "normal_updater_install_and_rollback": "pending user test",
+  "live_feed": "unchanged; nightly-2_9_126-updater-test1 remains the published runtime"
+}
