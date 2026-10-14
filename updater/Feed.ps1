@@ -75,6 +75,9 @@ function Check-Feed([string]$Url) {
  }finally{if([IO.File]::Exists($temp)){[IO.File]::Delete($temp)}}
 }
 function Install-FromFeed([string]$Url,[string]$ExpectedId,[string]$ExpectedHash) {
+ # Block a bad launcher before any download; Install-Package checks it again
+ # and holds its verified bytes open through the final runtime selection.
+ Assert-CompatibleLauncher
  # Recheck the authenticated feed when the user chooses Install.
  $feed=Check-Feed $Url;$r=$feed.release
  if($r.id -cne $ExpectedId -or $r.sha256 -cne $ExpectedHash){throw 'The approved release changed. Check for updates again before installing.'}

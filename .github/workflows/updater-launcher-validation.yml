@@ -1,0 +1,31 @@
+name: Test updater launcher validation
+on:
+  push:
+    branches: [test-updater-launcher-validation-0.3.0]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows-tests:
+    runs-on: windows-2022
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Retrieve unchanged accepted launcher for byte validation only
+        shell: powershell
+        run: |
+          $ErrorActionPreference='Stop'
+          $url='https://github.com/AMT-Hub/pcsx2-custom/releases/download/nightly-2.9.127-ci1-test1/PCSX2-Updater-Launcher-Repair-test1.zip'
+          Invoke-WebRequest -UseBasicParsing -Uri $url -OutFile launcher-repair.zip
+          if((Get-FileHash launcher-repair.zip -Algorithm SHA256).Hash.ToLowerInvariant() -cne '69251ba788aacdd8ac0b26c6216115a97a4572141c7914310b4659ae816d4deb'){throw 'Launcher repair ZIP hash mismatch.'}
+          Expand-Archive launcher-repair.zip accepted-launcher
+      - name: Windows PowerShell 5.1 engine and feed regression tests
+        shell: powershell
+        run: |
+          & ./updater/tests/LauncherValidation.Tests.ps1 -AcceptedLauncher ./accepted-launcher/Custom-PCSX2.exe
+      - name: Record scope
+        shell: powershell
+        run: |
+          'Launcher hash validation, pre-download blocking, file locking, signed install and rollback tests passed. No emulator or launcher EXE was executed. Manual Windows UI/game acceptance remains required. No release or feed is published by this workflow.' >> $env:GITHUB_STEP_SUMMARY
