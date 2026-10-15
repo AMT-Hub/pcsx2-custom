@@ -4,12 +4,19 @@
 
 Reviewed baseline: **v2.9.127** (`e35cb2c87590bc3d127b3bb4dd222b01e598c9a4`).
 
-Discovery checks official published prereleases daily at 06:23 UTC. See the [workflow](https://github.com/AMT-Hub/pcsx2-custom/actions/workflows/nightly-discovery.yml) for the latest check, failures and manual runs.
+Discovery is scheduled hourly at **:53 UTC**. GitHub may delay or drop scheduled events; the next hour provides another opportunity. See the [workflow](https://github.com/AMT-Hub/pcsx2-custom/actions/workflows/nightly-discovery.yml) for runs, failures and manual checks.
+
+## Check history
+
+- **Last successful check:** [2026-10-15T08:52:58.083285+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/38708811273/attempts/1) — event `push`.
+- **Last successful scheduled check: not yet recorded.**
+
+Push/manual checks do not verify the scheduled trigger. If the scheduled timestamp is missing or more than three hours old, investigate scheduling in Actions. These are fixed timestamps, not a live health badge. [Machine-readable last check](last-check.json).
 
 ## Reports against the current baseline
 
-No newer official nightly was found when this index was created.
+No newer official nightly has been reported against this baseline.
 
-Older assessments remain under `reports/`; their baseline and source identity are recorded in each report. Unchanged releases are not reported twice. Retagged releases, changed assets or changed review inputs produce a new record. A daily run assesses at most 10 unseen candidates, newest first; any backlog is stated in its summary.
+Older assessments remain under `reports/`; their baseline and source identity are recorded in each report. Unchanged candidates are not reported twice. Retagged releases, changed assets or changed review inputs produce a new candidate record. Each run assesses at most 10 unseen candidates, newest first; any backlog is stated in its summary. Successful-check timestamps update independently of candidate reports.
 
 Reports do not modify the custom emulator, launcher, updater, reviewed pins, releases or signed feed.

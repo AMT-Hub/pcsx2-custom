@@ -1,9 +1,23 @@
 {
   "baseline": {
     "commit": "e35cb2c87590bc3d127b3bb4dd222b01e598c9a4",
-    "policy_fingerprint": "dfc8f6dd185ba8b54e1502763452207a59c22d25f60d8d7d62730552984a0dae",
+    "policy_fingerprint": "61f2de9a2d03e0fd3985bfa5e4b4afd159047fb3800a43c26e9eadd073b4efc3",
     "tag": "v2.9.127"
   },
   "entries": {},
+  "last_successful_check": {
+    "baseline_tag": "v2.9.127",
+    "completed_at": "2026-10-15T08:52:58.083285+00:00",
+    "discovery_complete": true,
+    "event": "push",
+    "latest_nightly_in_scan": "v2.9.127",
+    "new_reports": [],
+    "pending_reports": 0,
+    "run_attempt": 1,
+    "run_url": "https://github.com/AMT-Hub/pcsx2-custom/actions/runs/38708811273/attempts/1",
+    "scan_started_at": "2026-10-15T08:52:56.571259+00:00",
+    "source_commit": "75762b405345878201716d978c450724d6072460"
+  },
+  "last_successful_scheduled_check": null,
   "schema": 1
 }
