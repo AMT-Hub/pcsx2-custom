@@ -29,10 +29,10 @@ def main():
         shutil.copyfile(ROOT / name, dest / name)
     shutil.copytree(ROOT / 'tests', dest / 'automatic-tests', ignore=shutil.ignore_patterns('__pycache__'))
     if args.channel == 'stable':
-        replace(dest/'build.py', "COMMIT = 'e35cb2c87590bc3d127b3bb4dd222b01e598c9a4'", "COMMIT = 'fd9d310ccbb6b8b62c976da8886a3c8fd3a10ff3'")
-        pins = json.loads((ROOT/'stable-baseline/archive.json').read_text())
-        replace(dest/'assemble.py', "NIGHTLY='pcsx2-v2.9.127-windows-x64-Qt.7z'", "NIGHTLY='pcsx2-v2.8.2-windows-x64-Qt.7z'")
-        replace(dest/'assemble.py', "EXPECTED='d780d14e3951705c3a4f51d30e1e3c894ef40db4024f5bce36bf29740222554a'", "EXPECTED='"+pins['sha256']+"'")
+        # The accepted stable kit builds a minimal EXE overlay from pinned source.
+        # It does not consume an official prebuilt archive or replace patches.zip.
+        shutil.copyfile(ROOT/'stable-baseline/build.py', dest/'build.py')
+        replace(dest/'build.py', "        run([sys.executable, ROOT / 'autobios-test/apply-patch.py', SOURCE])", "        run([sys.executable, ROOT / 'verify-upstream.py', SOURCE])\n        run([sys.executable, ROOT / 'autobios-test/apply-patch.py', SOURCE])")
         shutil.copyfile(ROOT/'stable-baseline/upstream-shader-hashes.json', dest/'upstream-shader-hashes.json')
         shutil.copyfile(ROOT/'stable-baseline/autobios-upstream-sha256.json', dest/'autobios-test/upstream-sha256.json')
         shutil.copyfile(ROOT/'stable-baseline/upstream-integration-sha256.json', dest/'nightly-upstream-sha256.json')

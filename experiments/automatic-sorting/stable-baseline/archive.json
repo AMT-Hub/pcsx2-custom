@@ -3,5 +3,5 @@
   "sha256": "ed704119fcff36321ebc16705b413e00ff7d8c34638f1aa0b026d6993ffb2612",
   "source_commit": "fd9d310ccbb6b8b62c976da8886a3c8fd3a10ff3",
   "recovered_buildkit": "PCSX2-SortingTitle-0.8.0-test1-BuildKit.zip",
-  "note": "Accepted stable manual-sorting kit recovered separately. Auto BIOS, ShaderGlass and manual sorting patch code matches repository emulator code; version-specific input hashes differ."
+  "note": "Historical local archive identity only; the current upstream download did not match. This archive is not consumed by the stable prototype. As in the accepted stable build kit, the minimal stable overlay is compiled from pinned source and preserves the installed patches.zip and dependencies. Auto BIOS, ShaderGlass and manual sorting patch code matches repository emulator code; version-specific input hashes differ."
 }
