@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "component": "Automatic Sorting Titles",
+  "accepted_version": "0.2.0",
+  "tested_catalogue_version": "0.2.0-test1",
+  "date": "2026-10-15",
+  "user_report": "This is a major improvement, every game title I checked in my PS2 ROM collection was sorted correctly in PCSX2. I am happy with how this functionality has been implemented and I approve this being integrated with the current working builds.",
+  "catalogue_source_commit": "c257a9ab7b43b9b8e6e7180bc6b8214718b1229f",
+  "catalogue_sha256": "3c585c804f30ac3b175d38af3be251c92bdf6789ece4463e9321e420031e7276",
+  "catalogue_identities": 11458,
+  "tested_builds": {
+    "stable": {
+      "source_commit": "3b0decdc32fdb515dae6823b14df88cc7714b902",
+      "workflow_run": 38714796508,
+      "job": 116354816639,
+      "conclusion": "success",
+      "overlay": "PCSX2-Automatic-Sorting-stable-0.1.0-test1-overlay.zip",
+      "bytes": 5407819,
+      "sha256": "b3225c2bbd0db7d2ce81a132b99dcb73c634224071472e146221b44589092d34",
+      "executable_sha256": "822703539dcdfad314c68c8ba3ff318564eb1aaf14552bb29ee3a17d6f8f3d9a",
+      "packaging": "locally repackaged verified CI output with corrected manual/legacy test path and current README; executable bytes unchanged"
+    },
+    "nightly": {
+      "source_commit": "4cd45bdedb270b6ffb3993e4ea9f0fbead461970",
+      "workflow_run": 38714339572,
+      "job": 116353286639,
+      "conclusion": "success",
+      "overlay": "PCSX2-Automatic-Sorting-nightly-0.1.0-test1-overlay.zip",
+      "bytes": 129429639,
+      "sha256": "e390e57710b68e9d994ac6d5ea89eb1e2e8cd376ed3d8955f4c70b92eb6aa842",
+      "executable_sha256": "c8411bb8ef9cf89a84df0792f1851034b92f7f046ead62c5fc249e51950d996e",
+      "packaging": "locally repackaged verified CI output with corrected manual/legacy test path and current README; executable bytes unchanged"
+    }
+  },
+  "promotion": {
+    "stable_package": "PCSX2-Portable-0.9.0-Personal.zip",
+    "nightly_runtime_id": "nightly-2_9_127-autosort-0_2_0",
+    "executable_and_catalogue_bytes_unchanged": true,
+    "previous_archives_preserved": true,
+    "manual_overrides_preserved": true,
+    "new_full_archives_windows_tested_here": false,
+    "new_signed_package_install_rollback_tested_here": false
+  },
+  "scope": "Accepts the reported sorting behaviour and integration. Does not claim complete compatibility for every PS2 game or fresh local Windows execution."
+}

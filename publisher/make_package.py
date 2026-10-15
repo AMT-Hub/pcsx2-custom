@@ -19,6 +19,8 @@ for name in files:
  assert not name.startswith('.') and not any(x.lower() in ('bios','memcards','sstates','inis','gamesettings','inputprofiles') for x in name.split('/'))
 requirements=['ShaderGlass/ShaderGlass-PCSX2.exe','ShaderGlass/Profiles/retro-crisis_1080p-curved_PS2.sgp']
 m={'schema':1,'product':'CustomPCSX2','channel':'approved','data_schema':1,'id':a.id,'label':a.label,'features':['auto-bios','shaderglass','sorting-title'],'files':{n:{'size':len(b),'sha256':hashlib.sha256(b).hexdigest()} for n,b in files.items()},'requires':{n:hashlib.sha256((a.root/n).read_bytes()).hexdigest() for n in requirements}}
+if 'resources/automatic-sorting.ini' in files:
+ m['features'].append('automatic-sorting-title')
 b=json.dumps(m,sort_keys=True,separators=(',',':')).encode()
 sig=key.sign(b,padding.PKCS1v15(),hashes.SHA256())
 output=io.BytesIO()

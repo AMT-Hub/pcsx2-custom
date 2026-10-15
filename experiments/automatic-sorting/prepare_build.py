@@ -1,4 +1,4 @@
-"""Generate disposable build kits. Never edit accepted emulator/ build inputs."""
+"""Generate isolated stable/nightly build kits from maintained component inputs."""
 import argparse
 import hashlib
 import json
@@ -40,10 +40,11 @@ def main():
     hashes=json.loads((dest/'nightly-upstream-sha256.json').read_text())
     hashes.update(json.loads((ROOT/(args.channel+'-sorting-upstream-sha256.json')).read_text()))
     (dest/'nightly-upstream-sha256.json').write_text(json.dumps(hashes,indent=2)+'\n')
-    replace(dest/'build.py', "run([sys.executable, ROOT / 'apply-sorting-patch.py', SOURCE])", "run([sys.executable, ROOT / 'apply-sorting-patch.py', SOURCE])\n        run([sys.executable, ROOT / 'apply-automatic-sorting.py', SOURCE])")
-    replace(dest/'build.py', '        save_shader_stamp(shader_source)', "        files += ['pcsx2/AutoSortTitle.h', 'pcsx2-qt/GameList/GameListModel.cpp', 'bin/resources/automatic-sorting.ini']\n        save_shader_stamp(shader_source)")
-    replace(dest/'build.py', "    run([WORK / 'policy-test.exe'])", "    run([WORK / 'policy-test.exe'])\n    run([compiler, '/nologo', '/std:c++17', '/EHsc', ROOT / 'automatic-tests/policy.cpp', '/Fe:' + str(WORK / 'auto-sort-policy.exe'), '/Fo:' + str(WORK / 'auto-sort-policy.obj')])\n    run([WORK / 'auto-sort-policy.exe'])")
-    replace(dest/'build.py', "'status': 'compiled; Windows acceptance tests required'", "'automatic_sorting': '0.1.0-test1', 'channel': '"+args.channel+"',\n                'status': 'experimental; Windows acceptance tests required'")
+    if args.channel == 'stable':
+        replace(dest/'build.py', "run([sys.executable, ROOT / 'apply-sorting-patch.py', SOURCE])", "run([sys.executable, ROOT / 'apply-sorting-patch.py', SOURCE])\n        run([sys.executable, ROOT / 'apply-automatic-sorting.py', SOURCE])")
+        replace(dest/'build.py', '        save_shader_stamp(shader_source)', "        files += ['pcsx2/AutoSortTitle.h', 'pcsx2-qt/GameList/GameListModel.cpp', 'bin/resources/automatic-sorting.ini']\n        save_shader_stamp(shader_source)")
+        replace(dest/'build.py', "    run([WORK / 'policy-test.exe'])", "    run([WORK / 'policy-test.exe'])\n    run([compiler, '/nologo', '/std:c++17', '/EHsc', ROOT / 'automatic-tests/policy.cpp', '/Fe:' + str(WORK / 'auto-sort-policy.exe'), '/Fo:' + str(WORK / 'auto-sort-policy.obj')])\n    run([WORK / 'auto-sort-policy.exe'])")
+        replace(dest/'build.py', "'status': 'compiled; Windows acceptance tests required'", "'automatic_sorting': '0.1.0-test1', 'channel': '"+args.channel+"',\n                'status': 'experimental; Windows acceptance tests required'")
     print('Prepared isolated',args.channel,'kit:',dest)
 
 
