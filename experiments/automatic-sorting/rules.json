@@ -1,0 +1,466 @@
+{
+  "schema": 1,
+  "version": "0.2.0-test1",
+  "scope": "Entire pinned PS2 identity database, independent of installed games",
+  "stylised_titles": {
+    "Driv3r": "Driver 3"
+  },
+  "roman_protected_patterns": [
+    "^Guilty Gear\\b",
+    "^(?:Mega Man|Rockman) X\\b",
+    "^Hunter [xX] Hunter\\b"
+  ],
+  "single_roman_contexts": [
+    "Final Fantasy",
+    "Dragon Quest",
+    "Dragon Warrior",
+    "Wizardry",
+    "Might and Magic",
+    "Wild Arms",
+    "Suikoden",
+    "Grand Theft Auto",
+    "Devil May Cry"
+  ],
+  "regional_aliases": {
+    "Driv3r": [
+      "Driv3r",
+      "Driver 3"
+    ],
+    "Grand Theft Auto III": [
+      "Grand Theft Auto III"
+    ],
+    "Grand Theft Auto - Vice City": [
+      "Grand Theft Auto - Vice City"
+    ],
+    "Grand Theft Auto - San Andreas": [
+      "Grand Theft Auto - San Andreas"
+    ],
+    "Grand Theft Auto - Liberty City Stories": [
+      "Grand Theft Auto - Liberty City Stories"
+    ],
+    "Grand Theft Auto - Vice City Stories": [
+      "Grand Theft Auto - Vice City Stories"
+    ],
+    "Crash Bandicoot - The Wrath of Cortex": [
+      "Crash Bandicoot - The Wrath of Cortex",
+      "Crash Bandicoot 4 - Sakuretsu! Majin Power",
+      "Crash Bandicoot - Return of the Demon King"
+    ],
+    "Crash Nitro Kart": [
+      "Crash Nitro Kart",
+      "Crash Bandicoot - Bakuso! Nitro Kart"
+    ],
+    "Crash Twinsanity": [
+      "Crash Twinsanity",
+      "Crash Bandicoot 5",
+      "Crash Bandicoot 5 - Eh Crash to Cortex no Yabou?!?"
+    ],
+    "Crash Tag Team Racing": [
+      "Crash Tag Team Racing",
+      "Crash Bandicoot - Gacchanko World"
+    ],
+    "Crash of the Titans": [
+      "Crash of the Titans"
+    ],
+    "Crash - Mind Over Mutant": [
+      "Crash - Mind Over Mutant"
+    ],
+    "God of War": [
+      "God of War",
+      "God of War - Traitor of the Soul"
+    ],
+    "God of War II": [
+      "God of War II",
+      "God of War II - The End Begins",
+      "God of War 2"
+    ],
+    "Silent Hill 2": [
+      "Silent Hill 2",
+      "Silent Hill 2 - Director's Cut",
+      "Silent Hill 2 - Saigo no Uta"
+    ],
+    "Silent Hill 3": [
+      "Silent Hill 3"
+    ],
+    "Silent Hill 4 - The Room": [
+      "Silent Hill 4 - The Room",
+      "Silent Hill 4"
+    ],
+    "The Simpsons - Road Rage": [
+      "The Simpsons - Road Rage",
+      "The Simpsons: Road Rage"
+    ],
+    "The Simpsons Skateboarding": [
+      "The Simpsons Skateboarding"
+    ],
+    "The Simpsons - Hit & Run": [
+      "The Simpsons - Hit & Run"
+    ],
+    "The Simpsons Game": [
+      "The Simpsons Game",
+      "Die Simpsons - Das Spiel"
+    ],
+    "Burnout": [
+      "Burnout"
+    ],
+    "Burnout 2 - Point of Impact": [
+      "Burnout 2 - Point of Impact"
+    ],
+    "Burnout 3 - Takedown": [
+      "Burnout 3 - Takedown"
+    ],
+    "Burnout Revenge": [
+      "Burnout Revenge",
+      "Burnout Revenge - Battle Racing Ignited"
+    ],
+    "Burnout Dominator": [
+      "Burnout Dominator"
+    ],
+    "Destroy All Humans!": [
+      "Destroy All Humans!"
+    ],
+    "Destroy All Humans! 2": [
+      "Destroy All Humans! 2"
+    ],
+    "Drakengard": [
+      "Drakengard",
+      "Drag-on Dragoon"
+    ],
+    "Drakengard 2": [
+      "Drakengard 2",
+      "Drag-on Dragoon 2 - Fuuin no Aka, Haitoku no Kuro",
+      "Drag-on Dragoon 2"
+    ],
+    "Kingdom Hearts": [
+      "Kingdom Hearts"
+    ],
+    "Kingdom Hearts II": [
+      "Kingdom Hearts II",
+      "Kingdom Hearts 2"
+    ],
+    "LEGO Star Wars - The Video Game": [
+      "LEGO Star Wars - The Video Game"
+    ],
+    "LEGO Star Wars II - The Original Trilogy": [
+      "LEGO Star Wars II - The Original Trilogy"
+    ],
+    "Medal of Honor - Frontline": [
+      "Medal of Honor - Frontline",
+      "Medal of Honor - En Première Ligne",
+      "Medal of Honor - Shijou Saidai no Sakusen"
+    ],
+    "Medal of Honor - Rising Sun": [
+      "Medal of Honor - Rising Sun"
+    ],
+    "Medal of Honor - European Assault": [
+      "Medal of Honor - European Assault",
+      "Medal of Honor - Les Faucons de Guerre"
+    ],
+    "Medal of Honor - Vanguard": [
+      "Medal of Honor - Vanguard"
+    ],
+    "Red Faction": [
+      "Red Faction"
+    ],
+    "Red Faction II": [
+      "Red Faction II"
+    ],
+    "Wipeout Fusion": [
+      "Wipeout Fusion"
+    ],
+    "WipEout Pulse": [
+      "WipEout Pulse"
+    ],
+    "Tony Hawk's Pro Skater 3": [
+      "Tony Hawk's Pro Skater 3"
+    ],
+    "Tony Hawk's Underground": [
+      "Tony Hawk's Underground"
+    ],
+    "Tony Hawk's Underground 2": [
+      "Tony Hawk's Underground 2"
+    ],
+    "Star Wars - Starfighter": [
+      "Star Wars - Starfighter"
+    ],
+    "Star Wars - Jedi Starfighter": [
+      "Star Wars - Jedi Starfighter"
+    ],
+    "Star Wars - Episode III - Revenge of the Sith": [
+      "Star Wars - Episode III - Revenge of the Sith",
+      "Star Wars - Episode III - Die Rache der Sith",
+      "Star Wars - Episode III - La Revanche des Sith",
+      "Star Wars - Episode III - Sith no Fukushuu"
+    ],
+    "Quake III - Revolution": [
+      "Quake III - Revolution"
+    ],
+    "Metal Gear Solid 2 - Substance": [
+      "Metal Gear Solid 2 - Substance"
+    ]
+  },
+  "company_aliases": {
+    "Lucasarts": "LucasArts",
+    "LucasArts Entertainment Company": "LucasArts",
+    "The Collective, Inc": "The Collective",
+    "Pandemic Studios, LLC": "Pandemic Studios",
+    "Electronic Arts, Inc": "Electronic Arts"
+  },
+  "families": [
+    {
+      "id": "gta",
+      "prefix": "Grand Theft Auto",
+      "patterns": [
+        "^Grand Theft Auto\\b"
+      ],
+      "start": 3,
+      "step": "0.1"
+    },
+    {
+      "id": "crash",
+      "prefix": "Crash Bandicoot",
+      "patterns": [
+        "^Crash (?:Bandicoot|Nitro Kart|Twinsanity|Tag Team Racing|of the Titans|- Mind Over Mutant)\\b"
+      ],
+      "start": 1
+    },
+    {
+      "id": "burnout",
+      "prefix": "Burnout",
+      "patterns": [
+        "^Burnout\\b"
+      ],
+      "start": 1
+    },
+    {
+      "id": "simpsons",
+      "prefix": "Simpsons",
+      "patterns": [
+        "^(?:The )?Simpsons(?:\\b|:)"
+      ],
+      "start": 1
+    },
+    {
+      "id": "medal-of-honor",
+      "prefix": "Medal of Honor",
+      "patterns": [
+        "^Medal of Honor\\b"
+      ],
+      "start": 1,
+      "exclude_patterns": [
+        "\\bRising Sun & Frontline\\b"
+      ]
+    },
+    {
+      "id": "wipeout",
+      "prefix": "WipEout",
+      "patterns": [
+        "^WipEout\\b"
+      ],
+      "start": 1
+    },
+    {
+      "id": "starfighter",
+      "prefix": "Star Wars - Starfighter",
+      "patterns": [
+        "^Star Wars - (?:Jedi )?Starfighter$"
+      ],
+      "start": 1
+    },
+    {
+      "id": "star-wars-other",
+      "prefix": "Star Wars",
+      "patterns": [
+        "^Star Wars - "
+      ],
+      "exclude_patterns": [
+        "^Star Wars - (?:Jedi )?Starfighter$",
+        "^Star Wars - (?:Battlefront|The Clone Wars)\\b"
+      ],
+      "start": 1,
+      "group_by_developer": true,
+      "keep_subtitle": true
+    }
+  ],
+  "reviewed_metadata": {
+    "grand theft auto iii": {
+      "date": "2001",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "grand theft auto vice city": {
+      "date": "2002",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "grand theft auto san andreas": {
+      "date": "2004",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "grand theft auto liberty city stories": {
+      "date": "2006",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "grand theft auto vice city stories": {
+      "date": "2007",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "crash bandicoot the wrath of cortex": {
+      "date": "2001",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "crash nitro kart": {
+      "date": "2003",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "crash twinsanity": {
+      "date": "2004",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "crash tag team racing": {
+      "date": "2005",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "crash of the titans": {
+      "date": "2007",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "crash mind over mutant": {
+      "date": "2008",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "burnout": {
+      "date": "2001",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "burnout 2 point of impact": {
+      "date": "2002",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "burnout 3 takedown": {
+      "date": "2004",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "burnout revenge": {
+      "date": "2005",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "burnout dominator": {
+      "date": "2007",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "simpsons road rage": {
+      "date": "2001",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "simpsons skateboarding": {
+      "date": "2002",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "simpsons hit run": {
+      "date": "2003",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "simpsons game": {
+      "date": "2007",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "medal of honor frontline": {
+      "date": "2002",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "medal of honor rising sun": {
+      "date": "2003",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "medal of honor european assault": {
+      "date": "2005",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "medal of honor vanguard": {
+      "date": "2007",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "wipeout fusion": {
+      "date": "2002",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "wipeout pulse": {
+      "date": "2009",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "star wars starfighter": {
+      "date": "2001",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "star wars jedi starfighter": {
+      "date": "2002",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "star wars bounty hunter": {
+      "date": "2002",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "star wars racer revenge": {
+      "date": "2002",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "star wars episode iii revenge of the sith": {
+      "date": "2005",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "star wars the force unleashed": {
+      "date": "2008",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    },
+    "star wars super bombad racing": {
+      "date": "2001",
+      "precision": "year",
+      "note": "PS2 release year; deliberately does not invent an exact release day."
+    }
+  },
+  "policy_notes": [
+    "Manual overrides always win at runtime.",
+    "User screenshot exceptions override generated defaults.",
+    "Roman numerals are whole tokens; ambiguous I/V/X and known letter-based brands are protected.",
+    "First-game numbering is inferred from numbered siblings in the whole database, not installed folders.",
+    "Release-order positions are generated from metadata, not per-game SortingTitle strings.",
+    "Cross-title franchise membership and regional equivalence require semantic metadata.",
+    "Inferred subtitle families require complete title-checked date metadata.",
+    "Metadata dates are not universally verified; missing/conflicting records appear in the coverage report.",
+    "PS2-only ordinal positions are not official franchise numbering."
+  ],
+  "canonical_prefixes": {
+    "Lara Croft Tomb Raider": "Tomb Raider"
+  }
+}

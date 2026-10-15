@@ -33,8 +33,10 @@ Do not bulk-approve these rows. Inspection found serial collisions, including
 Airforce Delta Strike and Airblade both assigned `SLUS-20346`, and Bujingai and
 Bully both assigned `SLPS-25879`. Some duplicates are editions/discs, while others
 conflict on title or date. Distinguish these cases explicitly against the pinned
-PCSX2 identity and corroborating release records. No descriptions or metadata
-from this candidate file are shipped in the prototype catalogue.
+PCSX2 identity and corroborating release records. Version 0.2.0 ships a compact facts-only snapshot after title validation.
+Descriptions are excluded. 3,098 fact records pass the join; 1,446 candidate
+records are rejected and listed in METADATA-PROVENANCE.json. Passing the join
+does not independently verify the historical accuracy of a date or studio.
 
 ## Expansion workflow
 
@@ -72,3 +74,44 @@ official archive download differed from a historical local file. The corrected
 stable preparation uses the recovered accepted source-only build bootstrap. It
 does not consume that prebuilt archive, replace dependencies or patches.zip, or
 change their checks. Source/dependency hash verification remains enabled.
+
+
+## 0.2.0 implementation and additional evidence
+
+The general compiler now processes all 12,841 pinned identities, excluding 1,383
+known demo/trial/non-retail entries. Coverage and unresolved candidates are
+reported separately. Newly installed known identities use the already-generated
+catalogue; no installed-game list is an input to generation.
+
+Publisher evidence distinguishes PS2 port dates from original PSP dates. Liberty
+City Stories reached PS2 in 2006 and Vice City Stories in 2007; their relative
+order is unchanged. Reviewed family chronology uses years where years suffice,
+without inventing exact days. Equal/overlapping date precision cannot establish
+a unique order. Release chronology is a sorting policy, not story chronology.
+
+Selected corroborating sources examined:
+
+- Secret Agent Clank's PS2 release and relationship: https://blog.playstation.com/2009/03/16/secret-agent-clank-coming-to-ps2/comment-page-2/
+- Vice City launch: https://ir.take2games.com/static-files/63b50ea9-bc60-4cc8-9cb6-1b7a3718507b
+- Liberty City Stories on PS2: https://ir.take2games.com/static-files/8c71a1b4-4142-4d54-830a-b5a10f46f300
+- Vice City Stories on PS2: https://ir.take2games.com/static-files/744c1b53-72cc-4587-8f90-4abb644a230d
+- Official God of War series overview: https://www.playstation.com/en-us/god-of-war/
+- Crash: Mind Over Mutant launch: https://investor.activision.com/static-files/f365e97c-db41-44ab-9f4d-3a11b2fc8a8e
+- Crash release overview (secondary): https://en.wikipedia.org/wiki/List_of_Crash_Bandicoot_video_games
+- Burnout series overview (secondary): https://en.wikipedia.org/wiki/Burnout_%28series%29
+- Simpsons release overview (secondary): https://en.wikipedia.org/wiki/List_of_The_Simpsons_video_games
+- Medal of Honor: Frontline PS2 date (secondary): https://en.wikipedia.org/wiki/Medal_of_Honor%3A_Frontline
+- WipEout Pulse PS2 port date (secondary): https://gamefaqs.gamespot.com/ps2/960820-wipeout-pulse
+
+These references support selected family decisions; they are not a claim that
+every inferred family or imported fact has been independently checked. Broad
+identity coverage must never be presented as comprehensive chronology research.
+Inferred subtitle families are conservative candidates; unknown regional
+relationships, mixed numbered/subtitle families, date gaps and studio conflicts
+are reported. Manual preferences always take precedence.
+
+No new Windows executable was compiled for 0.2.0 because scanner integration,
+manual override handling and sorting comparison code are unchanged. The original
+prototype was reported working by the user, with catalogue omissions. This data
+revision still needs their Windows acceptance; it is not promoted to main or to
+the accepted stable/nightly feed.

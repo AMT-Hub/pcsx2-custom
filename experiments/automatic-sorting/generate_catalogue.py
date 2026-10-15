@@ -4,6 +4,8 @@ Requires PyYAML only when regenerating from the pinned upstream GameIndex. The
 emulator reads the generated INI and never needs Python, a network, or ROM paths.
 """
 import argparse
+from collections import Counter
+import gzip
 import hashlib
 import json
 from pathlib import Path
@@ -70,19 +72,36 @@ def generate(seed, index):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('gameindex', type=Path)
+    parser.add_argument('gameindex', type=Path, nargs='?', help='Optional pinned source verification; normal builds use the checked-in facts snapshot.')
     args = parser.parse_args()
-    import yaml
     seed = json.loads((ROOT / 'catalogue-seed.json').read_text(encoding='utf-8'))
-    raw = args.gameindex.read_bytes().replace(b'\r\n', b'\n')
-    if hashlib.sha256(raw).hexdigest() != seed['upstream_gameindex_sha256']:
-        raise ValueError('Use the pinned upstream GameIndex; changed data requires review.')
-    games, identities = generate(seed, yaml.safe_load(raw))
-    (ROOT / 'catalogue.json').write_text(json.dumps({**seed, 'games': games}, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
-    ini = '; Automatic Sorting Titles 0.1.0-test1; generated from catalogue.json\n; Manual overrides belong in inis/sorting-titles.ini, not this file.\n\n'
+    if args.gameindex:
+        raw = args.gameindex.read_bytes().replace(b'\r\n', b'\n')
+        if hashlib.sha256(raw).hexdigest() != seed['upstream_gameindex_sha256']:
+            raise ValueError('Use the pinned upstream GameIndex; changed data requires review.')
+    from rules import compile_defaults, retail
+    snapshot_bytes=(ROOT/'identity-metadata.json.gz').read_bytes()
+    metadata=json.loads(gzip.decompress(snapshot_bytes))
+    provenance=json.loads((ROOT/'METADATA-PROVENANCE.json').read_text())
+    if hashlib.sha256(snapshot_bytes).hexdigest()!=provenance['snapshot_sha256']:
+        raise ValueError('Metadata snapshot checksum mismatch')
+    records=metadata['records']
+    index={r['serial']:{'name':r['name'],'name-en':r['english_name'],'region':r['region']} for r in records}
+    games, exceptions = generate(seed, index)
+    for game in games:
+        game['identities']=[i for i in game['identities'] if retail(i['serial'],i['english_name'] or i['name'])]
+    policy=json.loads((ROOT/'rules.json').read_text())
+    identities, reasons, unresolved=compile_defaults(records,policy,exceptions)
+    coverage={'source_identities':len(records),'eligible_identities':len(identities),'excluded_nonretail':len(records)-len(identities),'by_rule':dict(Counter(reasons.values())),'unresolved_franchise_members':unresolved,'coverage_limit':'Every eligible known serial receives a default. A normalised title is not proof that franchise chronology is known; unsupported identities retain the existing emulator fallback.'}
+    (ROOT / 'catalogue.json').write_text(json.dumps({**seed, 'games': games,'coverage':coverage}, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+    for serial, title in identities.items():
+        if not re.fullmatch('[A-Z0-9]+-[A-Z0-9]+', serial) or not title or any(ch in title for ch in '\r\n\x00'):
+            raise ValueError('Unsafe INI identity/title: ' + repr(serial))
+    ini = f'; Automatic Sorting Titles catalogue {seed["version"]}; generated from rules, metadata and user exceptions\n; Manual overrides belong in inis/sorting-titles.ini, not this file.\n\n'
     ini += ''.join(f'[{serial}]\nSortingTitle = {title}\n\n' for serial, title in sorted(identities.items()))
     (ROOT / 'automatic-sorting.ini').write_text(ini, encoding='utf-8', newline='\n')
-    print(f'{len(games)} curated games, {len(identities)} explicit serial identities; remaining titles retain normal ordering.')
+    (ROOT/'RULES-COVERAGE.json').write_text(json.dumps({'version':policy['version'],**coverage},ensure_ascii=False,indent=2)+'\n')
+    print(json.dumps({'version':policy['version'],**{k:v for k,v in coverage.items() if k!='unresolved_franchise_members'},'unresolved_franchise_members':len(unresolved)},indent=2))
 
 
 if __name__ == '__main__':

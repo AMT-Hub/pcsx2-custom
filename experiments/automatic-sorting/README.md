@@ -1,162 +1,133 @@
-# Automatic Sorting Titles 0.1.0-test1
+# Automatic Sorting Titles — rules catalogue 0.2.0-test1
 
-Experimental component for the accepted stable PCSX2 2.8.2 / Portable 0.8.0
-Personal installation and custom nightly 2.9.127. This is not an approved
-replacement for either working build. Use a separate copy of the whole PCSX2
-folder for testing; keep the accepted original intact.
+Experimental catalogue update for BOTH existing Automatic Sorting Titles
+0.1.0-test1 test installations: stable PCSX2 2.8.2 and custom nightly 2.9.127.
+The accepted builds, launchers, signed update feed and runtime EXEs are unchanged.
 
-## What this first prototype covers
+## Install
 
-- The 50 games in the user's 15 October 2026 screenshot, represented by 271
-  explicitly identified regional/reissue serials. `catalogue.json` lists every
-  mapped serial and the corresponding upstream names and regions.
-- Every detected game has a visible editable Sorting Title field. Reviewed
-  games receive the curated default; unmatched games use PCSX2's existing title
-  sorting, displayed in that field. A field value does not imply curated coverage.
-- Fresh scans, cached startup and adding game directories use the same lookup.
-  There is no separate ROM crawler, filename matching, Internet lookup or
-  per-game setting to configure. Formats supported by PCSX2's game scanner
-  follow its normal identity extraction; this does not add archive-format support.
-- Numeric title sorting: `7, 10, 10.1, 10.2, 11, 12, 12.1`, without changing the
-  displayed game names. Roman-numeral conversion is currently explicit catalogue
-  data, not a global text replacement (which could corrupt names such as Ico).
+1. Close PCSX2. Use the separate test copy in which Automatic Sorting Titles
+   already works. This small update does not install the missing EXE feature.
+2. Extract `PCSX2-Automatic-Sorting-Rules-0.2.0-test1-update.zip` beside that
+   copy's `Custom-PCSX2.exe`, merging `custom-pcsx2` and replacing the one
+   `resources/automatic-sorting.ini` file when asked.
+3. Launch `Custom-PCSX2.exe`. The same procedure applies to stable and nightly.
+   Keep the nightly test copy's existing `legacy` selection. Do not run the
+   controlled updater to install this unsigned experiment.
+4. Open Game Properties > Summary > Sorting Title. If you previously edited
+   or cleared a title, right-click its field > **Use automatic sorting title**
+   only when you want to discard that override and inspect the new default.
 
-This is a seed catalogue, not a claim to cover every PS2 release or every regional
-edition. The rest of the user's collection and wider major franchises still need
-research and review. Demo/beta/compilation entries are not guessed into retail
-series. English names from the pinned PCSX2 database help identify Japanese and
-other regional releases, but unreviewed aliases remain unmatched.
+The EXE tooltip still says Automatic Sorting Titles test1: only its data changed.
+The catalogue header identifies version 0.2.0-test1. The catalogue loads once at
+process start, so restart after installing it. No Python or Internet is needed.
+First-time prototype installation is documented in `README-0.1.0-test1.md`.
 
-## Install the matching overlay in a TEST COPY
+## What changed
 
-Close PCSX2 and the updater first. Do not extract either overlay over your only
-working installation. Run `Custom-PCSX2.exe`, not the official `pcsx2-qt.exe`.
+The original 50-game seed was too narrow. General rules now process the entire
+pinned PS2 identity database, independently of the user's installed collection.
+The runtime consumes their compiled serial-to-title results through the existing
+scanner. Adding a game directory, rescanning, and cached startup use this same
+lookup. Adding/removing installed games cannot renumber the rest of a series.
 
-### Stable
+Rules apply in this order, followed by the runtime's manual override:
 
-Extract `PCSX2-Automatic-Sorting-stable-0.1.0-test1-overlay.zip` at the root of a
-separate copy of PCSX2-Portable-0.8.0-Personal. This replaces only the nested
-custom emulator EXE, adds its catalogue, and adds build/test information.
-Then launch the copy's existing Custom-PCSX2.exe. Discard the test copy to revert.
+- Normalise recognised whole Roman numeral tokens; protect ambiguous letters
+  and known names such as Guilty Gear XX, Mega Man X and Hunter X Hunter.
+- Resolve metadata aliases for stylised titles (Driv3r), regional names and
+  consistent franchise prefixes. Do not globally replace digits inside words.
+- Detect unnumbered first games from numbered siblings across the whole database.
+  A unique subtitled first game is also supported. Years do not count as sequels.
+- Generate PS2 release-order positions for configured franchise families; apply
+  developer grouping (publisher fallback) where that policy is selected.
+- Infer further subtitle families only with shared-region identity evidence,
+  complete dates, no competing numbered series and an unambiguous date order.
+- Apply the user's explicit preferences and semantic exceptions, including
+  Secret Agent Clank / Ratchet, The Hobbit / LOTR, Team ICO and the screenshot.
 
-### Nightly
+God of War / II become 1 / 2 through general numbering rules. Crash's six PS2
+games receive 1–6 from release metadata. GTA keeps III at 3 and receives 3.1–3.4
+for Vice City, San Andreas, Liberty City Stories and Vice City Stories.
+These positions are sorting preferences, not official franchise numbers.
 
-Extract `PCSX2-Automatic-Sorting-nightly-0.1.0-test1-overlay.zip` at the root of a
-separate copy of the accepted custom nightly installation. This uses the
-launcher's existing manual/legacy runtime path in the test copy. It replaces
-that copy's nested legacy runtime, keeping its installed signed runtime folders
-and launcher intact. Your original installation must remain separate.
+## Scope and honest limits
 
-In the TEST COPY, save a copy of `custom-pcsx2/updater/active.txt`, then replace
-its contents with this one line:
+See `RULES-COVERAGE.json` for exact counts and unresolved candidate families.
+The output covers over 11,000 eligible disc identities, including regional
+editions and reissues; this is NOT 11,000 separate games or verified chronologies.
+Most defaults remain normal titles. Whole-token normalisation is broader than
+franchise/release-order coverage. Missing dates, developer conflicts, unresolved
+regional equivalence and ambiguous chronology do not receive invented positions.
 
+Rules alone cannot discover that Secret Agent Clank belongs beside Ratchet,
+or decide the preferred placement of movie adaptations. Those relationships
+remain metadata. The repository can expand that metadata and regenerate defaults
+without hand-writing each output title, rebuilding the EXE, or scanning your ROMs.
+A game added later that has a known serial works immediately. An identity absent
+from the catalogue retains normal PCSX2 title ordering and an editable field;
+this version does not perform runtime Roman conversion on unknown serials.
+
+`COLLECTION-COVERAGE.md` audits all 114 supplied collection entries against stock
+database identities. Filenames do not prove the actual serial/CRC of your ROMs;
+undubs and other modified discs need runtime confirmation. Demo filtering is
+conservative and does not prove that every remaining entry is a retail game.
+The original Quidditch=Harry Potter 4 preference is retained. Later Harry Potter
+numbering still needs a policy resolving that conflict with Goblet of Fire.
+
+## Manual edits and rollback
+
+Defaults never enter `inis/sorting-titles.ini`. Existing manual values always
+win and remain intact across scans and catalogue updates. Clearing a field opts
+that identity out; right-click > Use automatic sorting title resets the override.
+Displayed game names and ROM filenames do not change.
+
+To roll back the catalogue: close PCSX2, then copy
+`custom-pcsx2/automatic-sorting-0.2.0-test1/rollback/automatic-sorting.ini` over
+`custom-pcsx2/shader-prototype/resources/automatic-sorting.ini`, and restart.
+That is the original 0.1.0-test1 catalogue. Your manual edits remain unchanged.
+To roll back the entire prototype, use the untouched accepted installation or
+follow the saved nightly active.txt instructions in README-0.1.0-test1.md.
+
+## Test this update
+
+- Check God of War 1 / 2, Ratchet & Clank 6, Driver 3, GTA 3–3.4, Crash 1–6
+  and Lord of the Rings 0.5 - The Hobbit in ascending title order.
+- Add another folder with a game outside the original screenshot, such as
+  Devil May Cry or a later Burnout / Crash game. It should receive its generated
+  default after the ordinary scan, without running any external tool.
+- Edit one value, restart and rescan; confirm the edit survives. Check clearing
+  and restoring automatic mode. Other custom functionality should still work.
+
+Automated rules, precedence and packaging tests do not replace Windows acceptance.
+Do not promote this catalogue into accepted builds until the user accepts it.
+
+## Reproduce and maintain
+
+`rules.py` is the general compiler; `rules.json` contains policies, aliases and
+release facts; `catalogue-seed.json` retains explicit user exceptions.
+`identity-metadata.json.gz` is a compact facts-only, hash-pinned snapshot of
+PCSX2 GameIndex plus title-checked date/developer/publisher records from Libretro.
+No game descriptions, BIOS files, ROM files or personal settings are included.
+Provenance, rejected joins and input hashes are in METADATA-PROVENANCE.json.
+Facts are not all independently historically verified; see RESEARCH.md.
+
+From the repository root:
+
+```sh
+python3 experiments/automatic-sorting/generate_catalogue.py
+python3 experiments/automatic-sorting/audit_collection.py --input /path/to/private-list.tsv --output /path/to/private-audit
+python3 -m unittest discover -s experiments/automatic-sorting/tests -v
+g++ -std=c++17 experiments/automatic-sorting/tests/policy.cpp -o /tmp/sorting-policy
+/tmp/sorting-policy
+python3 experiments/automatic-sorting/package_catalogue.py --output /tmp/PCSX2-Automatic-Sorting-Rules-0.2.0-test1-update.zip
 ```
-legacy
-```
 
-Launch the existing Custom-PCSX2.exe. To return to the signed 2.9.127 runtime,
-close it and restore the saved active.txt (provided it selected the signed runtime
-before this test). Otherwise discard the test copy. Do not use the controlled
-updater to assess this unsigned prototype: its fixed legacy label may say 2.9.126.
-Use the emulator's About information and the Sorting Title tooltip instead.
-The signed feed is unchanged. No release manifest/signature or approval is
-fabricated to make an unsigned build look like an approved updater runtime.
+Regeneration from the checked-in snapshot needs only the Python standard library.
+Rebuilding the facts snapshot with prepare_metadata.py additionally needs PyYAML
+and the exact pinned input files. Metadata or rule changes are reviewed and tested
+before a new catalogue is distributed. Source follows the repository's licence.
 
-## Manual control and persistence
-
-Properties > Summary > Sorting Title remains visible and editable for every
-listed game. The tooltip identifies this component as Automatic Sorting Titles
-test1, which also helps distinguish the custom executable from the official one.
-
-Edit the value and press Tab to save. Your value always takes precedence. Clear
-the field to opt that game out of automatic sorting and use normal database/title
-ordering. Right-click inside the field and choose **Use automatic sorting title**
-to remove that override and return to the catalogue default.
-
-Automatic values are read from the active runtime's
-`resources/automatic-sorting.ini`. Manual values remain in the existing portable
-`inis/sorting-titles.ini`. Scanning never writes defaults into this file. Existing
-non-empty manual entries need no migration and are never replaced by catalogue
-updates. Explicit clearing uses `UseNormalTitle=true`; older builds ignore this
-extra key and already have no automatic catalogue to apply.
-
-Manual disc identities use the accepted serial+CRC key, preserving edits when
-the ROM or portable install moves. Identical disc identities share edits. Different
-revisions/patches with different CRCs retain independent overrides. Entries with
-no reliable serial+CRC retain the accepted encoded-path fallback, so moving those
-unidentified files can require another edit. CRC-specific catalogue entries are
-supported before serial-wide defaults, although the seed uses serials only.
-
-Catalogue changes take effect after restarting the emulator. Returning to the
-signed nightly runtime selects its own resources while keeping manual settings.
-
-## Catalogue policy and unresolved scope
-
-The screenshot's literal sorting titles are the starting authority, not factual
-claims about official franchise membership. For example, The Clone Wars is
-deliberately grouped as Battlefront 0.5; the engine does not infer that relationship.
-Numbering is stable across installed collections: adding/removing a game does not
-renumber another game. Preserve franchise numbering when explicitly requested
-(Spyro 4/5, Final Fantasy 7/10/11/12), even where earlier games were not on PS2.
-
-Regional aliases resolve to the same reviewed title, but title text alone is not
-an identity. US Gadget Racers (`SLUS-20225`) maps to Choro Q HG 1; EU Gadget Racers
-(`SLES-51911`) maps to Choro Q HG 3. Deadlocked and Gladiator both map to Ratchet
-& Clank 4. No assumption about identical names is made at runtime.
-
-Harry Potter Quidditch World Cup remains **Harry Potter 4**, exactly as supplied.
-A comprehensive catalogue must resolve its conflict with the later main-series
-PS2 games Goblet of Fire, Order of the Phoenix and Half-Blood Prince. No answer
-was received to the optional full-catalogue numbering question, so this prototype
-does not silently change the explicit screenshot preference to 7. Those later
-games retain ordinary title ordering for now.
-
-Expansion policy: use reviewed franchise/series grouping first, instalment or
-agreed story order second, then earliest PS2 release date within an agreed
-developer/publisher group for otherwise unordered games. Developer and publisher
-are separate fields, not interchangeable. Record exact evidence and a rationale
-for each proposed grouping; dates alone cannot establish the user's preferred
-order. Do not derive this from filenames or download a live unreviewed catalogue.
-
-Identity evidence is the pinned PCSX2 GameIndex:
-https://github.com/PCSX2/pcsx2/blob/e35cb2c87590bc3d127b3bb4dd222b01e598c9a4/bin/resources/GameIndex.yaml
-
-Additional primary research:
-- Insomniac's original Ratchet series list: https://insomniac.games/game/ratchet-and-clank/
-- EA confirms Half-Blood Prince's PS2 release and identifies Order of the Phoenix:
-  https://news.ea.com/press-releases/press-releases-details/2009/EA-and-Warner-Bros.-Interactive-Entertainment-Confirm-Harry-Potter-and-the-Half-Blood-Prince-Video-Game-Release-Date/default.aspx
-
-## Acceptance checks
-
-1. Confirm the tooltip says Automatic Sorting Titles test1. Check TimeSplitters,
-   Jak, Ratchet, Final Fantasy, Team ICO and both Choro Q region cases. Use title
-   sorting in ascending list and grid views; display names must remain unchanged.
-2. Edit one automatic value and restart. Rescan all games and confirm the edit
-   survives. Existing manual entries from the accepted build must also survive.
-3. Clear a value, restart/rescan and confirm it stays opted out. Right-click the
-   field > Use automatic sorting title and confirm the catalogue value returns.
-4. Add another ROM directory containing a mapped game. Its automatic title must
-   appear after the normal PCSX2 scan, without restarting or rerunning a tool.
-5. Confirm an unmatched title remains sensibly ordered and editable. Rename/move
-   a recognised ROM and confirm its serial+CRC manual override still applies.
-6. Launch games and check controller pause hotkey, Auto BIOS, ShaderGlass in
-   Vulkan fullscreen/windowed and cursor behaviour through the pause menu.
-7. Nightly: restore the saved active.txt and confirm the previously accepted
-   custom runtime launches. Stable: return to the untouched original installation.
-
-Source application and policy/catalogue tests do not prove Windows GUI or game
-behaviour. Windows build and user acceptance results must be recorded separately
-before integrating this component into the accepted stable or nightly builds.
-
-## Source and build
-
-All changes are isolated under this experiment and its dedicated test workflow.
-Accepted emulator build scripts, updater scripts, launcher, discovery schedule,
-signing configuration and approved feed are unchanged. `prepare_build.py` creates
-disposable copies of the accepted build kit with version-specific input hashes.
-No BIOS files, ROMs or personal settings are needed or included.
-
-The catalogue is reproducible from `catalogue-seed.json` and the hash-pinned
-GameIndex with `generate_catalogue.py` (PyYAML required for this development step
-only). `catalogue.json` preserves the resolved identities for review; the INI is
-the offline runtime payload. Source code follows the repository's GPL licence.
+Personal collection lists and audit outputs are excluded from the public source
+repository. The personal download can include its audit via package_catalogue.py
+--private-report-dir; a public package omits it.

@@ -25,7 +25,8 @@ class CatalogueTests(unittest.TestCase):
                 self.assertNotIn(serial, serials)
                 serials[serial] = game['sorting_title']
                 self.assertEqual(self.ini[serial]['SortingTitle'], game['sorting_title'])
-        self.assertEqual(set(serials), set(self.ini.sections()))
+        self.assertLessEqual(set(serials), set(self.ini.sections()))
+        self.assertEqual(len(self.ini.sections()), self.data['coverage']['eligible_identities'])
 
     def test_gadget_racers_regional_ambiguity(self):
         self.assertEqual(self.ini['SLUS-20225']['SortingTitle'], 'Choro Q HG 1')
