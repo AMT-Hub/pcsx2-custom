@@ -30,7 +30,7 @@ The feed and packages are signed with the project release key. The public verifi
 
 ## Nightly discovery
 
-The [daily discovery workflow](https://github.com/AMT-Hub/pcsx2-custom/actions/workflows/nightly-discovery.yml) checks official nightlies at 06:23 UTC and records source compatibility assessments in a [separate report branch](https://github.com/AMT-Hub/pcsx2-custom/tree/nightly-discovery-reports). New candidates remain review-required; matching file hashes do not approve an update. It does not build, sign or publish candidates. See [discovery and review instructions](ci/README.md#daily-discovery-and-reporting).
+The [discovery workflow](https://github.com/AMT-Hub/pcsx2-custom/actions/workflows/nightly-discovery.yml) checks official nightlies hourly at **:53 UTC** and records source compatibility assessments in a [separate report branch](https://github.com/AMT-Hub/pcsx2-custom/tree/nightly-discovery-reports). Its index shows the last successful check and last successful scheduled check separately; manual or push runs do not establish that scheduling works. New candidates remain review-required; matching file hashes do not approve an update. It does not build, sign or publish candidates. See [discovery and review instructions](ci/README.md#automatic-discovery-and-reporting).
 
 ## Source
 

@@ -227,6 +227,82 @@ class PublishingAPI:
         return {'sha': 'e' * 40}
 
 
+class CheckHistoryTests(unittest.TestCase):
+    def context(self, event='push', attempt='1'):
+        return discovery.execution_context({'GITHUB_EVENT_NAME': event, 'GITHUB_RUN_ID': '12345',
+                                             'GITHUB_RUN_ATTEMPT': attempt, 'GITHUB_SHA': BASE})
+
+    def prepared(self):
+        summary, files = discovery.discover(FakeAPI([release('v2.9.127')]), reviewed(), empty(), NOW)
+        return summary, files
+
+    def test_push_success_does_not_claim_schedule_has_run(self):
+        summary, files = self.prepared()
+        result = discovery.record_success(summary, empty(), files, self.context(), NOW)
+        check = json.loads(result['last-check.json'])
+        self.assertEqual(check['last_successful_check']['event'], 'push')
+        self.assertIsNone(check['last_successful_scheduled_check'])
+        self.assertIn('Last successful scheduled check: not yet recorded', result['README.md'])
+
+    def test_schedule_success_records_run_identity(self):
+        summary, files = self.prepared()
+        result = discovery.record_success(summary, empty(), files, self.context('schedule'), NOW)
+        check = json.loads(result['last-check.json'])
+        self.assertEqual(check['last_successful_check'], check['last_successful_scheduled_check'])
+        self.assertIn('/runs/12345/attempts/1', check['last_successful_scheduled_check']['run_url'])
+        self.assertEqual(check['last_successful_scheduled_check']['completed_at'], NOW)
+
+    def test_manual_check_and_scheduled_rerun_preserve_old_schedule_timestamp(self):
+        summary, files = self.prepared()
+        previous = json.loads(discovery.record_success(summary, empty(), files, self.context('schedule'), NOW)['state.json'])
+        later = '2026-10-15T07:23:00+00:00'
+        for event, attempt in [('workflow_dispatch', '1'), ('push', '1'), ('schedule', '2')]:
+            with self.subTest(event=event, attempt=attempt):
+                result = discovery.record_success(summary, previous, {}, self.context(event, attempt), later)
+                check = json.loads(result['last-check.json'])
+                self.assertEqual(check['last_successful_scheduled_check']['completed_at'], NOW)
+                self.assertEqual(check['last_successful_check']['completed_at'], later)
+                self.assertEqual(previous['last_successful_check']['completed_at'], NOW)
+
+    def test_repeated_checks_update_heartbeat_without_repeating_candidates(self):
+        summary, files = discovery.discover(FakeAPI(), reviewed(), empty(), NOW)
+        previous = json.loads(discovery.record_success(summary, empty(), files, self.context('schedule'), NOW)['state.json'])
+        summary, files = discovery.discover(FakeAPI(), reviewed(), previous, NOW)
+        self.assertEqual(files, {})
+        updated = discovery.record_success(summary, previous, files, self.context('schedule'), '2026-10-15T07:23:00+00:00')
+        self.assertEqual(set(updated), {'state.json', 'last-check.json', 'README.md'})
+        self.assertEqual(json.loads(updated['state.json'])['entries'], previous['entries'])
+
+    def test_new_candidates_do_not_erase_last_successful_schedule(self):
+        summary, files = self.prepared()
+        previous = json.loads(discovery.record_success(summary, empty(), files, self.context('schedule'), NOW)['state.json'])
+        summary, new_files = discovery.discover(FakeAPI(), reviewed(), previous, NOW)
+        updated = discovery.record_success(summary, previous, new_files, self.context('workflow_dispatch'), NOW)
+        state = json.loads(updated['state.json'])
+        self.assertEqual(len(state['entries']), 1)
+        self.assertEqual(state['last_successful_scheduled_check'], previous['last_successful_scheduled_check'])
+
+    def test_failed_publication_does_not_mutate_previous_success(self):
+        summary, files = self.prepared()
+        previous = json.loads(discovery.record_success(summary, empty(), files, self.context('schedule'), NOW)['state.json'])
+        original = discovery.encoded(previous)
+        generated = discovery.record_success(summary, previous, {}, self.context('schedule'), '2026-10-15T07:23:00+00:00')
+        api = PublishingAPI(BASE)
+        with patch.object(api, 'request', side_effect=RuntimeError('HTTP 403')):
+            with self.assertRaisesRegex(RuntimeError, '403'):
+                discovery.publish(api, 'AMT-Hub/pcsx2-custom', BASE, generated)
+        self.assertEqual(discovery.encoded(previous), original)
+
+    def test_invalid_execution_context_cannot_record_scheduled_health(self):
+        for environment in [
+                {'GITHUB_EVENT_NAME': 'schedule'},
+                {'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_RUN_ID': '../bad', 'GITHUB_SHA': BASE},
+                {'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_RUN_ID': '1', 'GITHUB_SHA': 'main'},
+                {'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_RUN_ID': '1', 'GITHUB_SHA': BASE, 'GITHUB_RUN_ATTEMPT': '0'}]:
+            with self.subTest(environment=environment), self.assertRaises(ValueError):
+                discovery.execution_context(environment)
+
+
 class PublishingTests(unittest.TestCase):
     def test_noop_makes_no_api_writes(self):
         api = PublishingAPI()
