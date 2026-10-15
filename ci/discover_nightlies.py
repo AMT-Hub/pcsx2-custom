@@ -297,31 +297,97 @@ def discover(api, reviewed, state, now):
                'new_reports': changed_tags, 'already_reported': seen,
                'pending_reports': pending, 'discovery_complete': pending == 0,
                'build_permitted': False, 'release_approved': False}
-    # Keep daily heartbeat in run summaries, not a new source commit every day.
+    # Candidate records remain deduplicated. The publishing entry point adds a
+    # separate successful-check record even when there is no new candidate.
     previous_baseline = state.get('baseline')
     current_baseline = {k: reviewed[k] for k in ('tag', 'commit', 'policy_fingerprint')}
     if generated or previous_baseline != current_baseline:
         new_state['baseline'] = current_baseline
         generated['state.json'] = encoded(new_state)
-        current = [entry for entry in entries.values() if entry['baseline_commit'] == reviewed['commit']
-                   and entry['policy_fingerprint'] == reviewed['policy_fingerprint']]
-        current.sort(key=lambda e: (version(e['tag']), e['assessed_at']), reverse=True)
-        index = ['# PCSX2 nightly discovery reports', '',
-                 '**These are review requests, not approved updates.**', '',
-                 f'Reviewed baseline: **{reviewed["tag"]}** (`{reviewed["commit"]}`).', '',
-                 'Discovery checks official published prereleases daily at 06:23 UTC. '
-                 'See the [workflow](https://github.com/' + os.environ.get('GITHUB_REPOSITORY', 'AMT-Hub/pcsx2-custom') +
-                 '/actions/workflows/nightly-discovery.yml) for the latest check, failures and manual runs.', '',
-                 '## Reports against the current baseline', '']
-        index += [f'- [{e["tag"]} / {e["commit"][:12]}]({e["report"]}) — {e["assessed_at"]}' for e in current]
-        if not current:
-            index += ['No newer official nightly was found when this index was created.']
-        index += ['', 'Older assessments remain under `reports/`; their baseline and source identity are recorded in each report. '
-                  'Unchanged releases are not reported twice. Retagged releases, changed assets or changed review inputs produce a new record. '
-                  'A daily run assesses at most 10 unseen candidates, newest first; any backlog is stated in its summary.', '',
-                  'Reports do not modify the custom emulator, launcher, updater, reviewed pins, releases or signed feed.', '']
-        generated['README.md'] = '\n'.join(index)
+        generated['README.md'] = render_index(new_state)
     return summary, generated
+
+
+def render_index(state):
+    reviewed = state['baseline']
+    current = [entry for entry in state['entries'].values() if entry['baseline_commit'] == reviewed['commit']
+               and entry['policy_fingerprint'] == reviewed['policy_fingerprint']]
+    current.sort(key=lambda e: (version(e['tag']), e['assessed_at']), reverse=True)
+    index = ['# PCSX2 nightly discovery reports', '',
+             '**These are review requests, not approved updates.**', '',
+             f'Reviewed baseline: **{reviewed["tag"]}** (`{reviewed["commit"]}`).', '',
+             'Discovery is scheduled hourly at **:53 UTC**. GitHub may delay or drop scheduled events; '
+             'the next hour provides another opportunity. '
+             'See the [workflow](https://github.com/AMT-Hub/pcsx2-custom/actions/workflows/nightly-discovery.yml) '
+             'for runs, failures and manual checks.', '', '## Check history', '']
+    for key, label in [('last_successful_check', 'Last successful check'),
+                       ('last_successful_scheduled_check', 'Last successful scheduled check')]:
+        check = state.get(key)
+        if check:
+            stamp = safe(check['completed_at'])
+            if check.get('run_url'):
+                stamp = f'[{stamp}]({check["run_url"]})'
+            index += [f'- **{label}:** {stamp} — event `{safe(check["event"])}`.']
+        else:
+            index += [f'- **{label}: not yet recorded.**']
+    index += ['', 'Push/manual checks do not verify the scheduled trigger. If the scheduled timestamp is missing '
+              'or more than three hours old, investigate scheduling in Actions. '
+              'These are fixed timestamps, not a live health badge. '
+              '[Machine-readable last check](last-check.json).', '',
+              '## Reports against the current baseline', '']
+    index += [f'- [{e["tag"]} / {e["commit"][:12]}]({e["report"]}) — {e["assessed_at"]}' for e in current]
+    if not current:
+        index += ['No newer official nightly has been reported against this baseline.']
+    index += ['', 'Older assessments remain under `reports/`; their baseline and source identity are recorded in each report. '
+              'Unchanged candidates are not reported twice. Retagged releases, changed assets or changed review inputs '
+              'produce a new candidate record. Each run assesses at most 10 unseen candidates, newest first; '
+              'any backlog is stated in its summary. Successful-check timestamps update independently of candidate reports.', '',
+              'Reports do not modify the custom emulator, launcher, updater, reviewed pins, releases or signed feed.', '']
+    return '\n'.join(index)
+
+
+def execution_context(environment):
+    event = environment.get('GITHUB_EVENT_NAME', 'local')
+    if event not in ('schedule', 'push', 'workflow_dispatch', 'pull_request', 'local'):
+        raise ValueError('Unrecognised discovery trigger.')
+    run_id = environment.get('GITHUB_RUN_ID')
+    if run_id is not None and not re.fullmatch(r'[0-9]{1,30}', run_id):
+        raise ValueError('Invalid workflow run identity.')
+    attempt = environment.get('GITHUB_RUN_ATTEMPT', '1')
+    if not re.fullmatch(r'[1-9][0-9]{0,5}', attempt):
+        raise ValueError('Invalid workflow attempt.')
+    commit = environment.get('GITHUB_SHA')
+    if commit is not None and not SHA.fullmatch(commit):
+        raise ValueError('Invalid workflow source identity.')
+    if event == 'schedule' and (not run_id or not commit):
+        raise ValueError('Scheduled checks require a workflow run and source identity.')
+    url = f'https://github.com/AMT-Hub/pcsx2-custom/actions/runs/{run_id}/attempts/{attempt}' if run_id else None
+    return {'event': event, 'run_attempt': int(attempt), 'run_url': url, 'source_commit': commit}
+
+
+def record_success(summary, previous_state, generated, context, completed_at):
+    """Stage health and candidate state together; only publish() persists them.
+
+    A failed discovery never calls this function. A failed final ref update leaves
+    both the previous reports and their successful-check timestamp in place.
+    """
+    files = dict(generated)
+    state = json.loads(files['state.json']) if 'state.json' in files else dict(previous_state)
+    check = {**context, 'completed_at': completed_at, 'scan_started_at': summary['checked_at'],
+             'baseline_tag': summary['baseline_tag'], 'latest_nightly_in_scan': summary['latest_nightly_in_scan'],
+             'new_reports': list(summary['new_reports']), 'pending_reports': summary['pending_reports'],
+             'discovery_complete': summary['discovery_complete']}
+    # A manual rerun keeps the original event name. It must not make an old
+    # scheduled event look like a new, successful clock-triggered execution.
+    fresh_schedule = context['event'] == 'schedule' and context['run_attempt'] == 1
+    scheduled = check if fresh_schedule else previous_state.get('last_successful_scheduled_check')
+    state['last_successful_check'] = check
+    state['last_successful_scheduled_check'] = scheduled
+    files['state.json'] = encoded(state)
+    files['last-check.json'] = encoded({'schema': 1, 'last_successful_check': check,
+                                       'last_successful_scheduled_check': scheduled})
+    files['README.md'] = render_index(state)
+    return files
 
 
 def publish(api, repository, expected_head, files):
@@ -329,7 +395,7 @@ def publish(api, repository, expected_head, files):
     if not files:
         return None
     for name in files:
-        if name not in ('README.md', 'state.json') and not re.fullmatch(
+        if name not in ('README.md', 'state.json', 'last-check.json') and not re.fullmatch(
                 rf'reports/{TAG_PATTERN}/[0-9a-f]{{64}}\.(json|md)', name):
             raise ValueError('Unexpected report destination.')
     base = f'/repos/{repository}'
@@ -378,6 +444,9 @@ def main():
     try:
         head, state = load_state(api, args.repository)
         summary, files = discover(api, baseline(), state, datetime.now(timezone.utc).isoformat())
+        if args.publish:
+            files = record_success(summary, state, files, execution_context(os.environ),
+                                   datetime.now(timezone.utc).isoformat())
         for name, content in files.items():
             dest = args.output / name
             dest.parent.mkdir(parents=True, exist_ok=True)

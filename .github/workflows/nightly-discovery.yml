@@ -1,10 +1,12 @@
 name: Discover official PCSX2 nightlies
 on:
   schedule:
-    - cron: '23 6 * * *'
+    # Multiple opportunities each day: one dropped event must not lose a day.
+    # A successful push/manual run is not proof that this schedule fired.
+    - cron: '53 * * * *'
   workflow_dispatch:
   push:
-    branches: [main, feature/nightly-discovery-reporting]
+    branches: [main, feature/nightly-discovery-reporting, fix/discovery-schedule-reliability]
     paths:
       - '.github/workflows/nightly-discovery.yml'
       - 'ci/discover_nightlies.py'
