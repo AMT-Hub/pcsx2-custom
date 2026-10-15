@@ -4,7 +4,13 @@ Unofficial custom PCSX2 builds and a controlled updater. Not affiliated with the
 
 The current approved runtime is based on PCSX2 nightly **2.9.127**, upstream commit `e35cb2c87590bc3d127b3bb4dd222b01e598c9a4`. See the [approved release](https://github.com/AMT-Hub/pcsx2-custom/releases/tag/nightly-2.9.127-ci1-test1). The earlier approved 2.9.126 releases remain available.
 
-Custom emulator features include compatibility-aware regional BIOS selection, integrated ShaderGlass worker coordination, editable sorting titles for every game, and disabled official updates. The updater accepts signed custom packages, preserves portable user data, and retains a previous runtime for rollback.
+Custom emulator features include compatibility-aware regional BIOS selection, integrated ShaderGlass worker coordination, automatic sorting defaults with editable overrides for every game, and disabled official updates. The updater accepts signed custom packages, preserves portable user data, and retains a previous runtime for rollback.
+
+## Automatic Sorting Titles accepted on 15 October 2026
+
+Automatic Sorting Titles 0.2.0 is accepted for the stable 2.8.2 and nightly 2.9.127 personal builds. The exact tested executables and 11,458-identity catalogue are retained; manual edits take priority and survive scans and updates. The stable personal package is 0.9.0. The nightly runtime has the new immutable identity `nightly-2_9_127-autosort-0_2_0`. See [acceptance and binary identities](ci/acceptance/2026-10-15-automatic-sorting.json). The hosted feed remains the separately published release until its next promotion.
+
+The maintained candidate build now applies the accepted automatic sorting component, packages its catalogue, and tests its precedence rules. Discovery checks all 14 affected upstream files and fingerprints the component inputs. Every future rebuilt candidate still requires acceptance before signing.
 
 ## Scope
 

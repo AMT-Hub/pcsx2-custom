@@ -29,6 +29,7 @@ jobs:
       - name: Test gate and validate requested tag
         run: |
           python3 -m unittest discover -s ci -p 'test_*.py' -v
+          python3 -m unittest discover -s experiments/automatic-sorting/tests -v
           python3 ci/assess_candidate.py --tag "$CANDIDATE_TAG"
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -64,7 +65,7 @@ jobs:
         working-directory: emulator
         run: |
           python -c "from pathlib import Path; import build, assemble; build.download('https://github.com/PCSX2/pcsx2/releases/download/' + assemble.TAG + '/' + assemble.NIGHTLY, Path(assemble.NIGHTLY), assemble.EXPECTED)"
-      - name: Compile reviewed custom runtime and run BIOS policy tests
+      - name: Compile reviewed custom runtime and run BIOS/sorting policy tests
         working-directory: emulator
         run: python build.py
       - name: Save build log

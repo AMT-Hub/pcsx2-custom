@@ -1,0 +1,434 @@
+{
+  "schema": 1,
+  "version": "0.2.0-test1",
+  "status": "User exceptions layered over whole-database rules; no installed-game dependency",
+  "upstream_commit": "e35cb2c87590bc3d127b3bb4dd222b01e598c9a4",
+  "upstream_gameindex_sha256": "6589964b54348a4af845bb33311375fa1596c55864be750e9fbdc69c8d7dcdcd",
+  "preference_source": "Original screenshot preferences plus explicit Secret Agent Clank and Hobbit grouping. General rules supply defaults for the remaining database.",
+  "identity_source": "https://github.com/PCSX2/pcsx2/blob/e35cb2c87590bc3d127b3bb4dd222b01e598c9a4/bin/resources/GameIndex.yaml",
+  "games": [
+    {
+      "id": "ratchet-1",
+      "sorting_title": "Ratchet & Clank 1",
+      "aliases": [
+        "Ratchet & Clank"
+      ]
+    },
+    {
+      "id": "ratchet-2",
+      "sorting_title": "Ratchet & Clank 2",
+      "aliases": [
+        "Ratchet & Clank 2 - Going Commando",
+        "Ratchet & Clank 2 - Locked and Loaded"
+      ]
+    },
+    {
+      "id": "ratchet-3",
+      "sorting_title": "Ratchet & Clank 3",
+      "aliases": [
+        "Ratchet & Clank - Up Your Arsenal",
+        "Ratchet & Clank 3 - Up Your Arsenal",
+        "Ratchet & Clank 3",
+        "Ratchet & Clank 3 - Charge! Galactic Rangers"
+      ]
+    },
+    {
+      "id": "ratchet-4",
+      "sorting_title": "Ratchet & Clank 4",
+      "aliases": [
+        "Ratchet - Deadlocked",
+        "Ratchet - Gladiator",
+        "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle",
+        "Ratchet & Clank 4th - GiriGiri Gingano Giga-battle"
+      ]
+    },
+    {
+      "id": "ratchet-5",
+      "sorting_title": "Ratchet & Clank 5",
+      "aliases": [
+        "Ratchet & Clank - Size Matters",
+        "Ratchet & Clank 5 - Gekitotsu! Dodeka Ginga no Mirimiri Gundan"
+      ]
+    },
+    {
+      "id": "jak-1",
+      "sorting_title": "Jak and Daxter 1",
+      "aliases": [
+        "Jak and Daxter - The Precursor Legacy",
+        "Jak & Daxter - The Precursor Legacy",
+        "Jak x Daxter - Kyuu Sekai no Isan"
+      ]
+    },
+    {
+      "id": "jak-2",
+      "sorting_title": "Jak and Daxter 2",
+      "aliases": [
+        "Jak II",
+        "Jak II - Renegade",
+        "Jak and Daxter II"
+      ]
+    },
+    {
+      "id": "jak-3",
+      "sorting_title": "Jak and Daxter 3",
+      "aliases": [
+        "Jak 3"
+      ]
+    },
+    {
+      "id": "jak-4",
+      "sorting_title": "Jak and Daxter 4",
+      "aliases": [
+        "Jak X - Combat Racing",
+        "Jak X"
+      ]
+    },
+    {
+      "id": "jak-5",
+      "sorting_title": "Jak and Daxter 5",
+      "aliases": [
+        "Jak and Daxter - The Lost Frontier"
+      ]
+    },
+    {
+      "id": "spyro-4",
+      "sorting_title": "Spyro 4",
+      "aliases": [
+        "Spyro - Enter the Dragonfly"
+      ]
+    },
+    {
+      "id": "spyro-5",
+      "sorting_title": "Spyro 5",
+      "aliases": [
+        "Spyro - A Hero's Tail"
+      ]
+    },
+    {
+      "id": "star-wars-clone-wars",
+      "sorting_title": "Star Wars - Battlefront 0.5",
+      "aliases": [
+        "Star Wars - The Clone Wars"
+      ],
+      "note": "User-defined grouping before Battlefront; does not assert official series membership."
+    },
+    {
+      "id": "star-wars-battlefront-1",
+      "sorting_title": "Star Wars - Battlefront 1",
+      "aliases": [
+        "Star Wars - Battlefront"
+      ]
+    },
+    {
+      "id": "star-wars-battlefront-2",
+      "sorting_title": "Star Wars - Battlefront 2",
+      "aliases": [
+        "Star Wars - Battlefront II",
+        "Star Wars - Battlefront 2"
+      ]
+    },
+    {
+      "id": "timesplitters-1",
+      "sorting_title": "TimeSplitters 1",
+      "aliases": [
+        "TimeSplitters"
+      ]
+    },
+    {
+      "id": "timesplitters-2",
+      "sorting_title": "TimeSplitters 2",
+      "aliases": [
+        "TimeSplitters 2"
+      ]
+    },
+    {
+      "id": "timesplitters-3",
+      "sorting_title": "TimeSplitters 3",
+      "aliases": [
+        "TimeSplitters - Future Perfect"
+      ]
+    },
+    {
+      "id": "monster-hunter-1",
+      "sorting_title": "Monster Hunter 1",
+      "aliases": [
+        "Monster Hunter"
+      ]
+    },
+    {
+      "id": "monster-hunter-g",
+      "sorting_title": "Monster Hunter 1.1",
+      "aliases": [
+        "Monster Hunter G"
+      ]
+    },
+    {
+      "id": "monster-hunter-2",
+      "sorting_title": "Monster Hunter 2",
+      "aliases": [
+        "Monster Hunter 2"
+      ]
+    },
+    {
+      "id": "harry-potter-1",
+      "sorting_title": "Harry Potter 1",
+      "aliases": [
+        "Harry Potter and the Sorcerer's Stone",
+        "Harry Potter and the Philosopher's Stone"
+      ]
+    },
+    {
+      "id": "harry-potter-2",
+      "sorting_title": "Harry Potter 2",
+      "aliases": [
+        "Harry Potter and the Chamber of Secrets",
+        "Harry Potter et la Chambre des Secrets",
+        "Harry Potter und die Kammer des Schreckens",
+        "Harry Potter y la Cámara Secreta",
+        "Harry Potter e La Camera dei Secreti",
+        "Harry Potter og Hemmelighedernes Kammer",
+        "Harry Potter og Mysteriekammeret",
+        "Harry Potter ja Salaisuuksien Kammio",
+        "Harry Potter och Hemligheternas Kammare",
+        "Harry Potter en de Geheime Kamer",
+        "Harry Potter ea Camara dos Segredos"
+      ]
+    },
+    {
+      "id": "harry-potter-3",
+      "sorting_title": "Harry Potter 3",
+      "aliases": [
+        "Harry Potter and the Prisoner of Azkaban",
+        "Harry Potter og Fangen fra Azkaban"
+      ]
+    },
+    {
+      "id": "harry-potter-quidditch",
+      "sorting_title": "Harry Potter 4",
+      "aliases": [
+        "Harry Potter - Quidditch World Cup"
+      ],
+      "note": "Exact screenshot preference retained. Full-catalogue placement conflicts with later main PS2 instalments; do not silently change to 7."
+    },
+    {
+      "id": "ico",
+      "sorting_title": "Team ICO 1",
+      "aliases": [
+        "Ico"
+      ]
+    },
+    {
+      "id": "shadow-colossus",
+      "sorting_title": "Team ICO 2",
+      "aliases": [
+        "Shadow of the Colossus",
+        "Wander to Kyozou"
+      ]
+    },
+    {
+      "id": "choro-hg-1",
+      "sorting_title": "Choro Q HG 1",
+      "aliases": [
+        "Penny Racers",
+        "Choro Q HG"
+      ],
+      "serials": [
+        "SLUS-20225"
+      ],
+      "note": "US Gadget Racers is HG1; EU Gadget Racers is a different game (HG3). Match serials, never the shared filename/title."
+    },
+    {
+      "id": "choro-hg-2",
+      "sorting_title": "Choro Q HG 2",
+      "aliases": [
+        "Road Trip Adventure",
+        "Road Trip",
+        "Choro Q HG 2"
+      ]
+    },
+    {
+      "id": "choro-hg-3",
+      "sorting_title": "Choro Q HG 3",
+      "aliases": [
+        "Choro Q HG 3"
+      ],
+      "serials": [
+        "SLES-51911"
+      ]
+    },
+    {
+      "id": "choro-hg-4",
+      "sorting_title": "Choro Q HG 4",
+      "aliases": [
+        "Choro Q",
+        "ChoroQ",
+        "Choro Q HG 4"
+      ]
+    },
+    {
+      "id": "persia-1",
+      "sorting_title": "Prince of Persia 1",
+      "aliases": [
+        "Prince of Persia - The Sands of Time"
+      ]
+    },
+    {
+      "id": "persia-2",
+      "sorting_title": "Prince of Persia 2",
+      "aliases": [
+        "Prince of Persia - Warrior Within",
+        "Prince of Persia - Kenshi no Kokoro"
+      ]
+    },
+    {
+      "id": "persia-3",
+      "sorting_title": "Prince of Persia 3",
+      "aliases": [
+        "Prince of Persia - The Two Thrones",
+        "Prince of Persia - Futatsu no Tamashii"
+      ]
+    },
+    {
+      "id": "lotr-1",
+      "sorting_title": "Lord of the Rings 1",
+      "aliases": [
+        "The Lord of the Rings - The Fellowship of the Ring",
+        "Lord of the Rings - The Fellowship of the Ring"
+      ]
+    },
+    {
+      "id": "lotr-2",
+      "sorting_title": "Lord of the Rings 2",
+      "aliases": [
+        "The Lord of the Rings - The Two Towers",
+        "Lord of the Rings - The Two Towers"
+      ]
+    },
+    {
+      "id": "lotr-3",
+      "sorting_title": "Lord of the Rings 3",
+      "aliases": [
+        "The Lord of the Rings - The Return of the King",
+        "Lord of the Rings - The Return of the King"
+      ]
+    },
+    {
+      "id": "lotr-4",
+      "sorting_title": "Lord of the Rings 4",
+      "aliases": [
+        "The Lord of the Rings - The Third Age",
+        "Lord of the Rings - The Third Age"
+      ]
+    },
+    {
+      "id": "ff-dirge",
+      "sorting_title": "Final Fantasy 7",
+      "aliases": [
+        "Dirge of Cerberus - Final Fantasy VII"
+      ]
+    },
+    {
+      "id": "ff-10",
+      "sorting_title": "Final Fantasy 10",
+      "aliases": [
+        "Final Fantasy X"
+      ]
+    },
+    {
+      "id": "ff-10-international",
+      "sorting_title": "Final Fantasy 10.1",
+      "aliases": [
+        "Final Fantasy X International",
+        "Final Fantasy X - International"
+      ]
+    },
+    {
+      "id": "ff-10-2",
+      "sorting_title": "Final Fantasy 10.2",
+      "aliases": [
+        "Final Fantasy X-2"
+      ]
+    },
+    {
+      "id": "ff-11",
+      "sorting_title": "Final Fantasy 11",
+      "aliases": [
+        "Final Fantasy XI"
+      ]
+    },
+    {
+      "id": "ff-12",
+      "sorting_title": "Final Fantasy 12",
+      "aliases": [
+        "Final Fantasy XII"
+      ]
+    },
+    {
+      "id": "ff-12-international",
+      "sorting_title": "Final Fantasy 12.1",
+      "aliases": [
+        "Final Fantasy XII International - Zodiac Job System",
+        "Final Fantasy XII International Zodiac Job System"
+      ]
+    },
+    {
+      "id": "sly-1",
+      "sorting_title": "Sly Cooper 1",
+      "aliases": [
+        "Sly Cooper and the Thievius Raccoonus",
+        "Sly Raccoon",
+        "Sly Cooper"
+      ]
+    },
+    {
+      "id": "sly-2",
+      "sorting_title": "Sly Cooper 2",
+      "aliases": [
+        "Sly 2 - Band of Thieves"
+      ]
+    },
+    {
+      "id": "sly-3",
+      "sorting_title": "Sly Cooper 3",
+      "aliases": [
+        "Sly 3 - Honor Among Thieves",
+        "Sly 3 - Honour Among Thieves"
+      ]
+    },
+    {
+      "id": "katamari-1",
+      "sorting_title": "Katamari 1",
+      "aliases": [
+        "Katamari Damacy",
+        "Katamari - Roll It! Prince!"
+      ]
+    },
+    {
+      "id": "katamari-2",
+      "sorting_title": "Katamari 2",
+      "aliases": [
+        "We Love Katamari",
+        "Minna Daisuki Katamari Damacy",
+        "Roll Roll Sticky Sticky - Katamari Damacy"
+      ]
+    },
+    {
+      "id": "ratchet-6",
+      "sorting_title": "Ratchet & Clank 6",
+      "aliases": [
+        "Secret Agent Clank"
+      ],
+      "note": "Explicit user preference: group the second spin-off after Size Matters regardless of its displayed title."
+    },
+    {
+      "id": "lotr-hobbit",
+      "sorting_title": "Lord of the Rings 0.5 - The Hobbit",
+      "aliases": [
+        "The Hobbit - The Prelude to the Lord of the Rings",
+        "The Hobbit",
+        "Hobbit no Bouken Load of The Rings, The - Hajimari no Monogatari"
+      ],
+      "note": "Explicit user preference: place The Hobbit before Fellowship, including the European and Japanese aliases."
+    }
+  ]
+}

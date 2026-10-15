@@ -206,7 +206,7 @@ class DiscoveryTests(unittest.TestCase):
     def test_existing_gate_pins_are_loaded_without_executing_build(self):
         baseline = discovery.baseline()
         self.assertRegex(baseline['commit'], r'^[0-9a-f]{40}$')
-        self.assertEqual(len(baseline['integration_hashes']), 13)
+        self.assertEqual(len(baseline['integration_hashes']), 14)
         self.assertRegex(baseline['policy_fingerprint'], r'^[0-9a-f]{64}$')
 
 

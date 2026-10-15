@@ -17,6 +17,7 @@ def package(root,stage,official):
  for n in ['auto-bios.enabled','bios-catalogue.tsv','bios-rules.tsv']:
   data['custom-pcsx2/'+n]=(root/'policy'/n).read_bytes()
  assert 'PCSX2-ShaderPrototype.exe' in data and 'resources/patches.zip' in data
+ assert 'resources/automatic-sorting.ini' in data, 'Automatic sorting catalogue is required.'
  assert not any(n.split('/')[0].lower() in ['bios','memcards','sstates','inis','gamesettings','inputprofiles'] for n in data)
  output=io.BytesIO()
  with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED,6) as z:

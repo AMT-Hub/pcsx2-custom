@@ -91,7 +91,10 @@ def baseline():
         raise ValueError('Invalid reviewed commit.')
     # Policy/source changes also invalidate old assessments, without changing pins.
     inputs = ['ci/discover_nightlies.py', 'ci/assess_candidate.py', 'emulator/build.py',
-              'emulator/assemble.py', 'emulator/nightly-upstream-sha256.json']
+              'emulator/assemble.py', 'emulator/nightly-upstream-sha256.json',
+              'experiments/automatic-sorting/apply-automatic-sorting.py',
+              'experiments/automatic-sorting/AutoSortTitle.h',
+              'experiments/automatic-sorting/automatic-sorting.ini']
     fingerprint = sha256(encoded({p: sha256((REPO / p).read_bytes()) for p in inputs}).encode())
     return {'tag': tag, 'commit': commit, 'integration_hashes': expected,
             'policy_fingerprint': fingerprint}

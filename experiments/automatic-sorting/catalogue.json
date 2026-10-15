@@ -1,0 +1,4406 @@
+{
+  "schema": 1,
+  "version": "0.2.0-test1",
+  "status": "User exceptions layered over whole-database rules; no installed-game dependency",
+  "upstream_commit": "e35cb2c87590bc3d127b3bb4dd222b01e598c9a4",
+  "upstream_gameindex_sha256": "6589964b54348a4af845bb33311375fa1596c55864be750e9fbdc69c8d7dcdcd",
+  "preference_source": "Original screenshot preferences plus explicit Secret Agent Clank and Hobbit grouping. General rules supply defaults for the remaining database.",
+  "identity_source": "https://github.com/PCSX2/pcsx2/blob/e35cb2c87590bc3d127b3bb4dd222b01e598c9a4/bin/resources/GameIndex.yaml",
+  "games": [
+    {
+      "id": "ratchet-1",
+      "sorting_title": "Ratchet & Clank 1",
+      "aliases": [
+        "Ratchet & Clank"
+      ],
+      "identities": [
+        {
+          "serial": "PBPX-95516",
+          "name": "ラチェット&クランク [本体同梱版]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank [PS2 Bundle]"
+        },
+        {
+          "serial": "SCAJ-20001",
+          "name": "Ratchet & Clank",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50916",
+          "name": "Ratchet & Clank",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCPS-15037",
+          "name": "ラチェット&クランク",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank"
+        },
+        {
+          "serial": "SCPS-19211",
+          "name": "ラチェット&クランク [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-19310",
+          "name": "ラチェット&クランク [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-19316",
+          "name": "ラチェット&クランク [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCUS-97199",
+          "name": "Ratchet & Clank",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ratchet-2",
+      "sorting_title": "Ratchet & Clank 2",
+      "aliases": [
+        "Ratchet & Clank 2 - Going Commando",
+        "Ratchet & Clank 2 - Locked and Loaded"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20052",
+          "name": "ラチェット&クランク2 ガガガ！銀河のコマンドーっす",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 2 - Going Commando"
+        },
+        {
+          "serial": "SCES-51607",
+          "name": "Ratchet & Clank 2 - Locked and Loaded",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCPS-15056",
+          "name": "ラチェット&クランク2 ガガガ！銀河のコマンドーっす",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 2 - Going Commando"
+        },
+        {
+          "serial": "SCPS-19302",
+          "name": "ラチェット&クランク2 ガガガ！銀河のコマンドーっす [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 2 - Going Commando [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-19317",
+          "name": "ラチェット&クランク2 ガガガ！銀河のコマンドーっす [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 2 - Going Commando [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCUS-97268",
+          "name": "Ratchet & Clank 2 - Going Commando",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97513",
+          "name": "Ratchet & Clank 2 - Going Commando [Greatest Hits]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ratchet-3",
+      "sorting_title": "Ratchet & Clank 3",
+      "aliases": [
+        "Ratchet & Clank - Up Your Arsenal",
+        "Ratchet & Clank 3 - Up Your Arsenal",
+        "Ratchet & Clank 3",
+        "Ratchet & Clank 3 - Charge! Galactic Rangers"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20109",
+          "name": "Ratchet & Clank 3 - Up Your Arsenal",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-52456",
+          "name": "Ratchet & Clank 3",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCPS-15084",
+          "name": "ラチェット&クランク3 突撃！ガラクチック★レンジャーズ",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 3 - Charge! Galactic Rangers"
+        },
+        {
+          "serial": "SCPS-19309",
+          "name": "ラチェット&クランク3 突撃！ガラクチック★レンジャーズ [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 3 - Up Your Arsenal [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCUS-97353",
+          "name": "Ratchet & Clank - Up Your Arsenal",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97518",
+          "name": "Ratchet & Clank - Up Your Arsenal [Greatest Hits]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ratchet-4",
+      "sorting_title": "Ratchet & Clank 4",
+      "aliases": [
+        "Ratchet - Deadlocked",
+        "Ratchet - Gladiator",
+        "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle",
+        "Ratchet & Clank 4th - GiriGiri Gingano Giga-battle"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20157",
+          "name": "Ratchet & Clank 4th - GiriGiri Gingano Giga-battle",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-53285",
+          "name": "Ratchet - Gladiator",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCPS-15099",
+          "name": "ラチェット&クランク4th ギリギリ銀河のギガバトル [Special Gift Package]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle [Special Gift Package]"
+        },
+        {
+          "serial": "SCPS-15100",
+          "name": "ラチェット&クランク4th ギリギリ銀河のギガバトル",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle"
+        },
+        {
+          "serial": "SCPS-19321",
+          "name": "ラチェット&クランク4th ギリギリ銀河のギガバトル [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-19328",
+          "name": "ラチェット&クランク4th ギリギリ銀河のギガバトル [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle [PlayStation 2 the Best - Reprint]"
+        },
+        {
+          "serial": "SCUS-97465",
+          "name": "Ratchet - Deadlocked",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ratchet-5",
+      "sorting_title": "Ratchet & Clank 5",
+      "aliases": [
+        "Ratchet & Clank - Size Matters",
+        "Ratchet & Clank 5 - Gekitotsu! Dodeka Ginga no Mirimiri Gundan"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-55019",
+          "name": "Ratchet & Clank - Size Matters",
+          "region": "PAL-M13",
+          "english_name": ""
+        },
+        {
+          "serial": "SCPS-15120",
+          "name": "ラチェット&クランク5 激突！ドデカ銀河のミリミリ軍団",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 5 - Gekitotsu! Dodeka Ginga no Mirimiri Gundan"
+        },
+        {
+          "serial": "SCUS-97615",
+          "name": "Ratchet & Clank - Size Matters",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-55019",
+          "name": "Ratchet & Clank - Size Matters",
+          "region": "PAL-M13",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "jak-1",
+      "sorting_title": "Jak and Daxter 1",
+      "aliases": [
+        "Jak and Daxter - The Precursor Legacy",
+        "Jak & Daxter - The Precursor Legacy",
+        "Jak x Daxter - Kyuu Sekai no Isan"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-50361",
+          "name": "Jak and Daxter - The Precursor Legacy",
+          "region": "PAL-M6",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50614",
+          "name": "Jak and Daxter - The Precursor Legacy",
+          "region": "PAL-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCPS-15021",
+          "name": "ジャック×ダクスター 旧世界の遺産",
+          "region": "NTSC-J",
+          "english_name": "Jak x Daxter - Kyuu Sekai no Isan"
+        },
+        {
+          "serial": "SCPS-19210",
+          "name": "ジャック×ダクスター [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Jak x Daxter - Kyuu Sekai no Isan [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-55004",
+          "name": "ジャック×ダクスター 旧世界の遺産",
+          "region": "NTSC-J",
+          "english_name": "Jak x Daxter - Kyuu Sekai no Isan"
+        },
+        {
+          "serial": "SCPS-56003",
+          "name": "Jak & Daxter - 구세계의 유산",
+          "region": "NTSC-K",
+          "english_name": "Jak and Daxter - The Precursor Legacy"
+        },
+        {
+          "serial": "SCUS-97124",
+          "name": "Jak and Daxter - The Precursor Legacy",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "jak-2",
+      "sorting_title": "Jak and Daxter 2",
+      "aliases": [
+        "Jak II",
+        "Jak II - Renegade",
+        "Jak and Daxter II"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20073",
+          "name": "Jak and Daxter II",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-51608",
+          "name": "Jak II - Renegade",
+          "region": "PAL-M7",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20010",
+          "name": "잭　ＩＩ",
+          "region": "NTSC-K",
+          "english_name": "Jak II"
+        },
+        {
+          "serial": "SCPS-15057",
+          "name": "ジャック×ダクスター2",
+          "region": "NTSC-J",
+          "english_name": "Jak and Daxter II"
+        },
+        {
+          "serial": "SCUS-97265",
+          "name": "Jak II",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97509",
+          "name": "Jak II [Greatest Hits]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "jak-3",
+      "sorting_title": "Jak and Daxter 3",
+      "aliases": [
+        "Jak 3"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-52460",
+          "name": "Jak 3",
+          "region": "PAL-M7",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20040",
+          "name": "잭 3",
+          "region": "NTSC-K",
+          "english_name": "Jak 3"
+        },
+        {
+          "serial": "SCUS-97330",
+          "name": "Jak 3",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97516",
+          "name": "Jak 3 [Greatest Hits]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "jak-4",
+      "sorting_title": "Jak and Daxter 4",
+      "aliases": [
+        "Jak X - Combat Racing",
+        "Jak X"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-53286",
+          "name": "Jak X - Combat Racing",
+          "region": "PAL-M7",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97429",
+          "name": "Jak X - Combat Racing",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97574",
+          "name": "Jak X - Combat Racing [Greatest Hits]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "jak-5",
+      "sorting_title": "Jak and Daxter 5",
+      "aliases": [
+        "Jak and Daxter - The Lost Frontier"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-55510",
+          "name": "Jak and Daxter - The Lost Frontier",
+          "region": "PAL-M12",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97558",
+          "name": "Jak and Daxter - The Lost Frontier",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "spyro-4",
+      "sorting_title": "Spyro 4",
+      "aliases": [
+        "Spyro - Enter the Dragonfly"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-51043",
+          "name": "Spyro - Enter the Dragonfly",
+          "region": "PAL-M6",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-20315",
+          "name": "Spyro - Enter the Dragonfly",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "spyro-5",
+      "sorting_title": "Spyro 5",
+      "aliases": [
+        "Spyro - A Hero's Tail"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-52569",
+          "name": "Spyro - A Hero's Tail",
+          "region": "PAL-M6",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-20884",
+          "name": "Spyro - A Hero's Tail",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "star-wars-clone-wars",
+      "sorting_title": "Star Wars - Battlefront 0.5",
+      "aliases": [
+        "Star Wars - The Clone Wars"
+      ],
+      "note": "User-defined grouping before Battlefront; does not assert official series membership.",
+      "identities": [
+        {
+          "serial": "SLES-50826",
+          "name": "Star Wars - The Clone Wars",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-50827",
+          "name": "Star Wars - The Clone Wars",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-50828",
+          "name": "Star Wars - The Clone Wars",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-20510",
+          "name": "Star Wars - The Clone Wars",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "star-wars-battlefront-1",
+      "sorting_title": "Star Wars - Battlefront 1",
+      "aliases": [
+        "Star Wars - Battlefront"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-52545",
+          "name": "Star Wars - Battlefront",
+          "region": "PAL-M3",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52546",
+          "name": "Star Wars - Battlefront",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52547",
+          "name": "Star Wars - Battlefront",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65687",
+          "name": "スター・ウォーズ - バトルフロント -",
+          "region": "NTSC-J",
+          "english_name": "Star Wars - Battlefront"
+        },
+        {
+          "serial": "SLPM-66148",
+          "name": "スター・ウォーズ - バトルフロント - [EA BEST HITS]",
+          "region": "NTSC-J",
+          "english_name": "Star Wars - Battlefront [EA Best Hits]"
+        },
+        {
+          "serial": "SLUS-20898",
+          "name": "Star Wars - Battlefront",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "star-wars-battlefront-2",
+      "sorting_title": "Star Wars - Battlefront 2",
+      "aliases": [
+        "Star Wars - Battlefront II",
+        "Star Wars - Battlefront 2"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-53501",
+          "name": "Star Wars - Battlefront II",
+          "region": "PAL-M3",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-53502",
+          "name": "Star Wars - Battlefront II",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-53503",
+          "name": "Star Wars - Battlefront II",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-66190",
+          "name": "スター・ウォーズ - バトルフロントⅡ -",
+          "region": "NTSC-J",
+          "english_name": "Star Wars - Battlefront II"
+        },
+        {
+          "serial": "SLUS-21240",
+          "name": "Star Wars - Battlefront II",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "timesplitters-1",
+      "sorting_title": "TimeSplitters 1",
+      "aliases": [
+        "TimeSplitters"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-50078",
+          "name": "TimeSplitters",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-20090",
+          "name": "TimeSplitters",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "timesplitters-2",
+      "sorting_title": "TimeSplitters 2",
+      "aliases": [
+        "TimeSplitters 2"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-50877",
+          "name": "TimeSplitters 2",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-25020",
+          "name": "타임 스플리터즈 2",
+          "region": "NTSC-K",
+          "english_name": "TimeSplitters 2"
+        },
+        {
+          "serial": "SLUS-20314",
+          "name": "TimeSplitters 2",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "timesplitters-3",
+      "sorting_title": "TimeSplitters 3",
+      "aliases": [
+        "TimeSplitters - Future Perfect"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-52993",
+          "name": "TimeSplitters - Future Perfect",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-21148",
+          "name": "TimeSplitters - Future Perfect",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "monster-hunter-1",
+      "sorting_title": "Monster Hunter 1",
+      "aliases": [
+        "Monster Hunter"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-52707",
+          "name": "Monster Hunter",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65495",
+          "name": "モンスターハンター",
+          "region": "NTSC-J",
+          "english_name": "Monster Hunter"
+        },
+        {
+          "serial": "SLUS-20896",
+          "name": "Monster Hunter",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "monster-hunter-g",
+      "sorting_title": "Monster Hunter 1.1",
+      "aliases": [
+        "Monster Hunter G"
+      ],
+      "identities": [
+        {
+          "serial": "SLKA-25219",
+          "name": "몬스터 헌터 G",
+          "region": "NTSC-K",
+          "english_name": "Monster Hunter G"
+        },
+        {
+          "serial": "SLPM-65869",
+          "name": "モンスターハンターG",
+          "region": "NTSC-J",
+          "english_name": "Monster Hunter G"
+        },
+        {
+          "serial": "SLPM-74248",
+          "name": "モンスターハンターG [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Monster Hunter G [PlayStation2 the Best]"
+        }
+      ]
+    },
+    {
+      "id": "monster-hunter-2",
+      "sorting_title": "Monster Hunter 2",
+      "aliases": [
+        "Monster Hunter 2"
+      ],
+      "identities": [
+        {
+          "serial": "CPCS-01020",
+          "name": "モンスターハンター2 [DXハンターボックス]",
+          "region": "NTSC-J",
+          "english_name": "Monster Hunter 2 [DX Hunters Box]"
+        },
+        {
+          "serial": "SLPM-66280",
+          "name": "モンスターハンター2（dos）",
+          "region": "NTSC-J",
+          "english_name": "Monster Hunter 2"
+        },
+        {
+          "serial": "SLPM-74245",
+          "name": "モンスターハンター2 [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Monster Hunter 2 [PlayStation2 the Best]"
+        }
+      ]
+    },
+    {
+      "id": "harry-potter-1",
+      "sorting_title": "Harry Potter 1",
+      "aliases": [
+        "Harry Potter and the Sorcerer's Stone",
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "identities": [
+        {
+          "serial": "SLAJ-25017",
+          "name": "Harry Potter and the Philosopher's Stone",
+          "region": "NTSC-HK",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52055",
+          "name": "Harry Potter and the Philosopher's Stone",
+          "region": "PAL-M11",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52056",
+          "name": "Harry Potter and the Philosopher's Stone",
+          "region": "PAL-M11",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65465",
+          "name": "ハリー・ポッターと賢者の石",
+          "region": "NTSC-J",
+          "english_name": "Harry Potter and the Philosopher's Stone"
+        },
+        {
+          "serial": "SLPM-65650",
+          "name": "ハリー・ポッターと賢者の石 [EA BEST HITS]",
+          "region": "NTSC-J",
+          "english_name": "Harry Potter and the Philosopher's Stone [EA Best Hits]"
+        },
+        {
+          "serial": "SLUS-20826",
+          "name": "Harry Potter and the Sorcerer's Stone",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "harry-potter-2",
+      "sorting_title": "Harry Potter 2",
+      "aliases": [
+        "Harry Potter and the Chamber of Secrets",
+        "Harry Potter et la Chambre des Secrets",
+        "Harry Potter und die Kammer des Schreckens",
+        "Harry Potter y la Cámara Secreta",
+        "Harry Potter e La Camera dei Secreti",
+        "Harry Potter og Hemmelighedernes Kammer",
+        "Harry Potter og Mysteriekammeret",
+        "Harry Potter ja Salaisuuksien Kammio",
+        "Harry Potter och Hemligheternas Kammare",
+        "Harry Potter en de Geheime Kamer",
+        "Harry Potter ea Camara dos Segredos"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-51192",
+          "name": "Harry Potter and the Chamber of Secrets",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51193",
+          "name": "Harry Potter et la Chambre des Secrets",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51194",
+          "name": "Harry Potter und die Kammer des Schreckens",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51195",
+          "name": "Harry Potter y la Cámara Secreta",
+          "region": "PAL-S",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51196",
+          "name": "Harry Potter e La Camera dei Secreti",
+          "region": "PAL-I",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51214",
+          "name": "Harry Potter og Hemmelighedernes Kammer",
+          "region": "PAL-D",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51215",
+          "name": "Harry Potter og Mysteriekammeret",
+          "region": "PAL-NO",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51216",
+          "name": "Harry Potter ja Salaisuuksien Kammio",
+          "region": "PAL-FI",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51217",
+          "name": "Harry Potter och Hemligheternas Kammare",
+          "region": "PAL-SW",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51218",
+          "name": "Harry Potter en de Geheime Kamer",
+          "region": "PAL-NL",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51219",
+          "name": "Harry Potter ea Camara dos Segredos",
+          "region": "PAL-P",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-62241",
+          "name": "哈利波特 - 消失的密室",
+          "region": "NTSC-C",
+          "english_name": "Harry Potter and the Chamber of Secrets"
+        },
+        {
+          "serial": "SLPM-62513",
+          "name": "ハリー・ポッターと秘密の部屋 [EA BEST HITS]",
+          "region": "NTSC-J",
+          "english_name": "Harry Potter and the Chamber of Secrets [EA Best Hits]"
+        },
+        {
+          "serial": "SLPM-64528",
+          "name": "해리포터와 비밀의 방",
+          "region": "NTSC-K",
+          "english_name": "Harry Potter and the Chamber of Secrets"
+        },
+        {
+          "serial": "SLPS-20234",
+          "name": "ハリー・ポッターと秘密の部屋",
+          "region": "NTSC-J",
+          "english_name": "Harry Potter and the Chamber of Secrets"
+        },
+        {
+          "serial": "SLUS-20576",
+          "name": "Harry Potter and the Chamber of Secrets",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "harry-potter-3",
+      "sorting_title": "Harry Potter 3",
+      "aliases": [
+        "Harry Potter and the Prisoner of Azkaban",
+        "Harry Potter og Fangen fra Azkaban"
+      ],
+      "identities": [
+        {
+          "serial": "SLAJ-25041",
+          "name": "Harry Potter and the Prisoner of Azkaban",
+          "region": "NTSC-C",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52440",
+          "name": "Harry Potter and the Prisoner of Azkaban",
+          "region": "PAL-M7",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52527",
+          "name": "Harry Potter og Fangen fra Azkaban",
+          "region": "PAL-M4",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52600",
+          "name": "Harry Potter and the Prisoner of Azkaban",
+          "region": "PAL-PL",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-25172",
+          "name": "해리포터와 아즈카반의 죄수",
+          "region": "NTSC-K",
+          "english_name": "Harry Potter and the Prisoner of Azkaban"
+        },
+        {
+          "serial": "SLPM-65612",
+          "name": "ハリー・ポッターとアズカバンの囚人",
+          "region": "NTSC-J",
+          "english_name": "Harry Potter and the Prisoner of Azkaban"
+        },
+        {
+          "serial": "SLUS-20926",
+          "name": "Harry Potter and the Prisoner of Azkaban",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "harry-potter-quidditch",
+      "sorting_title": "Harry Potter 4",
+      "aliases": [
+        "Harry Potter - Quidditch World Cup"
+      ],
+      "note": "Exact screenshot preference retained. Full-catalogue placement conflicts with later main PS2 instalments; do not silently change to 7.",
+      "identities": [
+        {
+          "serial": "SLES-51787",
+          "name": "Harry Potter - Quidditch World Cup",
+          "region": "PAL-M10",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-15016",
+          "name": "해리포터 퀴디치 월드컵",
+          "region": "NTSC-K",
+          "english_name": "Harry Potter - Quidditch World Cup"
+        },
+        {
+          "serial": "SLPM-62408",
+          "name": "ハリー・ポッター クィディッチ ワールドカップ",
+          "region": "NTSC-J",
+          "english_name": "Harry Potter - Quidditch World Cup"
+        },
+        {
+          "serial": "SLUS-20769",
+          "name": "Harry Potter - Quidditch World Cup",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ico",
+      "sorting_title": "Team ICO 1",
+      "aliases": [
+        "Ico"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20099",
+          "name": "ICO",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCCS-40005",
+          "name": "ICO 古堡迷踪",
+          "region": "NTSC-C",
+          "english_name": "Ico"
+        },
+        {
+          "serial": "SCES-50760",
+          "name": "Ico",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20028",
+          "name": "이코 [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Ico [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SCPS-11003",
+          "name": "ICO",
+          "region": "NTSC-J",
+          "english_name": "ICO"
+        },
+        {
+          "serial": "SCPS-19103",
+          "name": "ICO [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "ICO [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-19151",
+          "name": "ICO [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "ICO [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-55001",
+          "name": "ICO",
+          "region": "NTSC-J",
+          "english_name": "ICO"
+        },
+        {
+          "serial": "SCPS-56001",
+          "name": "이코",
+          "region": "NTSC-K",
+          "english_name": "Ico"
+        },
+        {
+          "serial": "SCUS-97113",
+          "name": "Ico",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "shadow-colossus",
+      "sorting_title": "Team ICO 2",
+      "aliases": [
+        "Shadow of the Colossus",
+        "Wander to Kyozou"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-53326",
+          "name": "Shadow of the Colossus",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97472",
+          "name": "Shadow of the Colossus",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "choro-hg-1",
+      "sorting_title": "Choro Q HG 1",
+      "aliases": [
+        "Penny Racers",
+        "Choro Q HG"
+      ],
+      "serials": [
+        "SLUS-20225"
+      ],
+      "note": "US Gadget Racers is HG1; EU Gadget Racers is a different game (HG3). Match serials, never the shared filename/title.",
+      "identities": [
+        {
+          "serial": "SLES-50252",
+          "name": "Penny Racers",
+          "region": "PAL-M3",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65149",
+          "name": "チョロQ HG [THE BEST タカラモノ]",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG [Takara THE BEST]"
+        },
+        {
+          "serial": "SLPS-25014",
+          "name": "チョロQ HG チョロQジェニーハイグレードBOX",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG [Jenny Hi-Grade Box]"
+        },
+        {
+          "serial": "SLPS-25015",
+          "name": "チョロQ HG",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG"
+        },
+        {
+          "serial": "SLUS-20225",
+          "name": "Gadget Racers",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "choro-hg-2",
+      "sorting_title": "Choro Q HG 2",
+      "aliases": [
+        "Road Trip Adventure",
+        "Road Trip",
+        "Choro Q HG 2"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-51356",
+          "name": "Road Trip Adventure",
+          "region": "PAL-M3",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-15008",
+          "name": "쵸로 Q HG 2",
+          "region": "NTSC-K",
+          "english_name": "Choro Q HG 2"
+        },
+        {
+          "serial": "SLPM-62104",
+          "name": "チョロQ HG2",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 2"
+        },
+        {
+          "serial": "SLPM-62355",
+          "name": "チョロQ HG2 [THE BEST タカラモノ]",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 2 [Takara THE BEST]"
+        },
+        {
+          "serial": "SLPM-62761",
+          "name": "チョロQ HG2 [ATLUS BEST COLLECTION]",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 2 [Atlus Best Collection]"
+        },
+        {
+          "serial": "SLUS-20398",
+          "name": "Road Trip",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "choro-hg-3",
+      "sorting_title": "Choro Q HG 3",
+      "aliases": [
+        "Choro Q HG 3"
+      ],
+      "serials": [
+        "SLES-51911"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-51911",
+          "name": "Gadget Racers",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-62244",
+          "name": "チョロQ HG3",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 3"
+        },
+        {
+          "serial": "SLPM-62595",
+          "name": "チョロQ HG3 [THE BEST タカラモノ]",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 3 [Takara The Best]"
+        },
+        {
+          "serial": "SLPM-62771",
+          "name": "チョロQ HG3 [ATLUS BEST COLLECTION]",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 3 [Atlus Best Collection]"
+        }
+      ]
+    },
+    {
+      "id": "choro-hg-4",
+      "sorting_title": "Choro Q HG 4",
+      "aliases": [
+        "Choro Q",
+        "ChoroQ",
+        "Choro Q HG 4"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-53140",
+          "name": "Choro Q",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65326",
+          "name": "チョロQ HG4",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 4"
+        },
+        {
+          "serial": "SLPM-66250",
+          "name": "チョロＱＨＧ4 [ATLUS BEST COLLECTION]",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 4 [Atlus Best Collection]"
+        },
+        {
+          "serial": "SLUS-20930",
+          "name": "ChoroQ",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "persia-1",
+      "sorting_title": "Prince of Persia 1",
+      "aliases": [
+        "Prince of Persia - The Sands of Time"
+      ],
+      "identities": [
+        {
+          "serial": "SCPS-15066",
+          "name": "プリンス・オブ・ペルシャ ～時間の砂～",
+          "region": "NTSC-J",
+          "english_name": "Prince of Persia - The Sands of Time"
+        },
+        {
+          "serial": "SLES-51918",
+          "name": "Prince of Persia - The Sands of Time",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51961",
+          "name": "Prince of Persia - The Sands of Time",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-25120",
+          "name": "페르시아의 왕자",
+          "region": "NTSC-K",
+          "english_name": "Prince of Persia - The Sands of Time"
+        },
+        {
+          "serial": "SLKA-25460",
+          "name": "페르시아의 왕자 - 시간의 모래 [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Prince of Persia - The Sands of Time [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLUS-20743",
+          "name": "Prince of Persia - The Sands of Time",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "persia-2",
+      "sorting_title": "Prince of Persia 2",
+      "aliases": [
+        "Prince of Persia - Warrior Within",
+        "Prince of Persia - Kenshi no Kokoro"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20154",
+          "name": "Prince of Persia - Warrior Within",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52822",
+          "name": "Prince of Persia - Warrior Within",
+          "region": "PAL-M6",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-25247",
+          "name": "페르시아의 왕자 - 전사의 길",
+          "region": "NTSC-K",
+          "english_name": "Prince of Persia - Warrior Within"
+        },
+        {
+          "serial": "SLKA-25462",
+          "name": "페르시아의 왕자 - 전사의 길 [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Prince of Persia - Warrior Within [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLPM-66002",
+          "name": "プリンス・オブ・ペルシャ ケンシ ノ ココロ",
+          "region": "NTSC-J",
+          "english_name": "Prince of Persia - Warrior Within"
+        },
+        {
+          "serial": "SLUS-21022",
+          "name": "Prince of Persia - Warrior Within",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "persia-3",
+      "sorting_title": "Prince of Persia 3",
+      "aliases": [
+        "Prince of Persia - The Two Thrones",
+        "Prince of Persia - Futatsu no Tamashii"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-53777",
+          "name": "Prince of Persia - The Two Thrones",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-25346",
+          "name": "페르시아의 왕자 - 두개의 왕좌",
+          "region": "NTSC-K",
+          "english_name": "Prince of Persia - The Two Thrones"
+        },
+        {
+          "serial": "SLKA-25461",
+          "name": "페르시아의 왕자 - 두개의 왕좌 [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Prince of Persia - The Two Thrones [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLPM-66391",
+          "name": "プリンス・オブ・ペルシャ 二つの魂",
+          "region": "NTSC-J",
+          "english_name": "Prince of Persia - The Two Thrones"
+        },
+        {
+          "serial": "SLUS-21287",
+          "name": "Prince of Persia - The Two Thrones",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "lotr-1",
+      "sorting_title": "Lord of the Rings 1",
+      "aliases": [
+        "The Lord of the Rings - The Fellowship of the Ring",
+        "Lord of the Rings - The Fellowship of the Ring"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-50988",
+          "name": "The Lord of the Rings - The Fellowship of the Ring",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-20520",
+          "name": "The Lord of the Rings - The Fellowship of the Ring",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "lotr-2",
+      "sorting_title": "Lord of the Rings 2",
+      "aliases": [
+        "The Lord of the Rings - The Two Towers",
+        "Lord of the Rings - The Two Towers"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-51252",
+          "name": "The Lord of the Rings - The Two Towers",
+          "region": "PAL-M3",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51253",
+          "name": "Le Seigneur des Anneaux - Les Deux Tours",
+          "region": "PAL-F",
+          "english_name": "The Lord of the Rings - The Two Towers"
+        },
+        {
+          "serial": "SLES-51254",
+          "name": "Der Herr der Ringe - Die zwei Türme",
+          "region": "PAL-G",
+          "english_name": "The Lord of the Rings - The Two Towers"
+        },
+        {
+          "serial": "SLES-51255",
+          "name": "Il Signore degli Anelli - Le Due Torri",
+          "region": "PAL-I",
+          "english_name": "The Lord of the Rings - The Two Towers"
+        },
+        {
+          "serial": "SLES-51256",
+          "name": "El Señor de los Anillos - Las Dos Torres",
+          "region": "PAL-S",
+          "english_name": "The Lord of the Rings - The Two Towers"
+        },
+        {
+          "serial": "SLPM-67546",
+          "name": "반지의 제왕 - 두개의 탑",
+          "region": "NTSC-K",
+          "english_name": "Lord of the Rings - The Two Towers"
+        },
+        {
+          "serial": "SLUS-20578",
+          "name": "The Lord of the Rings - The Two Towers",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "lotr-3",
+      "sorting_title": "Lord of the Rings 3",
+      "aliases": [
+        "The Lord of the Rings - The Return of the King",
+        "Lord of the Rings - The Return of the King"
+      ],
+      "identities": [
+        {
+          "serial": "SLAJ-25019",
+          "name": "The Lord of the Rings - The Return of the King",
+          "region": "NTSC-C",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52017",
+          "name": "The Lord of the Rings - The Return of the King",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52018",
+          "name": "Der Herr der Ringe - Die Rückkehr des Königs",
+          "region": "PAL-G",
+          "english_name": "The Lord of the Rings - The Return of the King"
+        },
+        {
+          "serial": "SLES-52019",
+          "name": "Le Seigneur des Anneaux - Le Retour du Roi",
+          "region": "PAL-F",
+          "english_name": "The Lord of the Rings - The Return of the King"
+        },
+        {
+          "serial": "SLES-52020",
+          "name": "El Señor de los Anillos - El Retorno del Rey",
+          "region": "PAL-S",
+          "english_name": "The Lord of the Rings - The Return of the King"
+        },
+        {
+          "serial": "SLES-52021",
+          "name": "Il Signore degli Anelli - Il Ritorno del Re",
+          "region": "PAL-I",
+          "english_name": "The Lord of the Rings - The Return of the King"
+        },
+        {
+          "serial": "SLKA-25098",
+          "name": "반지의 제왕 왕의 귀환",
+          "region": "NTSC-K",
+          "english_name": "The Lord of the Rings - The Return of the King"
+        },
+        {
+          "serial": "SLKA-25228",
+          "name": "반지의 제왕 - 왕의 귀환 [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "The Lord of the Rings - The Return of the King [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLUS-20770",
+          "name": "The Lord of the Rings - The Return of the King",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "lotr-4",
+      "sorting_title": "Lord of the Rings 4",
+      "aliases": [
+        "The Lord of the Rings - The Third Age",
+        "Lord of the Rings - The Third Age"
+      ],
+      "identities": [
+        {
+          "serial": "SLAJ-25051",
+          "name": "The Lord of the Rings - The Third Age",
+          "region": "NTSC-C",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52801",
+          "name": "The Lord of the Rings - The Third Age",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52802",
+          "name": "Le Seigneur des Anneaux - Le Tiers Âge",
+          "region": "PAL-F",
+          "english_name": "The Lord of the Rings - The Third Age"
+        },
+        {
+          "serial": "SLES-52803",
+          "name": "Der Herr der Ringe - Das dritte Zeitalter",
+          "region": "PAL-G",
+          "english_name": "The Lord of the Rings - The Third Age"
+        },
+        {
+          "serial": "SLES-52804",
+          "name": "Il Signore degli Anelli - La Terza Era",
+          "region": "PAL-I",
+          "english_name": "The Lord of the Rings - The Third Age"
+        },
+        {
+          "serial": "SLES-52805",
+          "name": "El Señor de los Anillos - La Tercera Edad",
+          "region": "PAL-S",
+          "english_name": "The Lord of the Rings - The Third Age"
+        },
+        {
+          "serial": "SLKA-25237",
+          "name": "반지의 제왕 써드 에이지",
+          "region": "NTSC-K",
+          "english_name": "The Lord of the Rings - The Third Age"
+        },
+        {
+          "serial": "SLUS-21027",
+          "name": "The Lord of the Rings - The Third Age",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ff-dirge",
+      "sorting_title": "Final Fantasy 7",
+      "aliases": [
+        "Dirge of Cerberus - Final Fantasy VII"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20169",
+          "name": "Dirge of Cerberus - Final Fantasy VII",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-54185",
+          "name": "Dirge of Cerberus - Final Fantasy VII",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-66271",
+          "name": "ダージュ・オブ・ケルベロス -ファイナルファンタジーⅫ-",
+          "region": "NTSC-J",
+          "english_name": "Dirge of Cerberus - Final Fantasy VII"
+        },
+        {
+          "serial": "SLUS-21419",
+          "name": "Dirge of Cerberus - Final Fantasy VII",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ff-10",
+      "sorting_title": "Final Fantasy 10",
+      "aliases": [
+        "Final Fantasy X"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-50490",
+          "name": "Final Fantasy X",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50491",
+          "name": "Final Fantasy X",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50492",
+          "name": "Final Fantasy X",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50493",
+          "name": "Final Fantasy X",
+          "region": "PAL-I",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50494",
+          "name": "Final Fantasy X",
+          "region": "PAL-S",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-66124",
+          "name": "ファイナルファンタジーⅩ [Ultimate Hits]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X [Ultimate Hits]"
+        },
+        {
+          "serial": "SLPS-25050",
+          "name": "ファイナルファンタジーⅩ",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X"
+        },
+        {
+          "serial": "SLPS-72501",
+          "name": "ファイナルファンタジーⅩ [MEGA HITS!]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X [MEGA HITS!]"
+        },
+        {
+          "serial": "SLUS-20312",
+          "name": "Final Fantasy X",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ff-10-international",
+      "sorting_title": "Final Fantasy 10.1",
+      "aliases": [
+        "Final Fantasy X International",
+        "Final Fantasy X - International"
+      ],
+      "identities": [
+        {
+          "serial": "SLKA-25214",
+          "name": "파이널 판타지 X [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Final Fantasy X International [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLPM-65115",
+          "name": "ファイナルファンタジーⅩ インターナショナル",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X International"
+        },
+        {
+          "serial": "SLPM-66677",
+          "name": "ファイナルファンタジーⅩ インターナショナル [Ultimate Hits]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X - International [Ultimate Hits]"
+        },
+        {
+          "serial": "SLPM-67513",
+          "name": "파이널 판타지 X 인터네셔널",
+          "region": "NTSC-K",
+          "english_name": "Final Fantasy X International"
+        },
+        {
+          "serial": "SLPS-25088",
+          "name": "ファイナルファンタジーⅩ インターナショナル",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X International"
+        }
+      ]
+    },
+    {
+      "id": "ff-10-2",
+      "sorting_title": "Final Fantasy 10.2",
+      "aliases": [
+        "Final Fantasy X-2"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-25012",
+          "name": "Final Fantasy X-2",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SLAJ-25012",
+          "name": "Final Fantasy X-2",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51815",
+          "name": "Final Fantasy X-2",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51816",
+          "name": "Final Fantasy X-2",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51817",
+          "name": "Final Fantasy X-2",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51818",
+          "name": "Final Fantasy X-2",
+          "region": "PAL-I",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51819",
+          "name": "Final Fantasy X-2",
+          "region": "PAL-S",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-25144",
+          "name": "파이널 판타지 X-2",
+          "region": "NTSC-K",
+          "english_name": "Final Fantasy X-2"
+        },
+        {
+          "serial": "SLPM-66125",
+          "name": "ファイナルファンタジーⅩ-2 [Ultimate Hits]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X-2 [Ultimate Hits]"
+        },
+        {
+          "serial": "SLPS-25250",
+          "name": "ファイナルファンタジーⅩ-2",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X-2"
+        },
+        {
+          "serial": "SLUS-20672",
+          "name": "Final Fantasy X-2",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ff-11",
+      "sorting_title": "Final Fantasy 11",
+      "aliases": [
+        "Final Fantasy XI"
+      ],
+      "identities": [
+        {
+          "serial": "SCUS-97266",
+          "name": "Final Fantasy XI [Disc 1 of 2]",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97269",
+          "name": "Final Fantasy XI [Disc 2 of 2]",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65289",
+          "name": "ファイナルファンタジーⅪ エントリーディスク [プレイオンライン]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XI [Entry Disc]"
+        },
+        {
+          "serial": "SLPS-20200",
+          "name": "ファイナルファンタジーⅪ [ディスク2/2]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XI [Disc 2 of 2]"
+        },
+        {
+          "serial": "SLPS-25200",
+          "name": "ファイナルファンタジーⅪ [ディスク1/2]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XI [Disc 1 of 2]"
+        }
+      ]
+    },
+    {
+      "id": "ff-12",
+      "sorting_title": "Final Fantasy 12",
+      "aliases": [
+        "Final Fantasy XII"
+      ],
+      "identities": [
+        {
+          "serial": "PBPX-95525",
+          "name": "ファイナルファンタジーⅫ [本体同梱版]",
+          "region": "NTSC-J-K",
+          "english_name": "FINAL FANTASY XII [PS2 Bundle]"
+        },
+        {
+          "serial": "SCAJ-20172",
+          "name": "Final Fantasy XII",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20073",
+          "name": "파이널 판타지 XII",
+          "region": "NTSC-K",
+          "english_name": "Final Fantasy XII"
+        },
+        {
+          "serial": "SLES-54354",
+          "name": "Final Fantasy XII",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-54355",
+          "name": "Final Fantasy XII",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-54356",
+          "name": "Final Fantasy XII",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-54357",
+          "name": "Final Fantasy XII",
+          "region": "PAL-I",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-54358",
+          "name": "Final Fantasy XII",
+          "region": "PAL-S",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-55022",
+          "name": "ファイナルファンタジーⅫ [Ultimate Hits]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XII [Ultimate Hits]"
+        },
+        {
+          "serial": "SLPM-66320",
+          "name": "ファイナルファンタジーⅫ",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XII"
+        },
+        {
+          "serial": "SLUS-20963",
+          "name": "Final Fantasy XII",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-21475",
+          "name": "Final Fantasy XII [Collector's Edition]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ff-12-international",
+      "sorting_title": "Final Fantasy 12.1",
+      "aliases": [
+        "Final Fantasy XII International - Zodiac Job System",
+        "Final Fantasy XII International Zodiac Job System"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20188",
+          "name": "Final Fantasy XII International - Zodiac Job System",
+          "region": "NTSC-J",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20110",
+          "name": "파이널판타지 12 인터네셔널",
+          "region": "NTSC-K",
+          "english_name": "Final Fantasy XII International - Zodiac Job System"
+        },
+        {
+          "serial": "SCKA-20138",
+          "name": "파이널판타지 12 인터네셔널 [Ultimate Hits]",
+          "region": "NTSC-K",
+          "english_name": "Final Fantasy XII International - Zodiac Job System [Ultimate Hits]"
+        },
+        {
+          "serial": "SLPM-55210",
+          "name": "ファイナルファンタジーⅫ インターナショナル ゾディアックジョブシステム [Ultimate Hits]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XII International Zodiac Job System [Ultimate Hits]"
+        },
+        {
+          "serial": "SLPM-66750",
+          "name": "ファイナルファンタジーⅫ インターナショナル ゾディアックジョブシステム",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XII International - Zodiac Job System [with Bonus DVD]"
+        }
+      ]
+    },
+    {
+      "id": "sly-1",
+      "sorting_title": "Sly Cooper 1",
+      "aliases": [
+        "Sly Cooper and the Thievius Raccoonus",
+        "Sly Raccoon",
+        "Sly Cooper"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20017",
+          "name": "Sly Cooper",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50917",
+          "name": "Sly Raccoon",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97198",
+          "name": "Sly Cooper and the Thievius Raccoonus",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "sly-2",
+      "sorting_title": "Sly Cooper 2",
+      "aliases": [
+        "Sly 2 - Band of Thieves"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-52529",
+          "name": "Sly 2 - Band of Thieves",
+          "region": "PAL-M11",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97316",
+          "name": "Sly 2 - Band of Thieves",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97519",
+          "name": "Sly 2 - Band of Thieves [Greatest Hits]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "sly-3",
+      "sorting_title": "Sly Cooper 3",
+      "aliases": [
+        "Sly 3 - Honor Among Thieves",
+        "Sly 3 - Honour Among Thieves"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-53409",
+          "name": "Sly 3 - Honour Among Thieves",
+          "region": "PAL-M11",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97464",
+          "name": "Sly 3 - Honor Among Thieves",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "katamari-1",
+      "sorting_title": "Katamari 1",
+      "aliases": [
+        "Katamari Damacy",
+        "Katamari - Roll It! Prince!"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20079",
+          "name": "Katamari Damacy",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20025",
+          "name": "괴혼 굴려라! 왕자님!",
+          "region": "NTSC-K",
+          "english_name": "Katamari - Roll It! Prince!"
+        },
+        {
+          "serial": "SCKA-20125",
+          "name": "괴혼 ~굴려라! 왕자님!~ [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Katamari - Roll It! Prince! [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLPS-25360",
+          "name": "塊魂",
+          "region": "NTSC-J",
+          "english_name": "Katamari Damacy"
+        },
+        {
+          "serial": "SLPS-73210",
+          "name": "塊魂 [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Katamari Damacy [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SLPS-73240",
+          "name": "塊魂 [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Katamari Damacy [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SLUS-21008",
+          "name": "Katamari Damacy",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "katamari-2",
+      "sorting_title": "Katamari 2",
+      "aliases": [
+        "We Love Katamari",
+        "Minna Daisuki Katamari Damacy",
+        "Roll Roll Sticky Sticky - Katamari Damacy"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20135",
+          "name": "Minna Daisuki Katamari Damacy",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20051",
+          "name": "데굴 데굴~ 쫀득 쫀득~ 괴혼",
+          "region": "NTSC-K",
+          "english_name": "Roll Roll Sticky Sticky - Katamari Damacy"
+        },
+        {
+          "serial": "SCKA-20135",
+          "name": "데굴 데굴~ 쫀득 쫀득~ 괴혼 [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Roll Roll Sticky Sticky - Katamari Damacy [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLES-53828",
+          "name": "We Love Katamari",
+          "region": "PAL-M4",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPS-25467",
+          "name": "みんな大好き塊魂",
+          "region": "NTSC-J",
+          "english_name": "Minna Daisuki Katamari Damacy"
+        },
+        {
+          "serial": "SLPS-73241",
+          "name": "みんな大好き塊魂 [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Minna Daisuki Katamari Damacy [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SLUS-21230",
+          "name": "We Love Katamari",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ratchet-6",
+      "sorting_title": "Ratchet & Clank 6",
+      "aliases": [
+        "Secret Agent Clank"
+      ],
+      "note": "Explicit user preference: group the second spin-off after Size Matters regardless of its displayed title.",
+      "identities": [
+        {
+          "serial": "SCES-55496",
+          "name": "Secret Agent Clank",
+          "region": "PAL-M12",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97623",
+          "name": "Secret Agent Clank",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "lotr-hobbit",
+      "sorting_title": "Lord of the Rings 0.5 - The Hobbit",
+      "aliases": [
+        "The Hobbit - The Prelude to the Lord of the Rings",
+        "The Hobbit",
+        "Hobbit no Bouken Load of The Rings, The - Hajimari no Monogatari"
+      ],
+      "note": "Explicit user preference: place The Hobbit before Fellowship, including the European and Japanese aliases.",
+      "identities": [
+        {
+          "serial": "SLES-51723",
+          "name": "The Hobbit",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52247",
+          "name": "The Hobbit",
+          "region": "PAL-R",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65728",
+          "name": "ホビットの冒険 ロード オブ ザ リング はじまりの物語",
+          "region": "NTSC-J",
+          "english_name": "Hobbit no Bouken Load of The Rings, The - Hajimari no Monogatari"
+        },
+        {
+          "serial": "SLUS-20655",
+          "name": "The Hobbit - The Prelude to the Lord of the Rings",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "source_identities": 12841,
+    "eligible_identities": 11458,
+    "excluded_nonretail": 1383,
+    "by_rule": {
+      "normal-title": 9349,
+      "user-exception": 275,
+      "numbered-series-first": 586,
+      "normalised-title": 1028,
+      "franchise-release-order": 216,
+      "franchise-unresolved-order": 4
+    },
+    "unresolved_franchise_members": [
+      {
+        "family": "inferred:Ace Combat",
+        "title": "Ace Combat",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCES-50410",
+          "SCES-52424",
+          "SCES-54041"
+        ]
+      },
+      {
+        "family": "inferred:Agent Hugo",
+        "title": "Agent Hugo",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-54212",
+          "SLES-54520",
+          "SLES-54917",
+          "SLES-54918",
+          "SLES-54919",
+          "SLES-55364",
+          "SLES-55365",
+          "SLES-55366"
+        ]
+      },
+      {
+        "family": "inferred:Anime Eikaiwa",
+        "title": "Anime Eikaiwa",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65027",
+          "SLPM-65028",
+          "SLPM-65029"
+        ]
+      },
+      {
+        "family": "inferred:Anime Super Remix, The",
+        "title": "Anime Super Remix, The",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65142",
+          "SLPM-65143"
+        ]
+      },
+      {
+        "family": "inferred:Ape Escape",
+        "title": "Ape Escape",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCAJ-20178",
+          "SCCS-40016",
+          "SLUS-21096"
+        ]
+      },
+      {
+        "family": "inferred:Ar tonelico",
+        "title": "Ar tonelico",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-54586",
+          "SLUS-21445",
+          "SLPS-25604",
+          "SLPS-73249"
+        ]
+      },
+      {
+        "family": "inferred:Arc the Lad",
+        "title": "Arc the Lad",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCAJ-20019",
+          "SCKA-20012",
+          "SCPS-15040",
+          "SCPS-15041",
+          "SCUS-97231",
+          "SCAJ-20038",
+          "SCAJ-20108",
+          "SCPS-15058",
+          "SCCS-40007",
+          "SLUS-21165"
+        ]
+      },
+      {
+        "family": "inferred:Armored Core",
+        "title": "Armored Core",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCAJ-20105",
+          "SCKA-20047",
+          "SLES-53819",
+          "SLPS-25408",
+          "SLUS-21200",
+          "SCAJ-20121",
+          "SLKA-25270",
+          "SLPS-25461",
+          "SCAJ-20143",
+          "SLES-53820",
+          "SLPM-68520",
+          "SLPS-25462",
+          "SLPS-25730",
+          "SLPS-73247",
+          "SLUS-21338"
+        ]
+      },
+      {
+        "family": "inferred:Army Men",
+        "title": "Army Men",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-50191",
+          "SLUS-20087",
+          "SLES-50192",
+          "SLUS-20132",
+          "SLES-50233",
+          "SLES-50434",
+          "SLES-50706",
+          "SLUS-20206",
+          "SLES-52587",
+          "SLES-53996",
+          "SLUS-20004",
+          "SLUS-21831"
+        ]
+      },
+      {
+        "family": "inferred:Ashita no Joe",
+        "title": "Ashita no Joe",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65441",
+          "SLPM-65625"
+        ]
+      },
+      {
+        "family": "inferred:Backyard Sports",
+        "title": "Backyard Sports",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLUS-21403",
+          "SLUS-21485"
+        ]
+      },
+      {
+        "family": "inferred:Baldur's Gate",
+        "title": "Baldur's Gate",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-50672",
+          "SLPS-25139",
+          "SLPS-25140",
+          "SLPS-25291",
+          "SLUS-20035",
+          "SLES-52187",
+          "SLES-52188",
+          "SLPM-65845",
+          "SLUS-20675"
+        ]
+      },
+      {
+        "family": "inferred:Barbie Horse Adventures",
+        "title": "Barbie Horse Adventures",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-51845",
+          "SLUS-20664",
+          "SLES-55371",
+          "SLUS-21806"
+        ]
+      },
+      {
+        "family": "inferred:Broken Sword",
+        "title": "Broken Sword",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-51557",
+          "SLPS-25356"
+        ]
+      },
+      {
+        "family": "inferred:Brothers in Arms",
+        "title": "Brothers in Arms",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-52888",
+          "SLKA-25277",
+          "SLPM-66042",
+          "SLPM-66568",
+          "SLUS-21163",
+          "SLES-53659",
+          "SLPM-66708",
+          "SLUS-21310",
+          "SLPM-66410"
+        ]
+      },
+      {
+        "family": "inferred:Buzz! Junior",
+        "title": "Buzz! Junior",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCES-54219",
+          "SCES-54220",
+          "SCES-54524",
+          "SCUS-97596",
+          "SCES-54625",
+          "SCES-54703",
+          "SCES-54676",
+          "SCES-54701",
+          "SCES-54749",
+          "SCES-54750",
+          "SCES-55210",
+          "SCES-55211"
+        ]
+      },
+      {
+        "family": "inferred:Cabela's Deer Hunt",
+        "title": "Cabela's Deer Hunt",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLUS-20665",
+          "SLUS-21011"
+        ]
+      },
+      {
+        "family": "inferred:Call of Duty",
+        "title": "Call of Duty",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-52782",
+          "SLES-52783",
+          "SLES-52784",
+          "SLPM-66159",
+          "SLUS-20725",
+          "SLES-55367",
+          "SLES-55369",
+          "SLKA-25449",
+          "SLUS-21746"
+        ]
+      },
+      {
+        "family": "inferred:Club Football",
+        "title": "Club Football",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-51076",
+          "SLES-51100",
+          "SLES-51077",
+          "SLES-51078",
+          "SLES-51079",
+          "SLES-51080",
+          "SLES-51081",
+          "SLES-51082",
+          "SLES-51083",
+          "SLES-51084",
+          "SLES-51085",
+          "SLES-51086",
+          "SLES-51087",
+          "SLES-51088",
+          "SLES-51089",
+          "SLES-51090",
+          "SLES-51094",
+          "SLES-51423"
+        ]
+      },
+      {
+        "family": "inferred:Daito Giken Koushiki Pachi-Slot Simulator",
+        "title": "Daito Giken Koushiki Pachi-Slot Simulator",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-20472",
+          "SLPS-20496",
+          "SLPS-20504",
+          "SLPS-20506"
+        ]
+      },
+      {
+        "family": "inferred:Death by Degrees",
+        "title": "Death by Degrees",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCKA-20039",
+          "SLPS-25422"
+        ]
+      },
+      {
+        "family": "inferred:Delta Force",
+        "title": "Delta Force",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-53299",
+          "SLUS-21124",
+          "SLES-54115",
+          "SLUS-21414"
+        ]
+      },
+      {
+        "family": "inferred:Digital Devil Saga",
+        "title": "Digital Devil Saga",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SCAJ-20095",
+          "SLKA-25300",
+          "SLPM-65597",
+          "SLPM-66372",
+          "SCAJ-20120",
+          "SLKA-25301",
+          "SLPM-65795",
+          "SLPM-66373"
+        ]
+      },
+      {
+        "family": "inferred:Dirge of Cerberus",
+        "title": "Dirge of Cerberus",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SCAJ-20169",
+          "SLES-54185",
+          "SLPM-66271",
+          "SLUS-21419",
+          "SLPM-66629",
+          "SLPM-68016"
+        ]
+      },
+      {
+        "family": "inferred:Disney Chicken Little",
+        "title": "Disney Chicken Little",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-54450",
+          "SLES-54452",
+          "SLES-54453"
+        ]
+      },
+      {
+        "family": "inferred:Disney Sing It",
+        "title": "Disney Sing It",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-55396",
+          "SLES-55397",
+          "SLUS-21861",
+          "SLUS-27034",
+          "SLES-55542",
+          "SLUS-21920",
+          "SLES-55628"
+        ]
+      },
+      {
+        "family": "inferred:Disney's Donald Duck",
+        "title": "Disney's Donald Duck",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-50048",
+          "SLES-50773",
+          "SLPS-20070",
+          "SLUS-20077"
+        ]
+      },
+      {
+        "family": "inferred:Disney's Jungle Book",
+        "title": "Disney's Jungle Book",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-50045",
+          "SLUS-20075"
+        ]
+      },
+      {
+        "family": "inferred:Disney's Tarzan",
+        "title": "Disney's Tarzan",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-50350",
+          "SLPS-20160",
+          "SLPM-67520",
+          "SLUS-20076"
+        ]
+      },
+      {
+        "family": "inferred:Disney/Pixar Cars",
+        "title": "Disney/Pixar Cars",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-55025",
+          "SLES-55026",
+          "SLES-55030",
+          "SLUS-21637",
+          "SLES-55027",
+          "SLES-55028",
+          "SLES-55029",
+          "SLES-55536",
+          "SLUS-21883"
+        ]
+      },
+      {
+        "family": "inferred:Disney/Pixar The Incredibles",
+        "title": "Disney/Pixar The Incredibles",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-52821",
+          "SLES-53473",
+          "SLES-53474",
+          "SLKA-25316",
+          "SLUS-21217"
+        ]
+      },
+      {
+        "family": "inferred:Dokodemo Issyo",
+        "title": "Dokodemo Issyo",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SCPS-15047",
+          "SCPS-15067",
+          "SCPS-15081"
+        ]
+      },
+      {
+        "family": "inferred:Dora the Explorer",
+        "title": "Dora the Explorer",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-53697",
+          "SLUS-21173",
+          "SLUS-21717",
+          "SLUS-21796",
+          "SLUS-21923"
+        ]
+      },
+      {
+        "family": "inferred:Dragon Ball Z",
+        "title": "Dragon Ball Z",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-51233",
+          "SLPS-25174",
+          "SLUS-20591",
+          "SLES-51839",
+          "SLPS-25330",
+          "SLUS-20779",
+          "SLES-52730",
+          "SLES-53346",
+          "SLUS-20998",
+          "SLUS-21123",
+          "SLES-53200",
+          "SLUS-21227",
+          "SLES-54164",
+          "SLUS-21441",
+          "SLES-54945",
+          "SLUS-21678",
+          "SLES-55347",
+          "SLKA-25444",
+          "SLPS-25905",
+          "SLUS-21842",
+          "SLKA-25407",
+          "SLPS-25815",
+          "SLPM-68513",
+          "SLUS-20874"
+        ]
+      },
+      {
+        "family": "inferred:Dragon Quest",
+        "title": "Dragon Quest",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCAJ-20175",
+          "SLPM-66781",
+          "SLPM-66363"
+        ]
+      },
+      {
+        "family": "inferred:DreamWorks Shrek",
+        "title": "DreamWorks Shrek",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-53657",
+          "SLES-53751",
+          "SLES-53752",
+          "SLUS-21197",
+          "SLES-54553",
+          "SLUS-21392"
+        ]
+      },
+      {
+        "family": "inferred:Eureka Seven",
+        "title": "Eureka Seven",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLPS-25646",
+          "SLPS-25706",
+          "SLUS-21353",
+          "SLUS-21538"
+        ]
+      },
+      {
+        "family": "inferred:EyeToy Play",
+        "title": "EyeToy Play",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SCES-55038",
+          "SCES-55083"
+        ]
+      },
+      {
+        "family": "inferred:FIFA World Cup",
+        "title": "FIFA World Cup",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLAJ-25081",
+          "SLKA-25378",
+          "SLPM-66386",
+          "SLES-54061",
+          "SLES-54062",
+          "SLUS-21408"
+        ]
+      },
+      {
+        "family": "inferred:Fatal Fury",
+        "title": "Fatal Fury",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-55231",
+          "SLPS-25698",
+          "SLPS-25864",
+          "SLPS-25863"
+        ]
+      },
+      {
+        "family": "inferred:From TV Animation",
+        "title": "From TV Animation",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLKA-25208",
+          "SLKA-25299"
+        ]
+      },
+      {
+        "family": "inferred:Gaelic Games",
+        "title": "Gaelic Games",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SCES-53450",
+          "SCES-54637",
+          "SCES-54638"
+        ]
+      },
+      {
+        "family": "inferred:Gakuen Heaven",
+        "title": "Gakuen Heaven",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-62597",
+          "SLPS-25381"
+        ]
+      },
+      {
+        "family": "inferred:Get Backers",
+        "title": "Get Backers",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-62186",
+          "SLPM-62276",
+          "SLPM-62376"
+        ]
+      },
+      {
+        "family": "inferred:Get Backers Dakkanoku",
+        "title": "Get Backers Dakkanoku",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-62377",
+          "SLPM-62476"
+        ]
+      },
+      {
+        "family": "inferred:Gold Gashbell!!",
+        "title": "Gold Gashbell!!",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-25358",
+          "SLPS-25440",
+          "SLPS-25479"
+        ]
+      },
+      {
+        "family": "inferred:Gran Turismo",
+        "title": "Gran Turismo",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "PCPX-96624",
+          "SCPS-15010",
+          "SCPS-19208",
+          "SCPS-55005",
+          "PCPX-96634",
+          "SCES-50858",
+          "SCPS-55902",
+          "SCPS-55903"
+        ]
+      },
+      {
+        "family": "inferred:Gran Turismo Concept",
+        "title": "Gran Turismo Concept",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "PAPX-90508",
+          "PAPX-90509",
+          "SCKA-20029",
+          "SCPS-56005",
+          "SCUS-97219"
+        ]
+      },
+      {
+        "family": "inferred:Guilty Gear XX",
+        "title": "Guilty Gear XX",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SCAJ-20005",
+          "SLPS-25184",
+          "SLPM-66746",
+          "SLUS-21652"
+        ]
+      },
+      {
+        "family": "inferred:Guitar Hero",
+        "title": "Guitar Hero",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-54859",
+          "SLES-54860",
+          "SLES-55191",
+          "SLES-55200",
+          "SLKA-25434",
+          "SLPS-25889",
+          "SLUS-21740",
+          "SLES-55472",
+          "SLUS-21843",
+          "SLES-55518",
+          "SLUS-21867",
+          "SLUS-21924",
+          "SLES-55544",
+          "SLUS-21866"
+        ]
+      },
+      {
+        "family": "inferred:Hagane no Renkinjutsushi",
+        "title": "Hagane no Renkinjutsushi",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLPM-65473",
+          "SLPS-25402"
+        ]
+      },
+      {
+        "family": "inferred:Hajime no Ippo",
+        "title": "Hajime no Ippo",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SCPS-55030",
+          "SLPS-25439"
+        ]
+      },
+      {
+        "family": "inferred:Hello Kitty",
+        "title": "Hello Kitty",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-53509",
+          "SLKA-25279"
+        ]
+      },
+      {
+        "family": "inferred:Hiiro no Kakera",
+        "title": "Hiiro no Kakera",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-66454",
+          "SLPM-66687"
+        ]
+      },
+      {
+        "family": "inferred:Hot Wheels",
+        "title": "Hot Wheels",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-51063",
+          "SLES-52481",
+          "SLUS-20954",
+          "SLES-54971",
+          "SLUS-21628",
+          "SLUS-20412"
+        ]
+      },
+      {
+        "family": "inferred:Iris no Atelier",
+        "title": "Iris no Atelier",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65985",
+          "SLPM-66537",
+          "SLPM-66436",
+          "SLPM-66849"
+        ]
+      },
+      {
+        "family": "inferred:Ishikura Noboru Kudan no Igo Kouza",
+        "title": "Ishikura Noboru Kudan no Igo Kouza",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-62338",
+          "SLPM-62386",
+          "SLPM-62421"
+        ]
+      },
+      {
+        "family": "inferred:J-League Pro Soccer Club",
+        "title": "J-League Pro Soccer Club",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65227",
+          "SLPM-65530"
+        ]
+      },
+      {
+        "family": "inferred:JoJo no Kimyou na Bouken",
+        "title": "JoJo no Kimyou na Bouken",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65140",
+          "SLPM-66853",
+          "SLPS-25686"
+        ]
+      },
+      {
+        "family": "inferred:Kamen Rider",
+        "title": "Kamen Rider",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLPS-25302",
+          "SLPS-25944"
+        ]
+      },
+      {
+        "family": "inferred:Karaoke Revolution",
+        "title": "Karaoke Revolution",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-62369",
+          "SLPM-62379",
+          "SLPM-62380",
+          "SLPM-62381",
+          "SLPM-62382",
+          "SLPM-62383",
+          "SLPM-62414",
+          "SLPM-62450",
+          "SLPM-62451",
+          "SLPM-62454",
+          "SLPM-62455",
+          "SLPM-62456",
+          "SLPM-62457",
+          "SLPM-62479",
+          "SLPM-62492"
+        ]
+      },
+      {
+        "family": "inferred:Karaoke Revolution Presents",
+        "title": "Karaoke Revolution Presents",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLUS-21540",
+          "SLUS-21719"
+        ]
+      },
+      {
+        "family": "inferred:Katekyoo Hitman Reborn! Dream Hyper Battle",
+        "title": "Katekyoo Hitman Reborn! Dream Hyper Battle",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-25806",
+          "SLPS-25910",
+          "SLPS-25904"
+        ]
+      },
+      {
+        "family": "inferred:Keroro Gunsou",
+        "title": "Keroro Gunsou",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-25399",
+          "SLPS-25568",
+          "SLPS-25575"
+        ]
+      },
+      {
+        "family": "inferred:Kidou Senshi Gundam",
+        "title": "Kidou Senshi Gundam",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLPS-25062",
+          "SLPS-25914",
+          "SLPS-25959"
+        ]
+      },
+      {
+        "family": "inferred:King of Colosseum",
+        "title": "King of Colosseum",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLPM-65176",
+          "SLPM-65206"
+        ]
+      },
+      {
+        "family": "inferred:King of Fighters, The",
+        "title": "King of Fighters, The",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-25525",
+          "SLPS-25636",
+          "SLPS-25661",
+          "SLPS-25865",
+          "SLPS-25765",
+          "SLPS-25938"
+        ]
+      },
+      {
+        "family": "inferred:Kita he",
+        "title": "Kita he",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65404",
+          "SLPM-65435",
+          "SLPM-65734",
+          "SLPM-65569"
+        ]
+      },
+      {
+        "family": "inferred:Konami Kids Playground",
+        "title": "Konami Kids Playground",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLUS-21556",
+          "SLUS-21557",
+          "SLUS-21558",
+          "SLUS-21559"
+        ]
+      },
+      {
+        "family": "inferred:Kurogane no Houkou",
+        "title": "Kurogane no Houkou",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLPM-62042",
+          "SLPM-62406",
+          "SLPM-62678",
+          "SLPM-66321"
+        ]
+      },
+      {
+        "family": "inferred:Last Escort",
+        "title": "Last Escort",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLPS-25591",
+          "SLPS-25673"
+        ]
+      },
+      {
+        "family": "inferred:Legacy of Kain",
+        "title": "Legacy of Kain",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-52150",
+          "SLUS-20773",
+          "SLUS-20165"
+        ]
+      },
+      {
+        "family": "inferred:London Racer",
+        "title": "London Racer",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-53536",
+          "SLES-53654"
+        ]
+      },
+      {
+        "family": "inferred:Lord of the Rings, The",
+        "title": "Lord of the Rings, The",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65212",
+          "SLPM-67005",
+          "SLPS-29003",
+          "SLPS-29004",
+          "SLPM-65503",
+          "SLPM-65727",
+          "SLPM-65846"
+        ]
+      },
+      {
+        "family": "inferred:Love Songs",
+        "title": "Love Songs",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65017",
+          "SLPM-65698"
+        ]
+      },
+      {
+        "family": "inferred:Magic Teacher Negima",
+        "title": "Magic Teacher Negima",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65870",
+          "SLPM-66258",
+          "SLPM-65871"
+        ]
+      },
+      {
+        "family": "inferred:Magical Sports",
+        "title": "Magical Sports",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-20036",
+          "SLPS-20244",
+          "SLPS-20037",
+          "SLPS-20243",
+          "SLPS-20097",
+          "SLPS-20098",
+          "SLPS-20111",
+          "SLPS-20173"
+        ]
+      },
+      {
+        "family": "inferred:Magna Carta",
+        "title": "Magna Carta",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCKA-20043",
+          "SLES-53483",
+          "SLUS-21221",
+          "SLES-53767",
+          "SLES-53949"
+        ]
+      },
+      {
+        "family": "inferred:Mahjong Haoh",
+        "title": "Mahjong Haoh",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-62629",
+          "SLPM-62772",
+          "SLPM-62755"
+        ]
+      },
+      {
+        "family": "inferred:Mahjong Haou",
+        "title": "Mahjong Haou",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-20134",
+          "SLPS-20327",
+          "SLPS-20224",
+          "SLPS-20313"
+        ]
+      },
+      {
+        "family": "inferred:Mahjong Party",
+        "title": "Mahjong Party",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCAJ-10010",
+          "SLPS-20349"
+        ]
+      },
+      {
+        "family": "inferred:Metal Saga",
+        "title": "Metal Saga",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65868",
+          "SLPM-74226"
+        ]
+      },
+      {
+        "family": "inferred:Minority Report",
+        "title": "Minority Report",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-51230",
+          "SLES-51318",
+          "SLUS-20331",
+          "SLES-51317"
+        ]
+      },
+      {
+        "family": "inferred:Mobile Suit Gundam",
+        "title": "Mobile Suit Gundam",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-51271",
+          "SLUS-20382",
+          "SLKA-25035",
+          "SLPS-25122",
+          "SLPS-25123",
+          "SLPS-25486",
+          "SLKA-25132",
+          "SLUS-20740",
+          "SLKA-25165",
+          "SLPS-25718",
+          "SLKA-25268",
+          "SLPS-25419",
+          "SLKA-25364",
+          "SLPS-25627",
+          "SLPS-25478",
+          "SLUS-20175",
+          "SLUS-20233",
+          "SLUS-20821"
+        ]
+      },
+      {
+        "family": "inferred:Monster Jam",
+        "title": "Monster Jam",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-50908",
+          "SLUS-20186",
+          "SLES-55332",
+          "SLUS-21807"
+        ]
+      },
+      {
+        "family": "inferred:Monster Trux Extreme",
+        "title": "Monster Trux Extreme",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-52750",
+          "SLES-53005"
+        ]
+      },
+      {
+        "family": "inferred:Motion Gravure Series",
+        "title": "Motion Gravure Series",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-25240",
+          "SLPS-25241",
+          "SLPS-25242",
+          "SLPS-25243"
+        ]
+      },
+      {
+        "family": "inferred:Myth Makers",
+        "title": "Myth Makers",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-52241",
+          "SLES-54112",
+          "SLES-53452"
+        ]
+      },
+      {
+        "family": "inferred:Naruto Shippuuden",
+        "title": "Naruto Shippuuden",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-55605",
+          "SLPS-25837"
+        ]
+      },
+      {
+        "family": "inferred:Naval Ops",
+        "title": "Naval Ops",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-51893",
+          "SLUS-20663",
+          "SLES-52471",
+          "SLUS-20871"
+        ]
+      },
+      {
+        "family": "inferred:Need for Speed",
+        "title": "Need for Speed",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-50731",
+          "SLPM-65181",
+          "SLPM-67527",
+          "SLUS-20362",
+          "SLES-51967",
+          "SLKA-25136",
+          "SLKA-25192",
+          "SLKA-90503",
+          "SLPM-65471",
+          "SLPM-65614",
+          "SLUS-20811",
+          "SLES-52725",
+          "SLKA-25241",
+          "SLPM-65766",
+          "SLPM-66960",
+          "SLUS-21065",
+          "SLES-55002",
+          "SLES-55003",
+          "SLES-55004",
+          "SLES-55005",
+          "SLES-55006",
+          "SLKA-25411",
+          "SLPM-55151",
+          "SLPM-66932",
+          "SLUS-21658",
+          "SLES-55349",
+          "SLES-55350",
+          "SLES-55351",
+          "SLES-55352",
+          "SLES-55353",
+          "SLKA-25446",
+          "SLPM-55127",
+          "SLPM-55244",
+          "SLUS-21801"
+        ]
+      },
+      {
+        "family": "inferred:New Century GPX Cyber Formula",
+        "title": "New Century GPX Cyber Formula",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-25307",
+          "SLPS-25541",
+          "SLPS-25695"
+        ]
+      },
+      {
+        "family": "inferred:Nickelodeon Avatar",
+        "title": "Nickelodeon Avatar",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-54188",
+          "SLES-54840",
+          "SLES-55263",
+          "SLES-55264"
+        ]
+      },
+      {
+        "family": "inferred:Nickelodeon Bob Esponja",
+        "title": "Nickelodeon Bob Esponja",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-52986",
+          "SLES-53498"
+        ]
+      },
+      {
+        "family": "inferred:Nickelodeon Bob L'éponge",
+        "title": "Nickelodeon Bob L'éponge",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-53495",
+          "SLES-53623"
+        ]
+      },
+      {
+        "family": "inferred:Nickelodeon SpongeBob",
+        "title": "Nickelodeon SpongeBob",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-52897",
+          "SLES-53496"
+        ]
+      },
+      {
+        "family": "inferred:Nickelodeon SpongeBob Schwammkopf",
+        "title": "Nickelodeon SpongeBob Schwammkopf",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-51970",
+          "SLES-52985",
+          "SLES-53497"
+        ]
+      },
+      {
+        "family": "inferred:Nickelodeon SpongeBob SquarePants",
+        "title": "Nickelodeon SpongeBob SquarePants",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCKA-20098",
+          "SLES-54400",
+          "SLUS-21391",
+          "SLES-51285",
+          "SLUS-20425",
+          "SLES-51968",
+          "SLUS-20680",
+          "SLES-52896",
+          "SLES-52906",
+          "SLES-52907",
+          "SLES-53494",
+          "SLKA-25319",
+          "SLUS-21252",
+          "SLES-53499"
+        ]
+      },
+      {
+        "family": "inferred:Nickelodeon SpongeBob and Friends",
+        "title": "Nickelodeon SpongeBob and Friends",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-54521",
+          "SLES-54522",
+          "SLES-54991"
+        ]
+      },
+      {
+        "family": "inferred:Nihon Sumou Kyoukai Kounin",
+        "title": "Nihon Sumou Kyoukai Kounin",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-62099",
+          "SLPM-62194"
+        ]
+      },
+      {
+        "family": "inferred:Nobunaga no Yabou",
+        "title": "Nobunaga no Yabou",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-55268",
+          "SLPM-62148",
+          "SLPM-62225",
+          "SLPM-62473",
+          "SLPM-62642",
+          "SLPM-62681",
+          "SLPM-62283",
+          "SLPM-62520",
+          "SLPM-62759",
+          "SLPM-65455",
+          "SLPM-66425",
+          "SLPM-66760",
+          "SLPM-65556",
+          "SLPM-65864",
+          "SLPM-66528",
+          "SLPM-74225",
+          "SLPM-74263",
+          "SLPM-66279",
+          "SLPM-66947",
+          "SLPM-66948",
+          "SLPM-74265",
+          "SLPM-74281",
+          "SLPM-66954"
+        ]
+      },
+      {
+        "family": "inferred:Nobunaga no Yabou Online",
+        "title": "Nobunaga no Yabou Online",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65783",
+          "SLPM-66539"
+        ]
+      },
+      {
+        "family": "inferred:Nobunaga's Ambition",
+        "title": "Nobunaga's Ambition",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLUS-21721",
+          "SLUS-21868"
+        ]
+      },
+      {
+        "family": "inferred:One Piece",
+        "title": "One Piece",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-52731",
+          "SLES-53579",
+          "SLUS-20975",
+          "SLES-54165",
+          "SLKA-25388",
+          "SLUS-21435",
+          "SLPS-25315",
+          "SLPS-25382",
+          "SLPS-25473"
+        ]
+      },
+      {
+        "family": "inferred:Pachi-Slot Club Collection",
+        "title": "Pachi-Slot Club Collection",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-20427",
+          "SLPS-20490"
+        ]
+      },
+      {
+        "family": "inferred:Pachi-Slot Kanzen Kouryaku",
+        "title": "Pachi-Slot Kanzen Kouryaku",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-62220",
+          "SLPM-62739"
+        ]
+      },
+      {
+        "family": "inferred:Pinball Hall of Fame",
+        "title": "Pinball Hall of Fame",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLUS-21038",
+          "SLUS-21589"
+        ]
+      },
+      {
+        "family": "inferred:Pippa Funnell",
+        "title": "Pippa Funnell",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-54393",
+          "SLES-54994"
+        ]
+      },
+      {
+        "family": "inferred:Pirates of the Caribbean",
+        "title": "Pirates of the Caribbean",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-54083",
+          "SLES-54237",
+          "SLUS-21110",
+          "SLES-54179",
+          "SLPM-66800",
+          "SLUS-21545",
+          "SLUS-21565"
+        ]
+      },
+      {
+        "family": "inferred:PlayStation BB Navigator",
+        "title": "PlayStation BB Navigator",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SCPN-60130",
+          "SCPN-60140",
+          "SCPN-60150",
+          "SCPN-60160"
+        ]
+      },
+      {
+        "family": "inferred:Power Rangers",
+        "title": "Power Rangers",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-52886",
+          "SLES-52887",
+          "SLUS-20944",
+          "SLES-54835",
+          "SLUS-21679"
+        ]
+      },
+      {
+        "family": "inferred:Prince of Tennis",
+        "title": "Prince of Tennis",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65370",
+          "SLPM-65397",
+          "SLPM-65398",
+          "SLPM-65509",
+          "SLPM-65510",
+          "SLPM-65679",
+          "SLPM-65680",
+          "SLPM-66596",
+          "SLPM-66608",
+          "SLPM-66610"
+        ]
+      },
+      {
+        "family": "inferred:Raging Bless",
+        "title": "Raging Bless",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCPS-51011",
+          "SLPM-64521"
+        ]
+      },
+      {
+        "family": "inferred:Ratchet & Clank",
+        "title": "Ratchet & Clank",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCES-55019",
+          "SCUS-97615",
+          "SLES-55019",
+          "SCKA-20011",
+          "SCKA-20046",
+          "SCKA-20037",
+          "SCKA-20060",
+          "SCKA-20108",
+          "SCKA-20120",
+          "SCUS-97353",
+          "SCUS-97518"
+        ]
+      },
+      {
+        "family": "inferred:Resident Evil",
+        "title": "Resident Evil",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCES-50987",
+          "SLES-51589",
+          "SLUS-20765",
+          "SLES-50306",
+          "SLUS-20184",
+          "SLES-51448",
+          "SLUS-20669"
+        ]
+      },
+      {
+        "family": "inferred:Return to Castle Wolfenstein",
+        "title": "Return to Castle Wolfenstein",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-51449",
+          "SLES-51522",
+          "SLUS-20297",
+          "SLES-51450"
+        ]
+      },
+      {
+        "family": "inferred:Rock Band",
+        "title": "Rock Band",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-55344",
+          "SLES-55458",
+          "SLUS-21758"
+        ]
+      },
+      {
+        "family": "inferred:Rock Band Track Pack",
+        "title": "Rock Band Track Pack",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLUS-21830",
+          "SLUS-21848",
+          "SLUS-21876"
+        ]
+      },
+      {
+        "family": "inferred:Roger Lemerre",
+        "title": "Roger Lemerre",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-50547",
+          "SLES-51024",
+          "SLES-51459",
+          "SLES-52695"
+        ]
+      },
+      {
+        "family": "inferred:Roommate Asami",
+        "title": "Roommate Asami",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65468",
+          "SLPS-25130"
+        ]
+      },
+      {
+        "family": "inferred:SD Gundam",
+        "title": "SD Gundam",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCKA-20139",
+          "SLKA-25081",
+          "SLKA-25170",
+          "SLKA-25413",
+          "SLPS-25941"
+        ]
+      },
+      {
+        "family": "inferred:SD Gundam G Generation",
+        "title": "SD Gundam G Generation",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-25492",
+          "SLPS-25531"
+        ]
+      },
+      {
+        "family": "inferred:Saint Seiya",
+        "title": "Saint Seiya",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-53201",
+          "SLES-54162",
+          "SLPS-25744"
+        ]
+      },
+      {
+        "family": "inferred:Sakura Taisen",
+        "title": "Sakura Taisen",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCCS-60001",
+          "SLAJ-35003",
+          "SLPM-67003",
+          "SLAJ-25034",
+          "SLPM-65515"
+        ]
+      },
+      {
+        "family": "inferred:Sakura Taisen V",
+        "title": "Sakura Taisen V",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SCAJ-25045",
+          "SLPM-65531",
+          "SLKA-25207",
+          "SLPM-66208",
+          "SLPM-67009"
+        ]
+      },
+      {
+        "family": "inferred:Samurai Spirits",
+        "title": "Samurai Spirits",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLKA-25433",
+          "SLPS-25559"
+        ]
+      },
+      {
+        "family": "inferred:Shaman King",
+        "title": "Shaman King",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLPS-25359",
+          "SLUS-20953"
+        ]
+      },
+      {
+        "family": "inferred:Shin Megami Tensei",
+        "title": "Shin Megami Tensei",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-53363",
+          "SLES-53458",
+          "SLUS-20974",
+          "SLES-54555",
+          "SLUS-21152",
+          "SLES-54629",
+          "SLUS-21431",
+          "SLUS-20911",
+          "SLUS-21845",
+          "SLUS-21897"
+        ]
+      },
+      {
+        "family": "inferred:Shinkyoku Soukai Polyphonica",
+        "title": "Shinkyoku Soukai Polyphonica",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-55095",
+          "SLPM-55270"
+        ]
+      },
+      {
+        "family": "inferred:Shinseiki Evangelion",
+        "title": "Shinseiki Evangelion",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLPM-65334",
+          "SLPM-65340",
+          "SLPM-66097",
+          "SLPM-65867",
+          "SLPM-66315"
+        ]
+      },
+      {
+        "family": "inferred:Silent Hill",
+        "title": "Silent Hill",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-55147",
+          "SLKA-25422",
+          "SLUS-21731",
+          "SLES-55569",
+          "SLKA-25465",
+          "SLPM-55231",
+          "SLUS-21899"
+        ]
+      },
+      {
+        "family": "inferred:Star Trek",
+        "title": "Star Trek",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-52209",
+          "SLUS-20112",
+          "SLES-54554",
+          "SLUS-21396",
+          "SLES-55048",
+          "SLUS-21630"
+        ]
+      },
+      {
+        "family": "inferred:Strawberry Shortcake",
+        "title": "Strawberry Shortcake",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-54309",
+          "SLUS-21497"
+        ]
+      },
+      {
+        "family": "inferred:Super Robot Taisen",
+        "title": "Super Robot Taisen",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCAJ-20185",
+          "SLPS-25750"
+        ]
+      },
+      {
+        "family": "inferred:Super Robot Wars",
+        "title": "Super Robot Wars",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SCAJ-20022",
+          "SLPS-25227",
+          "SLPS-25228",
+          "SLPS-25296",
+          "SLPS-25537",
+          "SLPS-73238",
+          "SLPS-73416"
+        ]
+      },
+      {
+        "family": "inferred:Suzuki TT Superbikes",
+        "title": "Suzuki TT Superbikes",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLUS-20912",
+          "SLUS-21863"
+        ]
+      },
+      {
+        "family": "inferred:Syphon Filter",
+        "title": "Syphon Filter",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SCES-52033",
+          "SCKA-20032",
+          "SCUS-97264",
+          "SCUS-97520",
+          "SCES-54794",
+          "SCUS-97362",
+          "SCUS-97397",
+          "SCUS-97584"
+        ]
+      },
+      {
+        "family": "inferred:TVware Jouhou Kakumei Series",
+        "title": "TVware Jouhou Kakumei Series",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-20094",
+          "SLPS-20114",
+          "SLPS-20115",
+          "SLPS-20116",
+          "SLPS-20145",
+          "SLPS-20146",
+          "SLPS-20147",
+          "SLPS-25067"
+        ]
+      },
+      {
+        "family": "inferred:Taiko no Tatsujin",
+        "title": "Taiko no Tatsujin",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SCAJ-10003",
+          "SLPS-20272",
+          "SCAJ-10006",
+          "SLPS-20320",
+          "SLPS-20321",
+          "SLPS-73110",
+          "SCAJ-10007",
+          "SLPS-20330",
+          "SLPS-73111",
+          "SCAJ-10008",
+          "SLPS-20382",
+          "SLPS-20383",
+          "SCAJ-10011",
+          "SLPS-20399",
+          "SLPS-20400",
+          "SLPS-73107",
+          "SCAJ-10013",
+          "SLPS-20424",
+          "SLPS-20425",
+          "SCAJ-10014",
+          "SLPS-20450",
+          "SLPS-20451",
+          "SCAJ-10015",
+          "SLPS-20485",
+          "SLPS-20486"
+        ]
+      },
+      {
+        "family": "inferred:Taito Memories",
+        "title": "Taito Memories",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLKA-25305",
+          "SLPM-66057",
+          "SLPM-66402",
+          "SLPM-66775",
+          "TCPS-10115",
+          "TCPS-10124",
+          "TCPS-10160"
+        ]
+      },
+      {
+        "family": "inferred:Taito MemoriesII",
+        "title": "Taito MemoriesII",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-66649",
+          "SLPM-66713"
+        ]
+      },
+      {
+        "family": "inferred:Tantei Jinguuji Saburou",
+        "title": "Tantei Jinguuji Saburou",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65173",
+          "SLPM-65576",
+          "SLPM-65944"
+        ]
+      },
+      {
+        "family": "inferred:Teenage Mutant Ninja Turtles",
+        "title": "Teenage Mutant Ninja Turtles",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-53127",
+          "SLES-55565",
+          "SLUS-21904"
+        ]
+      },
+      {
+        "family": "inferred:Tennis no Oji-Sama",
+        "title": "Tennis no Oji-Sama",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-62357",
+          "SLPM-62358",
+          "SLPM-62359",
+          "SLPM-62435",
+          "SLPM-65452",
+          "SLPM-65453",
+          "SLPM-65756",
+          "SLPM-66014",
+          "SLPM-65817",
+          "SLPM-65818",
+          "SLPM-65819",
+          "SLPM-65820",
+          "SLPM-66010",
+          "SLPM-66011",
+          "SLPM-66012",
+          "SLPM-66013",
+          "SLPM-66219"
+        ]
+      },
+      {
+        "family": "inferred:Tennis no Oujisama",
+        "title": "Tennis no Oujisama",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65371",
+          "SLPM-66832"
+        ]
+      },
+      {
+        "family": "inferred:Test Drive",
+        "title": "Test Drive",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLUS-20177",
+          "SLUS-20910"
+        ]
+      },
+      {
+        "family": "inferred:The Adventures of Jimmy Neutron",
+        "title": "The Adventures of Jimmy Neutron",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-51932",
+          "SLES-52700",
+          "SLUS-20887"
+        ]
+      },
+      {
+        "family": "inferred:The Chronicles of Narnia",
+        "title": "The Chronicles of Narnia",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-53706",
+          "SLES-53709",
+          "SLES-53712",
+          "SLKA-25382",
+          "SLUS-21082",
+          "SLES-55143",
+          "SLES-55144",
+          "SLES-55145",
+          "SLES-55146",
+          "SLUS-21756"
+        ]
+      },
+      {
+        "family": "inferred:The Fairly OddParents",
+        "title": "The Fairly OddParents",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-52857",
+          "SLUS-20880",
+          "SLUS-20661"
+        ]
+      },
+      {
+        "family": "inferred:The Godfather",
+        "title": "The Godfather",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLUS-21385",
+          "SLUS-21406"
+        ]
+      },
+      {
+        "family": "inferred:The History Channel",
+        "title": "The History Channel",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-54708",
+          "SLES-55102",
+          "SLUS-21712",
+          "SLUS-21474"
+        ]
+      },
+      {
+        "family": "inferred:The King of Fighters",
+        "title": "The King of Fighters",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-53999",
+          "SLES-54255"
+        ]
+      },
+      {
+        "family": "inferred:The Legend of Spyro",
+        "title": "The Legend of Spyro",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-54359",
+          "SLUS-21372",
+          "SLES-54815",
+          "SLES-54816",
+          "SLUS-21607",
+          "SLES-55163",
+          "SLES-55227",
+          "SLES-55265",
+          "SLUS-21820"
+        ]
+      },
+      {
+        "family": "inferred:The Lord of the Rings",
+        "title": "The Lord of the Rings",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLAJ-25019",
+          "SLES-52017",
+          "SLES-52018",
+          "SLES-52019",
+          "SLES-52020",
+          "SLES-52021",
+          "SLKA-25098",
+          "SLKA-25228",
+          "SLUS-20770",
+          "SLAJ-25051",
+          "SLES-52801",
+          "SLES-52802",
+          "SLES-52803",
+          "SLES-52804",
+          "SLES-52805",
+          "SLKA-25237",
+          "SLUS-21027",
+          "SLES-50988",
+          "SLUS-20520",
+          "SLES-51252",
+          "SLES-51253",
+          "SLES-51254",
+          "SLES-51255",
+          "SLES-51256",
+          "SLPM-67546",
+          "SLUS-20578",
+          "SLES-55574",
+          "SLUS-21915"
+        ]
+      },
+      {
+        "family": "inferred:Tim Burton's The Nightmare Before Christmas",
+        "title": "Tim Burton's The Nightmare Before Christmas",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-53192",
+          "SLPM-65739",
+          "SLPM-66131",
+          "SLPM-66697",
+          "SLUS-20860"
+        ]
+      },
+      {
+        "family": "inferred:Tom Clancy's Ghost Recon",
+        "title": "Tom Clancy's Ghost Recon",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-51976",
+          "SLPM-65619",
+          "SLUS-20820",
+          "SLES-53763",
+          "SLKA-25344",
+          "SLPM-66461",
+          "SLPM-66808",
+          "SLUS-21422"
+        ]
+      },
+      {
+        "family": "inferred:Tom Clancy's Splinter Cell",
+        "title": "Tom Clancy's Splinter Cell",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-52149",
+          "SLKA-25180",
+          "SLPM-65815",
+          "SLUS-20958",
+          "SLES-53007",
+          "SLES-53287",
+          "SLPM-66130",
+          "SLPM-66496",
+          "SLUS-21137",
+          "SLES-53826",
+          "SLES-53827",
+          "SLPM-66672",
+          "SLPM-66868",
+          "SLUS-21356"
+        ]
+      },
+      {
+        "family": "inferred:Tomb Raider",
+        "title": "Tomb Raider",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCAJ-20044",
+          "SLKA-25073",
+          "SLPS-25246",
+          "SLUS-20467",
+          "SLES-51227",
+          "SLES-53908",
+          "SLPM-66558",
+          "SLPS-25945",
+          "SLUS-21203",
+          "SLES-54674",
+          "SLPS-25856",
+          "SLPS-25946",
+          "SLUS-21555",
+          "SLES-55442",
+          "SLPS-25927",
+          "SLPS-25986",
+          "SLUS-21858"
+        ]
+      },
+      {
+        "family": "inferred:Top Gun",
+        "title": "Top Gun",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-50568",
+          "SLUS-20211",
+          "SLPM-62182"
+        ]
+      },
+      {
+        "family": "inferred:Train Simulator",
+        "title": "Train Simulator",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-65386",
+          "SLPM-67006",
+          "SLPM-67007"
+        ]
+      },
+      {
+        "family": "inferred:True Crime",
+        "title": "True Crime",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-51753",
+          "SLES-51754",
+          "SLPM-65729",
+          "SLPM-66098",
+          "SLUS-20550",
+          "SLES-53616",
+          "SLES-53617",
+          "SLES-53618",
+          "SLPM-66473",
+          "SLPM-74243",
+          "SLUS-21106"
+        ]
+      },
+      {
+        "family": "inferred:Victorious Boxers",
+        "title": "Victorious Boxers",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLPS-25128",
+          "SLPS-25129",
+          "SLPS-73401",
+          "SLUS-20282"
+        ]
+      },
+      {
+        "family": "inferred:Viewtiful Joe",
+        "title": "Viewtiful Joe",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLKA-25220",
+          "SLKA-25452",
+          "SLPM-65699"
+        ]
+      },
+      {
+        "family": "inferred:Virtua Fighter",
+        "title": "Virtua Fighter",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLAJ-25042",
+          "SLES-51699",
+          "SLPM-68008",
+          "SLPM-68018"
+        ]
+      },
+      {
+        "family": "inferred:Virtual View",
+        "title": "Virtual View",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-25258",
+          "SLPS-25259",
+          "SLPS-25260"
+        ]
+      },
+      {
+        "family": "inferred:Wer wird Millionär",
+        "title": "Wer wird Millionär",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-50497",
+          "SLES-54805"
+        ]
+      },
+      {
+        "family": "inferred:Who Wants to Be a Millionaire",
+        "title": "Who Wants to Be a Millionaire",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLES-50495",
+          "SLES-54199"
+        ]
+      },
+      {
+        "family": "inferred:Wild ARMs",
+        "title": "Wild ARMs",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SCAJ-20123",
+          "SCPS-15091",
+          "SCPS-15092",
+          "SCPS-19313",
+          "SCPS-19322",
+          "SCPS-19323",
+          "SCAJ-30002",
+          "SCPS-17002",
+          "SCPS-19251",
+          "SCPS-19253",
+          "SLUS-20937"
+        ]
+      },
+      {
+        "family": "inferred:World Destruction League",
+        "title": "World Destruction League",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-50170",
+          "SLUS-20005",
+          "SLES-50262",
+          "SLUS-20007"
+        ]
+      },
+      {
+        "family": "inferred:World of Outlaws",
+        "title": "World of Outlaws",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-51509",
+          "SLUS-20283"
+        ]
+      },
+      {
+        "family": "inferred:Yamasa Digi World SP",
+        "title": "Yamasa Digi World SP",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-20289",
+          "SLPS-20357",
+          "SLPS-20315",
+          "SLPS-20459",
+          "SLPS-20475"
+        ]
+      },
+      {
+        "family": "inferred:Yanya Caballista",
+        "title": "Yanya Caballista",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLPM-62051",
+          "SLUS-20278"
+        ]
+      },
+      {
+        "family": "inferred:Yu-Gi-Oh! GX",
+        "title": "Yu-Gi-Oh! GX",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-55017",
+          "SLUS-21683"
+        ]
+      },
+      {
+        "family": "inferred:Zero Pilot",
+        "title": "Zero Pilot",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPM-66459",
+          "SLPS-25312"
+        ]
+      },
+      {
+        "family": "inferred:Zero no Tsukaima",
+        "title": "Zero no Tsukaima",
+        "reason": "subtitle family needs complete date metadata",
+        "serials": [
+          "SLPS-20502",
+          "SLPS-20507"
+        ]
+      },
+      {
+        "family": "inferred:Zone of the Enders",
+        "title": "Zone of the Enders",
+        "reason": "regional equivalence or mixed numbered/subtitle series needs explicit metadata",
+        "serials": [
+          "SLES-51113",
+          "SLKA-25470",
+          "SLKA-25066",
+          "SLUS-20545"
+        ]
+      },
+      {
+        "family": "star-wars-other",
+        "title": "Star Wars - The Force Unleashed",
+        "reason": "missing/conflicting chronology or developer metadata",
+        "serials": [
+          "SLES-54658",
+          "SLES-54659",
+          "SLPS-25888",
+          "SLUS-21614"
+        ]
+      },
+      {
+        "family": "star-wars-other",
+        "title": "Star Wars",
+        "reason": "release dates do not establish a unique order",
+        "serials": [
+          "SLES-50829",
+          "SLES-50830"
+        ]
+      },
+      {
+        "family": "inferred:Clever Kids",
+        "title": "Clever Kids",
+        "reason": "release dates do not establish a unique order",
+        "serials": [
+          "SLES-54890",
+          "SLES-54891"
+        ]
+      }
+    ],
+    "coverage_limit": "Every eligible known serial receives a default. A normalised title is not proof that franchise chronology is known; unsupported identities retain the existing emulator fallback."
+  }
+}

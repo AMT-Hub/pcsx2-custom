@@ -1,0 +1,10 @@
+{
+  "pcsx2/GameList.h": "67ac947539300b453cdae460d3cd912259e8af37ad9f8b0989d6d970ce7dacff",
+  "pcsx2/GameList.cpp": "c56981ba3b8cd9354b41b5ccbfb95f0900b4adedbf70bca45993f629e7ae3433",
+  "pcsx2-qt/Settings/GameSummaryWidget.cpp": "2206e4f904cd093c713bc32acd8ecda4cafe8b8d3a68fb8d3ac497b8efb13f0d",
+  "pcsx2-qt/GameList/GameListModel.cpp": "d0ea75d4079836fc4328659ed4f5acc4f70b479b829dd06b0a7bde1ceaeb2b81",
+  "pcsx2-qt/MainWindow.cpp": "566e47a57130b5c49836f64aeb5b8a3750a9a58d1df3eebc264736a00bd8f923",
+  "pcsx2-qt/MainWindow.h": "7051d1998f10a253e8c9ca89c488e9a4084fecfb05eb6eb30b1bf303095aa5d6",
+  "pcsx2-qt/GameList/GameListWidget.cpp": "973650184afda84d29b95515cc7ecdb9921833f57ae04e0c8733a4237922ffde",
+  "pcsx2-qt/GameList/GameListWidget.h": "f5ac09aeb0db4bf078b1655587d00dab51345df8826dea0b8a02c1da989e6075"
+}

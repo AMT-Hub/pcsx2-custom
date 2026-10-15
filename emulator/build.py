@@ -13,6 +13,8 @@ import zipfile
 ROOT = Path(__file__).resolve().parent
 WORK = ROOT / 'work'
 SOURCE = WORK / 'pcsx2'
+SORTING = ROOT if (ROOT / 'apply-automatic-sorting.py').is_file() else ROOT.parent / 'experiments/automatic-sorting'
+SORTING_TESTS = ROOT / 'automatic-tests' if (ROOT / 'automatic-tests').is_dir() else SORTING / 'tests'
 COMMIT = 'e35cb2c87590bc3d127b3bb4dd222b01e598c9a4'
 DEPS_SHA = 'a3133c7841e8fbdab6f4d1d5ad8efec31fb1ecda95ffed39f4d1f36bb7eb0007'
 FFMPEG_SHA = 'c4f8a5093997445fbb08c694be289b36eed660e46e02078d9371a2481453ae5a'
@@ -222,11 +224,13 @@ def main():
         updater.write_text(original.replace(needle, needle + '\n\treturn false; // Custom build: updates are supplied by the component installer.\n'), encoding='utf-8', newline='\n')
         run([sys.executable, ROOT / 'apply-shader-patch.py', SOURCE, shader_source])
         run([sys.executable, ROOT / 'apply-sorting-patch.py', SOURCE])
+        run([sys.executable, SORTING / 'apply-automatic-sorting.py', SOURCE])
         files = list(json.loads((ROOT / 'autobios-test/upstream-sha256.json').read_text()))
         files += ['pcsx2/AutoBios.h', 'pcsx2/AutoBiosPolicy.h', 'pcsx2/AutoBiosIdentity.h', 'pcsx2-qt/AutoUpdaterDialog.cpp']
         files += ['pcsx2-qt/MainWindow.cpp', 'pcsx2-qt/DisplayWidget.cpp', 'pcsx2-qt/QtHost.cpp', 'pcsx2-qt/ShaderPrototype.h']
         files += ['pcsx2/GameList.h', 'pcsx2/GameList.cpp', 'pcsx2-qt/Settings/GameSummaryWidget.cpp', 'pcsx2-qt/MainWindow.h', 'pcsx2-qt/GameList/GameListWidget.h', 'pcsx2-qt/GameList/GameListWidget.cpp']
         save_shader_stamp(shader_source)
+        files += ['pcsx2/AutoSortTitle.h', 'pcsx2-qt/GameList/GameListModel.cpp', 'bin/resources/automatic-sorting.ini']
         patch_stamp.write_text(json.dumps({name: digest(SOURCE / name) for name in files}, indent=2))
     else:
         for name, expected in json.loads(patch_stamp.read_text()).items():
@@ -237,6 +241,9 @@ def main():
     run([compiler, '/nologo', '/std:c++17', '/EHsc', ROOT / 'autobios-test/tests/policy.cpp',
          '/Fe:' + str(WORK / 'policy-test.exe'), '/Fo:' + str(WORK / 'policy-test.obj')])
     run([WORK / 'policy-test.exe'])
+    run([compiler, '/nologo', '/std:c++17', '/EHsc', SORTING_TESTS / 'policy.cpp',
+         '/Fe:' + str(WORK / 'auto-sort-policy.exe'), '/Fo:' + str(WORK / 'auto-sort-policy.obj')])
+    run([WORK / 'auto-sort-policy.exe'])
     archive = WORK / 'windows-deps.7z'
     download(RELEASES + 'latest-windows-dependencies/pcsx2-windows-dependencies.7z', archive, DEPS_SHA)
     deps_stamp = WORK / 'deps-ready.txt'
@@ -300,6 +307,8 @@ def main():
     metadata = {'nightly_port': assemble.VERSION + '-candidate1', 'pcsx2_commit': COMMIT,
                 'shaderglass_commit': SHADER_COMMIT,
                 'dependencies_sha256': DEPS_SHA, 'ffmpeg_sha256': FFMPEG_SHA,
+                'automatic_sorting': '0.2.0',
+                'automatic_sorting_catalogue_sha256': digest(SORTING / 'automatic-sorting.ini'),
                 'status': 'compiled; Windows acceptance tests required'}
     (stage / 'BUILD-INFO.json').write_text(json.dumps(metadata, indent=2))
     official = WORK / 'official-nightly'
