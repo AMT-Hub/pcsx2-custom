@@ -14,13 +14,16 @@ def main():
     parser.add_argument('kit', type=Path)
     args=parser.parse_args()
     stage=args.kit/'work/package'
-    runtime='custom-pcsx2/shader-prototype/' if args.channel=='stable' else 'custom-pcsx2/runtimes/automatic-sorting-0_1_0-test1/'
+    # The accepted launcher's signed-runtime path requires an updater-installed
+    # release. Exercise its existing manual/legacy path in a disposable copy;
+    # never fabricate a release manifest or an approval for an unsigned build.
+    runtime='custom-pcsx2/shader-prototype/'
     if args.channel=='stable':
         selected=['PCSX2-ShaderPrototype.exe','resources/automatic-sorting.ini','BUILD-INFO.json']
         files={runtime+n:(stage/n).read_bytes() for n in selected}
     else:
         files={runtime+p.relative_to(stage).as_posix():p.read_bytes() for p in stage.rglob('*') if p.is_file()}
-        files[runtime+'portable.txt']=b'../../..\r\n'
+        files[runtime+'portable.txt']=b'../..\r\n'
         # Keep accepted runtime BIOS rules with this experimental runtime.
         for name in ['auto-bios.enabled','bios-catalogue.tsv','bios-rules.tsv']:
             files[runtime+'custom-pcsx2/'+name]=(args.kit/'policy'/name).read_bytes()

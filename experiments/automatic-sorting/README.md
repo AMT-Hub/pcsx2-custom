@@ -42,20 +42,25 @@ Then launch the copy's existing Custom-PCSX2.exe. Discard the test copy to rever
 ### Nightly
 
 Extract `PCSX2-Automatic-Sorting-nightly-0.1.0-test1-overlay.zip` at the root of a
-separate copy of the accepted custom nightly installation. It adds a new runtime
-directory and leaves the installed accepted runtime and launcher untouched.
+separate copy of the accepted custom nightly installation. This uses the
+launcher's existing manual/legacy runtime path in the test copy. It replaces
+that copy's nested legacy runtime, keeping its installed signed runtime folders
+and launcher intact. Your original installation must remain separate.
 
 In the TEST COPY, save a copy of `custom-pcsx2/updater/active.txt`, then replace
 its contents with this one line:
 
 ```
-automatic-sorting-0_1_0-test1
+legacy
 ```
 
-Launch the existing Custom-PCSX2.exe. To revert, close it and restore the saved
-active.txt. Do not run the controlled updater while this unsigned experimental
-runtime is selected. The normal signed feed is unchanged; this manual selection
-exists only to test a feature before package approval.
+Launch the existing Custom-PCSX2.exe. To return to the signed 2.9.127 runtime,
+close it and restore the saved active.txt (provided it selected the signed runtime
+before this test). Otherwise discard the test copy. Do not use the controlled
+updater to assess this unsigned prototype: its fixed legacy label may say 2.9.126.
+Use the emulator's About information and the Sorting Title tooltip instead.
+The signed feed is unchanged. No release manifest/signature or approval is
+fabricated to make an unsigned build look like an approved updater runtime.
 
 ## Manual control and persistence
 
@@ -82,8 +87,8 @@ no reliable serial+CRC retain the accepted encoded-path fallback, so moving thos
 unidentified files can require another edit. CRC-specific catalogue entries are
 supported before serial-wide defaults, although the seed uses serials only.
 
-Catalogue changes take effect after restarting the emulator. A nightly rollback
-selects the old runtime's catalogue while keeping manual user settings.
+Catalogue changes take effect after restarting the emulator. Returning to the
+signed nightly runtime selects its own resources while keeping manual settings.
 
 ## Catalogue policy and unresolved scope
 

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "component": "automatic-sorting",
+  "version": "0.1.0-test1",
+  "status": "compiled; user Windows acceptance pending",
+  "accepted_builds_changed": false,
+  "catalogue": {
+    "games": 50,
+    "serial_identities": 271,
+    "coverage": "user screenshot seed; unmatched titles use normal ordering",
+    "sha256": "35590be83c41aed3d1c174e89ce40f69f70fb17670fc1f07ae416a862036dd2c"
+  },
+  "validation": {
+    "catalogue_and_packaging_tests": 9,
+    "cpp_policy_tests": "passed on Linux g++ and Windows MSVC; precedence, natural order and comparator properties",
+    "full_emulator_builds": "both passed on Windows Server 2022, Visual Studio 2022 MSVC 14.44.35207",
+    "gui_gameplay_acceptance": "not performed here"
+  },
+  "builds": {
+    "stable": {
+      "source_commit": "3b0decdc32fdb515dae6823b14df88cc7714b902",
+      "workflow_run": 38714796508,
+      "job": 116354816639,
+      "conclusion": "success",
+      "overlay": "PCSX2-Automatic-Sorting-stable-0.1.0-test1-overlay.zip",
+      "bytes": 5407819,
+      "sha256": "b3225c2bbd0db7d2ce81a132b99dcb73c634224071472e146221b44589092d34",
+      "executable_sha256": "822703539dcdfad314c68c8ba3ff318564eb1aaf14552bb29ee3a17d6f8f3d9a",
+      "packaging": "locally repackaged verified CI output with corrected manual/legacy test path and current README; executable bytes unchanged"
+    },
+    "nightly": {
+      "source_commit": "4cd45bdedb270b6ffb3993e4ea9f0fbead461970",
+      "workflow_run": 38714339572,
+      "job": 116353286639,
+      "conclusion": "success",
+      "overlay": "PCSX2-Automatic-Sorting-nightly-0.1.0-test1-overlay.zip",
+      "bytes": 129429639,
+      "sha256": "e390e57710b68e9d994ac6d5ea89eb1e2e8cd376ed3d8955f4c70b92eb6aa842",
+      "executable_sha256": "c8411bb8ef9cf89a84df0792f1851034b92f7f046ead62c5fc249e51950d996e",
+      "packaging": "locally repackaged verified CI output with corrected manual/legacy test path and current README; executable bytes unchanged"
+    }
+  }
+}
