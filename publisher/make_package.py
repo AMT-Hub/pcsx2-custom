@@ -18,6 +18,12 @@ assert files['portable.txt'].strip()==b'../../..'
 for name in files:
  assert not name.startswith('.') and not any(x.lower() in ('bios','memcards','sstates','inis','gamesettings','inputprofiles') for x in name.split('/'))
 requirements=['ShaderGlass/ShaderGlass-PCSX2.exe','ShaderGlass/Profiles/retro-crisis_1080p-curved_PS2.sgp']
+defaults=pathlib.Path(__file__).resolve().parents[1]/'defaults/performance.json'
+if defaults.is_file():
+ policy=json.loads(defaults.read_text())
+ profile=a.root/policy['profile_path']
+ if hashlib.sha256(profile.read_bytes()).hexdigest()!=policy['profile_sha256']:
+  raise RuntimeError('The signing input must contain the accepted FrameSkip 0 shader profile. Apply defaults/ShaderGlass to the staging root before signing; do not change an installed profile without matching signed runtime requirements.')
 m={'schema':1,'product':'CustomPCSX2','channel':'approved','data_schema':1,'id':a.id,'label':a.label,'features':['auto-bios','shaderglass','sorting-title'],'files':{n:{'size':len(b),'sha256':hashlib.sha256(b).hexdigest()} for n,b in files.items()},'requires':{n:hashlib.sha256((a.root/n).read_bytes()).hexdigest() for n in requirements}}
 if 'resources/automatic-sorting.ini' in files:
  m['features'].append('automatic-sorting-title')

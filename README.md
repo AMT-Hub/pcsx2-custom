@@ -12,6 +12,12 @@ Automatic Sorting Titles 0.2.0 is accepted for the stable 2.8.2 and nightly 2.9.
 
 The maintained candidate build now applies the accepted automatic sorting component, packages its catalogue, and tests its precedence rules. Discovery checks all 14 affected upstream files and fingerprints the component inputs. Every future rebuilt candidate still requires acceptance before signing.
 
+## Smooth shader profile and 4x defaults accepted on 15 October 2026
+
+The current personal packages are stable **0.9.1** and nightly **2.9.127 Personal r2**. The accepted profile uses `FrameSkip "0"`, removing the approximately 30 Hz shader-processing limit carried by the original profile. PCSX2 internal resolution remains **4x Native (~1440px/QHD)**. Other performance experiments are not adopted. See [the acceptance record](ci/acceptance/2026-10-15-shader-pacing.json) and [canonical defaults](defaults/performance.json).
+
+The emulator, launcher, ShaderGlass worker, updater and sorting catalogue are unchanged. The nightly's active and rollback runtime payloads are reissued under new immutable IDs with signed requirements matching the corrected profile. Old full archives and release identities remain intact. The online feed is unchanged and its older packages require the old profile; the existing updater correctly blocks those packages against the new profile. Future signatures must use the accepted profile from `defaults/ShaderGlass`.
+
 ## Scope
 
 Release packages are **runtime updates for an existing matching custom installation**, not standalone PCSX2 installations. They require the expected ShaderGlass worker/profile and custom launcher. BIOS firmware and game images are not included. Existing controller profiles and game settings remain in the user's portable data folder.

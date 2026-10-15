@@ -1,0 +1,28 @@
+{
+  "component": "ShaderGlass profile / portable performance defaults",
+  "date": "2026-10-15",
+  "status": "user-accepted",
+  "user_result": "Games are noticeably smoother after changing FrameSkip from 1 to 0. User requests saving the corrected profile and 4x Native internal resolution for stable and nightly builds.",
+  "settings": {
+    "schema": 1,
+    "accepted_on": "2026-10-15",
+    "profile_path": "ShaderGlass/Profiles/retro-crisis_1080p-curved_PS2.sgp",
+    "profile_sha256": "afc9e3964382062b0babbf10bddfcf81ec0cb8e7b4d5e69ba9b329ae6d3a0a96",
+    "previous_profile_sha256": "02c926b62ba1e6cbeeb11f67325268fffdd0e440611776bc0942724a5848fe11",
+    "shader_frame_skip": 0,
+    "pcsx2_settings": {
+      "EmuCore/GS": {
+        "upscale_multiplier": "4"
+      }
+    },
+    "notes": "Only FrameSkip and internal resolution are confirmed by this acceptance. Other exploratory performance suggestions are not adopted. Internal resolution was already 4 in the previous saved packages."
+  },
+  "stable_package_version": "0.9.1",
+  "nightly_package_revision": "2.9.127-Personal-r2",
+  "nightly_runtime_id": "nightly-2_9_127-autosort-pacing1",
+  "nightly_rollback_id": "nightly-2_9_127-ci1-pacing1",
+  "implementation": "Configuration-only change; emulator, launcher, worker, updater and automatic-sorting catalogue remain byte-identical to accepted inputs. Both nightly slots get new IDs and signed requirements for the corrected profile.",
+  "previous_builds_preserved": true,
+  "new_windows_package_install_rollback_test_here": false,
+  "live_feed_changed": false
+}
