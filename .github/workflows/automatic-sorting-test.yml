@@ -1,0 +1,65 @@
+name: Build isolated automatic sorting prototypes
+on:
+  push:
+    branches: [feature/automatic-sorting-titles]
+    paths:
+      - 'experiments/automatic-sorting/**'
+      - '.github/workflows/automatic-sorting-test.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: automatic-sorting-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  policy:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s experiments/automatic-sorting/tests -v
+      - run: |
+          g++ -std=c++17 -Wall -Wextra -Werror experiments/automatic-sorting/tests/policy.cpp -o /tmp/sorting-policy
+          /tmp/sorting-policy
+  windows:
+    needs: policy
+    strategy:
+      fail-fast: false
+      matrix:
+        channel: [stable, nightly]
+    runs-on: windows-2022
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.13'
+      - name: Prepare separate build kit
+        run: python experiments/automatic-sorting/prepare_build.py ${{ matrix.channel }} C:/auto-sort-kit
+      - name: Download pinned official archive
+        working-directory: C:/auto-sort-kit
+        run: python -c "from pathlib import Path; import build, assemble; build.download('https://github.com/PCSX2/pcsx2/releases/download/' + assemble.TAG + '/' + assemble.NIGHTLY, Path(assemble.NIGHTLY), assemble.EXPECTED)"
+      - name: Compile unchanged existing features plus automatic sorting
+        working-directory: C:/auto-sort-kit
+        run: python build.py
+      - name: Package test overlay
+        run: python experiments/automatic-sorting/package_test.py ${{ matrix.channel }} C:/auto-sort-kit
+      - name: Save build log
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: sorting-${{ matrix.channel }}-build-log-${{ github.run_id }}
+          path: C:/auto-sort-kit/Build.log
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Save experimental overlay
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: sorting-${{ matrix.channel }}-test1-${{ github.run_id }}
+          path: C:/auto-sort-kit/PCSX2-Automatic-Sorting-*-overlay.zip
+          if-no-files-found: error
+          retention-days: 30

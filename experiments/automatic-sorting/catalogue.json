@@ -1,0 +1,2142 @@
+{
+  "schema": 1,
+  "version": "0.1.0-test1",
+  "status": "experimental; screenshot preferences, not a complete PS2 series catalogue",
+  "upstream_commit": "e35cb2c87590bc3d127b3bb4dd222b01e598c9a4",
+  "upstream_gameindex_sha256": "6589964b54348a4af845bb33311375fa1596c55864be750e9fbdc69c8d7dcdcd",
+  "preference_source": "User-supplied sorting examples, 2026-10-15. Ordering is a user preference, not a historical claim.",
+  "identity_source": "https://github.com/PCSX2/pcsx2/blob/e35cb2c87590bc3d127b3bb4dd222b01e598c9a4/bin/resources/GameIndex.yaml",
+  "games": [
+    {
+      "id": "ratchet-1",
+      "sorting_title": "Ratchet & Clank 1",
+      "aliases": [
+        "Ratchet & Clank"
+      ],
+      "identities": [
+        {
+          "serial": "PBPX-95516",
+          "name": "ラチェット&クランク [本体同梱版]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank [PS2 Bundle]"
+        },
+        {
+          "serial": "SCAJ-20001",
+          "name": "Ratchet & Clank",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50916",
+          "name": "Ratchet & Clank",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCPS-15037",
+          "name": "ラチェット&クランク",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank"
+        },
+        {
+          "serial": "SCPS-19211",
+          "name": "ラチェット&クランク [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-19310",
+          "name": "ラチェット&クランク [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-19316",
+          "name": "ラチェット&クランク [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCUS-97199",
+          "name": "Ratchet & Clank",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ratchet-2",
+      "sorting_title": "Ratchet & Clank 2",
+      "aliases": [
+        "Ratchet & Clank 2 - Going Commando",
+        "Ratchet & Clank 2 - Locked and Loaded"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20052",
+          "name": "ラチェット&クランク2 ガガガ！銀河のコマンドーっす",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 2 - Going Commando"
+        },
+        {
+          "serial": "SCES-51607",
+          "name": "Ratchet & Clank 2 - Locked and Loaded",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCPS-15056",
+          "name": "ラチェット&クランク2 ガガガ！銀河のコマンドーっす",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 2 - Going Commando"
+        },
+        {
+          "serial": "SCPS-19302",
+          "name": "ラチェット&クランク2 ガガガ！銀河のコマンドーっす [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 2 - Going Commando [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-19317",
+          "name": "ラチェット&クランク2 ガガガ！銀河のコマンドーっす [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 2 - Going Commando [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCUS-97268",
+          "name": "Ratchet & Clank 2 - Going Commando",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97513",
+          "name": "Ratchet & Clank 2 - Going Commando [Greatest Hits]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ratchet-3",
+      "sorting_title": "Ratchet & Clank 3",
+      "aliases": [
+        "Ratchet & Clank - Up Your Arsenal",
+        "Ratchet & Clank 3 - Up Your Arsenal",
+        "Ratchet & Clank 3",
+        "Ratchet & Clank 3 - Charge! Galactic Rangers"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20109",
+          "name": "Ratchet & Clank 3 - Up Your Arsenal",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-52456",
+          "name": "Ratchet & Clank 3",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCPS-15084",
+          "name": "ラチェット&クランク3 突撃！ガラクチック★レンジャーズ",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 3 - Charge! Galactic Rangers"
+        },
+        {
+          "serial": "SCPS-19309",
+          "name": "ラチェット&クランク3 突撃！ガラクチック★レンジャーズ [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 3 - Up Your Arsenal [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCUS-97353",
+          "name": "Ratchet & Clank - Up Your Arsenal",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97518",
+          "name": "Ratchet & Clank - Up Your Arsenal [Greatest Hits]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ratchet-4",
+      "sorting_title": "Ratchet & Clank 4",
+      "aliases": [
+        "Ratchet - Deadlocked",
+        "Ratchet - Gladiator",
+        "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle",
+        "Ratchet & Clank 4th - GiriGiri Gingano Giga-battle"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20157",
+          "name": "Ratchet & Clank 4th - GiriGiri Gingano Giga-battle",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-53285",
+          "name": "Ratchet - Gladiator",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCPS-15099",
+          "name": "ラチェット&クランク4th ギリギリ銀河のギガバトル [Special Gift Package]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle [Special Gift Package]"
+        },
+        {
+          "serial": "SCPS-15100",
+          "name": "ラチェット&クランク4th ギリギリ銀河のギガバトル",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle"
+        },
+        {
+          "serial": "SCPS-19321",
+          "name": "ラチェット&クランク4th ギリギリ銀河のギガバトル [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-19328",
+          "name": "ラチェット&クランク4th ギリギリ銀河のギガバトル [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle [PlayStation 2 the Best - Reprint]"
+        },
+        {
+          "serial": "SCUS-97465",
+          "name": "Ratchet - Deadlocked",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ratchet-5",
+      "sorting_title": "Ratchet & Clank 5",
+      "aliases": [
+        "Ratchet & Clank - Size Matters",
+        "Ratchet & Clank 5 - Gekitotsu! Dodeka Ginga no Mirimiri Gundan"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-55019",
+          "name": "Ratchet & Clank - Size Matters",
+          "region": "PAL-M13",
+          "english_name": ""
+        },
+        {
+          "serial": "SCPS-15120",
+          "name": "ラチェット&クランク5 激突！ドデカ銀河のミリミリ軍団",
+          "region": "NTSC-J",
+          "english_name": "Ratchet & Clank 5 - Gekitotsu! Dodeka Ginga no Mirimiri Gundan"
+        },
+        {
+          "serial": "SCUS-97615",
+          "name": "Ratchet & Clank - Size Matters",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-55019",
+          "name": "Ratchet & Clank - Size Matters",
+          "region": "PAL-M13",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "jak-1",
+      "sorting_title": "Jak and Daxter 1",
+      "aliases": [
+        "Jak and Daxter - The Precursor Legacy",
+        "Jak & Daxter - The Precursor Legacy",
+        "Jak x Daxter - Kyuu Sekai no Isan"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-50361",
+          "name": "Jak and Daxter - The Precursor Legacy",
+          "region": "PAL-M6",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50614",
+          "name": "Jak and Daxter - The Precursor Legacy",
+          "region": "PAL-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCPS-15021",
+          "name": "ジャック×ダクスター 旧世界の遺産",
+          "region": "NTSC-J",
+          "english_name": "Jak x Daxter - Kyuu Sekai no Isan"
+        },
+        {
+          "serial": "SCPS-19210",
+          "name": "ジャック×ダクスター [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Jak x Daxter - Kyuu Sekai no Isan [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-55004",
+          "name": "ジャック×ダクスター 旧世界の遺産",
+          "region": "NTSC-J",
+          "english_name": "Jak x Daxter - Kyuu Sekai no Isan"
+        },
+        {
+          "serial": "SCPS-56003",
+          "name": "Jak & Daxter - 구세계의 유산",
+          "region": "NTSC-K",
+          "english_name": "Jak and Daxter - The Precursor Legacy"
+        },
+        {
+          "serial": "SCUS-97124",
+          "name": "Jak and Daxter - The Precursor Legacy",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "jak-2",
+      "sorting_title": "Jak and Daxter 2",
+      "aliases": [
+        "Jak II",
+        "Jak II - Renegade",
+        "Jak and Daxter II"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20073",
+          "name": "Jak and Daxter II",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-51608",
+          "name": "Jak II - Renegade",
+          "region": "PAL-M7",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20010",
+          "name": "잭　ＩＩ",
+          "region": "NTSC-K",
+          "english_name": "Jak II"
+        },
+        {
+          "serial": "SCPS-15057",
+          "name": "ジャック×ダクスター2",
+          "region": "NTSC-J",
+          "english_name": "Jak and Daxter II"
+        },
+        {
+          "serial": "SCUS-97265",
+          "name": "Jak II",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97509",
+          "name": "Jak II [Greatest Hits]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "jak-3",
+      "sorting_title": "Jak and Daxter 3",
+      "aliases": [
+        "Jak 3"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-52460",
+          "name": "Jak 3",
+          "region": "PAL-M7",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20040",
+          "name": "잭 3",
+          "region": "NTSC-K",
+          "english_name": "Jak 3"
+        },
+        {
+          "serial": "SCUS-97330",
+          "name": "Jak 3",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97516",
+          "name": "Jak 3 [Greatest Hits]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "jak-4",
+      "sorting_title": "Jak and Daxter 4",
+      "aliases": [
+        "Jak X - Combat Racing",
+        "Jak X"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-53286",
+          "name": "Jak X - Combat Racing",
+          "region": "PAL-M7",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97429",
+          "name": "Jak X - Combat Racing",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97574",
+          "name": "Jak X - Combat Racing [Greatest Hits]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "jak-5",
+      "sorting_title": "Jak and Daxter 5",
+      "aliases": [
+        "Jak and Daxter - The Lost Frontier"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-55510",
+          "name": "Jak and Daxter - The Lost Frontier",
+          "region": "PAL-M12",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97558",
+          "name": "Jak and Daxter - The Lost Frontier",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "spyro-4",
+      "sorting_title": "Spyro 4",
+      "aliases": [
+        "Spyro - Enter the Dragonfly"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-51043",
+          "name": "Spyro - Enter the Dragonfly",
+          "region": "PAL-M6",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-20315",
+          "name": "Spyro - Enter the Dragonfly",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "spyro-5",
+      "sorting_title": "Spyro 5",
+      "aliases": [
+        "Spyro - A Hero's Tail"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-52569",
+          "name": "Spyro - A Hero's Tail",
+          "region": "PAL-M6",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-20884",
+          "name": "Spyro - A Hero's Tail",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "star-wars-clone-wars",
+      "sorting_title": "Star Wars - Battlefront 0.5",
+      "aliases": [
+        "Star Wars - The Clone Wars"
+      ],
+      "note": "User-defined grouping before Battlefront; does not assert official series membership.",
+      "identities": [
+        {
+          "serial": "SLES-50826",
+          "name": "Star Wars - The Clone Wars",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-50827",
+          "name": "Star Wars - The Clone Wars",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-50828",
+          "name": "Star Wars - The Clone Wars",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-20510",
+          "name": "Star Wars - The Clone Wars",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "star-wars-battlefront-1",
+      "sorting_title": "Star Wars - Battlefront 1",
+      "aliases": [
+        "Star Wars - Battlefront"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-52545",
+          "name": "Star Wars - Battlefront",
+          "region": "PAL-M3",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52546",
+          "name": "Star Wars - Battlefront",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52547",
+          "name": "Star Wars - Battlefront",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65687",
+          "name": "スター・ウォーズ - バトルフロント -",
+          "region": "NTSC-J",
+          "english_name": "Star Wars - Battlefront"
+        },
+        {
+          "serial": "SLPM-66148",
+          "name": "スター・ウォーズ - バトルフロント - [EA BEST HITS]",
+          "region": "NTSC-J",
+          "english_name": "Star Wars - Battlefront [EA Best Hits]"
+        },
+        {
+          "serial": "SLUS-20898",
+          "name": "Star Wars - Battlefront",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "star-wars-battlefront-2",
+      "sorting_title": "Star Wars - Battlefront 2",
+      "aliases": [
+        "Star Wars - Battlefront II",
+        "Star Wars - Battlefront 2"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-53501",
+          "name": "Star Wars - Battlefront II",
+          "region": "PAL-M3",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-53502",
+          "name": "Star Wars - Battlefront II",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-53503",
+          "name": "Star Wars - Battlefront II",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-66190",
+          "name": "スター・ウォーズ - バトルフロントⅡ -",
+          "region": "NTSC-J",
+          "english_name": "Star Wars - Battlefront II"
+        },
+        {
+          "serial": "SLUS-21240",
+          "name": "Star Wars - Battlefront II",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "timesplitters-1",
+      "sorting_title": "TimeSplitters 1",
+      "aliases": [
+        "TimeSplitters"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-50078",
+          "name": "TimeSplitters",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-20090",
+          "name": "TimeSplitters",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "timesplitters-2",
+      "sorting_title": "TimeSplitters 2",
+      "aliases": [
+        "TimeSplitters 2"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-50877",
+          "name": "TimeSplitters 2",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-25020",
+          "name": "타임 스플리터즈 2",
+          "region": "NTSC-K",
+          "english_name": "TimeSplitters 2"
+        },
+        {
+          "serial": "SLUS-20314",
+          "name": "TimeSplitters 2",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "timesplitters-3",
+      "sorting_title": "TimeSplitters 3",
+      "aliases": [
+        "TimeSplitters - Future Perfect"
+      ],
+      "identities": [
+        {
+          "serial": "SLED-53066",
+          "name": "TimeSplitters - Future Perfect",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52993",
+          "name": "TimeSplitters - Future Perfect",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-21148",
+          "name": "TimeSplitters - Future Perfect",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "monster-hunter-1",
+      "sorting_title": "Monster Hunter 1",
+      "aliases": [
+        "Monster Hunter"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-52707",
+          "name": "Monster Hunter",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65495",
+          "name": "モンスターハンター",
+          "region": "NTSC-J",
+          "english_name": "Monster Hunter"
+        },
+        {
+          "serial": "SLUS-20896",
+          "name": "Monster Hunter",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "monster-hunter-g",
+      "sorting_title": "Monster Hunter 1.1",
+      "aliases": [
+        "Monster Hunter G"
+      ],
+      "identities": [
+        {
+          "serial": "SLKA-25219",
+          "name": "몬스터 헌터 G",
+          "region": "NTSC-K",
+          "english_name": "Monster Hunter G"
+        },
+        {
+          "serial": "SLPM-65869",
+          "name": "モンスターハンターG",
+          "region": "NTSC-J",
+          "english_name": "Monster Hunter G"
+        },
+        {
+          "serial": "SLPM-74248",
+          "name": "モンスターハンターG [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Monster Hunter G [PlayStation2 the Best]"
+        }
+      ]
+    },
+    {
+      "id": "monster-hunter-2",
+      "sorting_title": "Monster Hunter 2",
+      "aliases": [
+        "Monster Hunter 2"
+      ],
+      "identities": [
+        {
+          "serial": "CPCS-01020",
+          "name": "モンスターハンター2 [DXハンターボックス]",
+          "region": "NTSC-J",
+          "english_name": "Monster Hunter 2 [DX Hunters Box]"
+        },
+        {
+          "serial": "SLPM-66280",
+          "name": "モンスターハンター2（dos）",
+          "region": "NTSC-J",
+          "english_name": "Monster Hunter 2"
+        },
+        {
+          "serial": "SLPM-74245",
+          "name": "モンスターハンター2 [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Monster Hunter 2 [PlayStation2 the Best]"
+        }
+      ]
+    },
+    {
+      "id": "harry-potter-1",
+      "sorting_title": "Harry Potter 1",
+      "aliases": [
+        "Harry Potter and the Sorcerer's Stone",
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "identities": [
+        {
+          "serial": "SLAJ-25017",
+          "name": "Harry Potter and the Philosopher's Stone",
+          "region": "NTSC-HK",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52055",
+          "name": "Harry Potter and the Philosopher's Stone",
+          "region": "PAL-M11",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52056",
+          "name": "Harry Potter and the Philosopher's Stone",
+          "region": "PAL-M11",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65465",
+          "name": "ハリー・ポッターと賢者の石",
+          "region": "NTSC-J",
+          "english_name": "Harry Potter and the Philosopher's Stone"
+        },
+        {
+          "serial": "SLPM-65650",
+          "name": "ハリー・ポッターと賢者の石 [EA BEST HITS]",
+          "region": "NTSC-J",
+          "english_name": "Harry Potter and the Philosopher's Stone [EA Best Hits]"
+        },
+        {
+          "serial": "SLUS-20826",
+          "name": "Harry Potter and the Sorcerer's Stone",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "harry-potter-2",
+      "sorting_title": "Harry Potter 2",
+      "aliases": [
+        "Harry Potter and the Chamber of Secrets",
+        "Harry Potter et la Chambre des Secrets",
+        "Harry Potter und die Kammer des Schreckens",
+        "Harry Potter y la Cámara Secreta",
+        "Harry Potter e La Camera dei Secreti",
+        "Harry Potter og Hemmelighedernes Kammer",
+        "Harry Potter og Mysteriekammeret",
+        "Harry Potter ja Salaisuuksien Kammio",
+        "Harry Potter och Hemligheternas Kammare",
+        "Harry Potter en de Geheime Kamer",
+        "Harry Potter ea Camara dos Segredos"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-51192",
+          "name": "Harry Potter and the Chamber of Secrets",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51193",
+          "name": "Harry Potter et la Chambre des Secrets",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51194",
+          "name": "Harry Potter und die Kammer des Schreckens",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51195",
+          "name": "Harry Potter y la Cámara Secreta",
+          "region": "PAL-S",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51196",
+          "name": "Harry Potter e La Camera dei Secreti",
+          "region": "PAL-I",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51214",
+          "name": "Harry Potter og Hemmelighedernes Kammer",
+          "region": "PAL-D",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51215",
+          "name": "Harry Potter og Mysteriekammeret",
+          "region": "PAL-NO",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51216",
+          "name": "Harry Potter ja Salaisuuksien Kammio",
+          "region": "PAL-FI",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51217",
+          "name": "Harry Potter och Hemligheternas Kammare",
+          "region": "PAL-SW",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51218",
+          "name": "Harry Potter en de Geheime Kamer",
+          "region": "PAL-NL",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51219",
+          "name": "Harry Potter ea Camara dos Segredos",
+          "region": "PAL-P",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-62241",
+          "name": "哈利波特 - 消失的密室",
+          "region": "NTSC-C",
+          "english_name": "Harry Potter and the Chamber of Secrets"
+        },
+        {
+          "serial": "SLPM-62513",
+          "name": "ハリー・ポッターと秘密の部屋 [EA BEST HITS]",
+          "region": "NTSC-J",
+          "english_name": "Harry Potter and the Chamber of Secrets [EA Best Hits]"
+        },
+        {
+          "serial": "SLPM-64528",
+          "name": "해리포터와 비밀의 방",
+          "region": "NTSC-K",
+          "english_name": "Harry Potter and the Chamber of Secrets"
+        },
+        {
+          "serial": "SLPS-20234",
+          "name": "ハリー・ポッターと秘密の部屋",
+          "region": "NTSC-J",
+          "english_name": "Harry Potter and the Chamber of Secrets"
+        },
+        {
+          "serial": "SLUS-20576",
+          "name": "Harry Potter and the Chamber of Secrets",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "harry-potter-3",
+      "sorting_title": "Harry Potter 3",
+      "aliases": [
+        "Harry Potter and the Prisoner of Azkaban",
+        "Harry Potter og Fangen fra Azkaban"
+      ],
+      "identities": [
+        {
+          "serial": "SLAJ-25041",
+          "name": "Harry Potter and the Prisoner of Azkaban",
+          "region": "NTSC-C",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52440",
+          "name": "Harry Potter and the Prisoner of Azkaban",
+          "region": "PAL-M7",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52527",
+          "name": "Harry Potter og Fangen fra Azkaban",
+          "region": "PAL-M4",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52600",
+          "name": "Harry Potter and the Prisoner of Azkaban",
+          "region": "PAL-PL",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-25172",
+          "name": "해리포터와 아즈카반의 죄수",
+          "region": "NTSC-K",
+          "english_name": "Harry Potter and the Prisoner of Azkaban"
+        },
+        {
+          "serial": "SLPM-65612",
+          "name": "ハリー・ポッターとアズカバンの囚人",
+          "region": "NTSC-J",
+          "english_name": "Harry Potter and the Prisoner of Azkaban"
+        },
+        {
+          "serial": "SLUS-20926",
+          "name": "Harry Potter and the Prisoner of Azkaban",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "harry-potter-quidditch",
+      "sorting_title": "Harry Potter 4",
+      "aliases": [
+        "Harry Potter - Quidditch World Cup"
+      ],
+      "note": "Exact screenshot preference retained. Full-catalogue placement conflicts with later main PS2 instalments; do not silently change to 7.",
+      "identities": [
+        {
+          "serial": "SLES-51787",
+          "name": "Harry Potter - Quidditch World Cup",
+          "region": "PAL-M10",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-15016",
+          "name": "해리포터 퀴디치 월드컵",
+          "region": "NTSC-K",
+          "english_name": "Harry Potter - Quidditch World Cup"
+        },
+        {
+          "serial": "SLPM-62408",
+          "name": "ハリー・ポッター クィディッチ ワールドカップ",
+          "region": "NTSC-J",
+          "english_name": "Harry Potter - Quidditch World Cup"
+        },
+        {
+          "serial": "SLUS-20769",
+          "name": "Harry Potter - Quidditch World Cup",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ico",
+      "sorting_title": "Team ICO 1",
+      "aliases": [
+        "Ico"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20099",
+          "name": "ICO",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCCS-40005",
+          "name": "ICO 古堡迷踪",
+          "region": "NTSC-C",
+          "english_name": "Ico"
+        },
+        {
+          "serial": "SCES-50760",
+          "name": "Ico",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20028",
+          "name": "이코 [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Ico [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SCPS-11003",
+          "name": "ICO",
+          "region": "NTSC-J",
+          "english_name": "ICO"
+        },
+        {
+          "serial": "SCPS-19103",
+          "name": "ICO [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "ICO [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-19151",
+          "name": "ICO [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "ICO [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SCPS-55001",
+          "name": "ICO",
+          "region": "NTSC-J",
+          "english_name": "ICO"
+        },
+        {
+          "serial": "SCPS-56001",
+          "name": "이코",
+          "region": "NTSC-K",
+          "english_name": "Ico"
+        },
+        {
+          "serial": "SCUS-97113",
+          "name": "Ico",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "shadow-colossus",
+      "sorting_title": "Team ICO 2",
+      "aliases": [
+        "Shadow of the Colossus",
+        "Wander to Kyozou"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-53326",
+          "name": "Shadow of the Colossus",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97472",
+          "name": "Shadow of the Colossus",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "choro-hg-1",
+      "sorting_title": "Choro Q HG 1",
+      "aliases": [
+        "Penny Racers",
+        "Choro Q HG"
+      ],
+      "serials": [
+        "SLUS-20225"
+      ],
+      "note": "US Gadget Racers is HG1; EU Gadget Racers is a different game (HG3). Match serials, never the shared filename/title.",
+      "identities": [
+        {
+          "serial": "SLES-50252",
+          "name": "Penny Racers",
+          "region": "PAL-M3",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65149",
+          "name": "チョロQ HG [THE BEST タカラモノ]",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG [Takara THE BEST]"
+        },
+        {
+          "serial": "SLPS-25014",
+          "name": "チョロQ HG チョロQジェニーハイグレードBOX",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG [Jenny Hi-Grade Box]"
+        },
+        {
+          "serial": "SLPS-25015",
+          "name": "チョロQ HG",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG"
+        },
+        {
+          "serial": "SLUS-20225",
+          "name": "Gadget Racers",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "choro-hg-2",
+      "sorting_title": "Choro Q HG 2",
+      "aliases": [
+        "Road Trip Adventure",
+        "Road Trip",
+        "Choro Q HG 2"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-51356",
+          "name": "Road Trip Adventure",
+          "region": "PAL-M3",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-15008",
+          "name": "쵸로 Q HG 2",
+          "region": "NTSC-K",
+          "english_name": "Choro Q HG 2"
+        },
+        {
+          "serial": "SLPM-62104",
+          "name": "チョロQ HG2",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 2"
+        },
+        {
+          "serial": "SLPM-62355",
+          "name": "チョロQ HG2 [THE BEST タカラモノ]",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 2 [Takara THE BEST]"
+        },
+        {
+          "serial": "SLPM-62761",
+          "name": "チョロQ HG2 [ATLUS BEST COLLECTION]",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 2 [Atlus Best Collection]"
+        },
+        {
+          "serial": "SLUS-20398",
+          "name": "Road Trip",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "choro-hg-3",
+      "sorting_title": "Choro Q HG 3",
+      "aliases": [
+        "Choro Q HG 3"
+      ],
+      "serials": [
+        "SLES-51911"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-51911",
+          "name": "Gadget Racers",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-62244",
+          "name": "チョロQ HG3",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 3"
+        },
+        {
+          "serial": "SLPM-62595",
+          "name": "チョロQ HG3 [THE BEST タカラモノ]",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 3 [Takara The Best]"
+        },
+        {
+          "serial": "SLPM-62771",
+          "name": "チョロQ HG3 [ATLUS BEST COLLECTION]",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 3 [Atlus Best Collection]"
+        }
+      ]
+    },
+    {
+      "id": "choro-hg-4",
+      "sorting_title": "Choro Q HG 4",
+      "aliases": [
+        "Choro Q",
+        "ChoroQ",
+        "Choro Q HG 4"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-53140",
+          "name": "Choro Q",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65326",
+          "name": "チョロQ HG4",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 4"
+        },
+        {
+          "serial": "SLPM-66250",
+          "name": "チョロＱＨＧ4 [ATLUS BEST COLLECTION]",
+          "region": "NTSC-J",
+          "english_name": "Choro Q HG 4 [Atlus Best Collection]"
+        },
+        {
+          "serial": "SLUS-20930",
+          "name": "ChoroQ",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "persia-1",
+      "sorting_title": "Prince of Persia 1",
+      "aliases": [
+        "Prince of Persia - The Sands of Time"
+      ],
+      "identities": [
+        {
+          "serial": "SCPS-15066",
+          "name": "プリンス・オブ・ペルシャ ～時間の砂～",
+          "region": "NTSC-J",
+          "english_name": "Prince of Persia - The Sands of Time"
+        },
+        {
+          "serial": "SLES-51918",
+          "name": "Prince of Persia - The Sands of Time",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51961",
+          "name": "Prince of Persia - The Sands of Time",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-25120",
+          "name": "페르시아의 왕자",
+          "region": "NTSC-K",
+          "english_name": "Prince of Persia - The Sands of Time"
+        },
+        {
+          "serial": "SLKA-25460",
+          "name": "페르시아의 왕자 - 시간의 모래 [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Prince of Persia - The Sands of Time [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLUS-20743",
+          "name": "Prince of Persia - The Sands of Time",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "persia-2",
+      "sorting_title": "Prince of Persia 2",
+      "aliases": [
+        "Prince of Persia - Warrior Within",
+        "Prince of Persia - Kenshi no Kokoro"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20154",
+          "name": "Prince of Persia - Warrior Within",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52822",
+          "name": "Prince of Persia - Warrior Within",
+          "region": "PAL-M6",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-25247",
+          "name": "페르시아의 왕자 - 전사의 길",
+          "region": "NTSC-K",
+          "english_name": "Prince of Persia - Warrior Within"
+        },
+        {
+          "serial": "SLKA-25462",
+          "name": "페르시아의 왕자 - 전사의 길 [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Prince of Persia - Warrior Within [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLPM-66002",
+          "name": "プリンス・オブ・ペルシャ ケンシ ノ ココロ",
+          "region": "NTSC-J",
+          "english_name": "Prince of Persia - Warrior Within"
+        },
+        {
+          "serial": "SLUS-21022",
+          "name": "Prince of Persia - Warrior Within",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "persia-3",
+      "sorting_title": "Prince of Persia 3",
+      "aliases": [
+        "Prince of Persia - The Two Thrones",
+        "Prince of Persia - Futatsu no Tamashii"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-53777",
+          "name": "Prince of Persia - The Two Thrones",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-25346",
+          "name": "페르시아의 왕자 - 두개의 왕좌",
+          "region": "NTSC-K",
+          "english_name": "Prince of Persia - The Two Thrones"
+        },
+        {
+          "serial": "SLKA-25461",
+          "name": "페르시아의 왕자 - 두개의 왕좌 [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Prince of Persia - The Two Thrones [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLPM-66391",
+          "name": "プリンス・オブ・ペルシャ 二つの魂",
+          "region": "NTSC-J",
+          "english_name": "Prince of Persia - The Two Thrones"
+        },
+        {
+          "serial": "SLUS-21287",
+          "name": "Prince of Persia - The Two Thrones",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "lotr-1",
+      "sorting_title": "Lord of the Rings 1",
+      "aliases": [
+        "The Lord of the Rings - The Fellowship of the Ring",
+        "Lord of the Rings - The Fellowship of the Ring"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-50988",
+          "name": "The Lord of the Rings - The Fellowship of the Ring",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-20520",
+          "name": "The Lord of the Rings - The Fellowship of the Ring",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "lotr-2",
+      "sorting_title": "Lord of the Rings 2",
+      "aliases": [
+        "The Lord of the Rings - The Two Towers",
+        "Lord of the Rings - The Two Towers"
+      ],
+      "identities": [
+        {
+          "serial": "SLES-51252",
+          "name": "The Lord of the Rings - The Two Towers",
+          "region": "PAL-M3",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51253",
+          "name": "Le Seigneur des Anneaux - Les Deux Tours",
+          "region": "PAL-F",
+          "english_name": "The Lord of the Rings - The Two Towers"
+        },
+        {
+          "serial": "SLES-51254",
+          "name": "Der Herr der Ringe - Die zwei Türme",
+          "region": "PAL-G",
+          "english_name": "The Lord of the Rings - The Two Towers"
+        },
+        {
+          "serial": "SLES-51255",
+          "name": "Il Signore degli Anelli - Le Due Torri",
+          "region": "PAL-I",
+          "english_name": "The Lord of the Rings - The Two Towers"
+        },
+        {
+          "serial": "SLES-51256",
+          "name": "El Señor de los Anillos - Las Dos Torres",
+          "region": "PAL-S",
+          "english_name": "The Lord of the Rings - The Two Towers"
+        },
+        {
+          "serial": "SLPM-67546",
+          "name": "반지의 제왕 - 두개의 탑",
+          "region": "NTSC-K",
+          "english_name": "Lord of the Rings - The Two Towers"
+        },
+        {
+          "serial": "SLUS-20578",
+          "name": "The Lord of the Rings - The Two Towers",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "lotr-3",
+      "sorting_title": "Lord of the Rings 3",
+      "aliases": [
+        "The Lord of the Rings - The Return of the King",
+        "Lord of the Rings - The Return of the King"
+      ],
+      "identities": [
+        {
+          "serial": "SLAJ-25019",
+          "name": "The Lord of the Rings - The Return of the King",
+          "region": "NTSC-C",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52017",
+          "name": "The Lord of the Rings - The Return of the King",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52018",
+          "name": "Der Herr der Ringe - Die Rückkehr des Königs",
+          "region": "PAL-G",
+          "english_name": "The Lord of the Rings - The Return of the King"
+        },
+        {
+          "serial": "SLES-52019",
+          "name": "Le Seigneur des Anneaux - Le Retour du Roi",
+          "region": "PAL-F",
+          "english_name": "The Lord of the Rings - The Return of the King"
+        },
+        {
+          "serial": "SLES-52020",
+          "name": "El Señor de los Anillos - El Retorno del Rey",
+          "region": "PAL-S",
+          "english_name": "The Lord of the Rings - The Return of the King"
+        },
+        {
+          "serial": "SLES-52021",
+          "name": "Il Signore degli Anelli - Il Ritorno del Re",
+          "region": "PAL-I",
+          "english_name": "The Lord of the Rings - The Return of the King"
+        },
+        {
+          "serial": "SLKA-25098",
+          "name": "반지의 제왕 왕의 귀환",
+          "region": "NTSC-K",
+          "english_name": "The Lord of the Rings - The Return of the King"
+        },
+        {
+          "serial": "SLKA-25228",
+          "name": "반지의 제왕 - 왕의 귀환 [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "The Lord of the Rings - The Return of the King [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLUS-20770",
+          "name": "The Lord of the Rings - The Return of the King",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "lotr-4",
+      "sorting_title": "Lord of the Rings 4",
+      "aliases": [
+        "The Lord of the Rings - The Third Age",
+        "Lord of the Rings - The Third Age"
+      ],
+      "identities": [
+        {
+          "serial": "SLAJ-25051",
+          "name": "The Lord of the Rings - The Third Age",
+          "region": "NTSC-C",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52801",
+          "name": "The Lord of the Rings - The Third Age",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-52802",
+          "name": "Le Seigneur des Anneaux - Le Tiers Âge",
+          "region": "PAL-F",
+          "english_name": "The Lord of the Rings - The Third Age"
+        },
+        {
+          "serial": "SLES-52803",
+          "name": "Der Herr der Ringe - Das dritte Zeitalter",
+          "region": "PAL-G",
+          "english_name": "The Lord of the Rings - The Third Age"
+        },
+        {
+          "serial": "SLES-52804",
+          "name": "Il Signore degli Anelli - La Terza Era",
+          "region": "PAL-I",
+          "english_name": "The Lord of the Rings - The Third Age"
+        },
+        {
+          "serial": "SLES-52805",
+          "name": "El Señor de los Anillos - La Tercera Edad",
+          "region": "PAL-S",
+          "english_name": "The Lord of the Rings - The Third Age"
+        },
+        {
+          "serial": "SLKA-25237",
+          "name": "반지의 제왕 써드 에이지",
+          "region": "NTSC-K",
+          "english_name": "The Lord of the Rings - The Third Age"
+        },
+        {
+          "serial": "SLUS-21027",
+          "name": "The Lord of the Rings - The Third Age",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ff-dirge",
+      "sorting_title": "Final Fantasy 7",
+      "aliases": [
+        "Dirge of Cerberus - Final Fantasy VII"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20169",
+          "name": "Dirge of Cerberus - Final Fantasy VII",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-54185",
+          "name": "Dirge of Cerberus - Final Fantasy VII",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-66271",
+          "name": "ダージュ・オブ・ケルベロス -ファイナルファンタジーⅫ-",
+          "region": "NTSC-J",
+          "english_name": "Dirge of Cerberus - Final Fantasy VII"
+        },
+        {
+          "serial": "SLUS-21419",
+          "name": "Dirge of Cerberus - Final Fantasy VII",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ff-10",
+      "sorting_title": "Final Fantasy 10",
+      "aliases": [
+        "Final Fantasy X"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-50490",
+          "name": "Final Fantasy X",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50491",
+          "name": "Final Fantasy X",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50492",
+          "name": "Final Fantasy X",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50493",
+          "name": "Final Fantasy X",
+          "region": "PAL-I",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50494",
+          "name": "Final Fantasy X",
+          "region": "PAL-S",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-66124",
+          "name": "ファイナルファンタジーⅩ [Ultimate Hits]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X [Ultimate Hits]"
+        },
+        {
+          "serial": "SLPS-25050",
+          "name": "ファイナルファンタジーⅩ",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X"
+        },
+        {
+          "serial": "SLPS-72501",
+          "name": "ファイナルファンタジーⅩ [MEGA HITS!]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X [MEGA HITS!]"
+        },
+        {
+          "serial": "SLUS-20312",
+          "name": "Final Fantasy X",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ff-10-international",
+      "sorting_title": "Final Fantasy 10.1",
+      "aliases": [
+        "Final Fantasy X International",
+        "Final Fantasy X - International"
+      ],
+      "identities": [
+        {
+          "serial": "SLKA-25214",
+          "name": "파이널 판타지 X [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Final Fantasy X International [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLPM-65115",
+          "name": "ファイナルファンタジーⅩ インターナショナル",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X International"
+        },
+        {
+          "serial": "SLPM-66677",
+          "name": "ファイナルファンタジーⅩ インターナショナル [Ultimate Hits]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X - International [Ultimate Hits]"
+        },
+        {
+          "serial": "SLPM-67513",
+          "name": "파이널 판타지 X 인터네셔널",
+          "region": "NTSC-K",
+          "english_name": "Final Fantasy X International"
+        },
+        {
+          "serial": "SLPS-25088",
+          "name": "ファイナルファンタジーⅩ インターナショナル",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X International"
+        }
+      ]
+    },
+    {
+      "id": "ff-10-2",
+      "sorting_title": "Final Fantasy 10.2",
+      "aliases": [
+        "Final Fantasy X-2"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-25012",
+          "name": "Final Fantasy X-2",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SLAJ-25012",
+          "name": "Final Fantasy X-2",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51815",
+          "name": "Final Fantasy X-2",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51816",
+          "name": "Final Fantasy X-2",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51817",
+          "name": "Final Fantasy X-2",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51818",
+          "name": "Final Fantasy X-2",
+          "region": "PAL-I",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-51819",
+          "name": "Final Fantasy X-2",
+          "region": "PAL-S",
+          "english_name": ""
+        },
+        {
+          "serial": "SLKA-25144",
+          "name": "파이널 판타지 X-2",
+          "region": "NTSC-K",
+          "english_name": "Final Fantasy X-2"
+        },
+        {
+          "serial": "SLPM-66125",
+          "name": "ファイナルファンタジーⅩ-2 [Ultimate Hits]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X-2 [Ultimate Hits]"
+        },
+        {
+          "serial": "SLPS-25250",
+          "name": "ファイナルファンタジーⅩ-2",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy X-2"
+        },
+        {
+          "serial": "SLUS-20672",
+          "name": "Final Fantasy X-2",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ff-11",
+      "sorting_title": "Final Fantasy 11",
+      "aliases": [
+        "Final Fantasy XI"
+      ],
+      "identities": [
+        {
+          "serial": "SCUS-97266",
+          "name": "Final Fantasy XI [Disc 1 of 2]",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97269",
+          "name": "Final Fantasy XI [Disc 2 of 2]",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-65289",
+          "name": "ファイナルファンタジーⅪ エントリーディスク [プレイオンライン]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XI [Entry Disc]"
+        },
+        {
+          "serial": "SLPS-20200",
+          "name": "ファイナルファンタジーⅪ [ディスク2/2]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XI [Disc 2 of 2]"
+        },
+        {
+          "serial": "SLPS-25200",
+          "name": "ファイナルファンタジーⅪ [ディスク1/2]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XI [Disc 1 of 2]"
+        }
+      ]
+    },
+    {
+      "id": "ff-12",
+      "sorting_title": "Final Fantasy 12",
+      "aliases": [
+        "Final Fantasy XII"
+      ],
+      "identities": [
+        {
+          "serial": "PBPX-95525",
+          "name": "ファイナルファンタジーⅫ [本体同梱版]",
+          "region": "NTSC-J-K",
+          "english_name": "FINAL FANTASY XII [PS2 Bundle]"
+        },
+        {
+          "serial": "SCAJ-20172",
+          "name": "Final Fantasy XII",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20073",
+          "name": "파이널 판타지 XII",
+          "region": "NTSC-K",
+          "english_name": "Final Fantasy XII"
+        },
+        {
+          "serial": "SLES-54354",
+          "name": "Final Fantasy XII",
+          "region": "PAL-E",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-54355",
+          "name": "Final Fantasy XII",
+          "region": "PAL-F",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-54356",
+          "name": "Final Fantasy XII",
+          "region": "PAL-G",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-54357",
+          "name": "Final Fantasy XII",
+          "region": "PAL-I",
+          "english_name": ""
+        },
+        {
+          "serial": "SLES-54358",
+          "name": "Final Fantasy XII",
+          "region": "PAL-S",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPM-55022",
+          "name": "ファイナルファンタジーⅫ [Ultimate Hits]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XII [Ultimate Hits]"
+        },
+        {
+          "serial": "SLPM-66320",
+          "name": "ファイナルファンタジーⅫ",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XII"
+        },
+        {
+          "serial": "SLUS-20963",
+          "name": "Final Fantasy XII",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SLUS-21475",
+          "name": "Final Fantasy XII [Collector's Edition]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "ff-12-international",
+      "sorting_title": "Final Fantasy 12.1",
+      "aliases": [
+        "Final Fantasy XII International - Zodiac Job System",
+        "Final Fantasy XII International Zodiac Job System"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20188",
+          "name": "Final Fantasy XII International - Zodiac Job System",
+          "region": "NTSC-J",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20110",
+          "name": "파이널판타지 12 인터네셔널",
+          "region": "NTSC-K",
+          "english_name": "Final Fantasy XII International - Zodiac Job System"
+        },
+        {
+          "serial": "SCKA-20138",
+          "name": "파이널판타지 12 인터네셔널 [Ultimate Hits]",
+          "region": "NTSC-K",
+          "english_name": "Final Fantasy XII International - Zodiac Job System [Ultimate Hits]"
+        },
+        {
+          "serial": "SLPM-55210",
+          "name": "ファイナルファンタジーⅫ インターナショナル ゾディアックジョブシステム [Ultimate Hits]",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XII International Zodiac Job System [Ultimate Hits]"
+        },
+        {
+          "serial": "SLPM-66750",
+          "name": "ファイナルファンタジーⅫ インターナショナル ゾディアックジョブシステム",
+          "region": "NTSC-J",
+          "english_name": "Final Fantasy XII International - Zodiac Job System [with Bonus DVD]"
+        }
+      ]
+    },
+    {
+      "id": "sly-1",
+      "sorting_title": "Sly Cooper 1",
+      "aliases": [
+        "Sly Cooper and the Thievius Raccoonus",
+        "Sly Raccoon",
+        "Sly Cooper"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20017",
+          "name": "Sly Cooper",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCED-51452",
+          "name": "Sly Raccoon",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCES-50917",
+          "name": "Sly Raccoon",
+          "region": "PAL-M5",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97198",
+          "name": "Sly Cooper and the Thievius Raccoonus",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "sly-2",
+      "sorting_title": "Sly Cooper 2",
+      "aliases": [
+        "Sly 2 - Band of Thieves"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-52529",
+          "name": "Sly 2 - Band of Thieves",
+          "region": "PAL-M11",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97316",
+          "name": "Sly 2 - Band of Thieves",
+          "region": "NTSC-U",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97519",
+          "name": "Sly 2 - Band of Thieves [Greatest Hits]",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "sly-3",
+      "sorting_title": "Sly Cooper 3",
+      "aliases": [
+        "Sly 3 - Honor Among Thieves",
+        "Sly 3 - Honour Among Thieves"
+      ],
+      "identities": [
+        {
+          "serial": "SCES-53409",
+          "name": "Sly 3 - Honour Among Thieves",
+          "region": "PAL-M11",
+          "english_name": ""
+        },
+        {
+          "serial": "SCUS-97464",
+          "name": "Sly 3 - Honor Among Thieves",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "katamari-1",
+      "sorting_title": "Katamari 1",
+      "aliases": [
+        "Katamari Damacy",
+        "Katamari - Roll It! Prince!"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20079",
+          "name": "Katamari Damacy",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20025",
+          "name": "괴혼 굴려라! 왕자님!",
+          "region": "NTSC-K",
+          "english_name": "Katamari - Roll It! Prince!"
+        },
+        {
+          "serial": "SCKA-20125",
+          "name": "괴혼 ~굴려라! 왕자님!~ [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Katamari - Roll It! Prince! [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLPS-25360",
+          "name": "塊魂",
+          "region": "NTSC-J",
+          "english_name": "Katamari Damacy"
+        },
+        {
+          "serial": "SLPS-73210",
+          "name": "塊魂 [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Katamari Damacy [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SLPS-73240",
+          "name": "塊魂 [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Katamari Damacy [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SLUS-21008",
+          "name": "Katamari Damacy",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    },
+    {
+      "id": "katamari-2",
+      "sorting_title": "Katamari 2",
+      "aliases": [
+        "We Love Katamari",
+        "Minna Daisuki Katamari Damacy",
+        "Roll Roll Sticky Sticky - Katamari Damacy"
+      ],
+      "identities": [
+        {
+          "serial": "SCAJ-20135",
+          "name": "Minna Daisuki Katamari Damacy",
+          "region": "NTSC-Unk",
+          "english_name": ""
+        },
+        {
+          "serial": "SCKA-20051",
+          "name": "데굴 데굴~ 쫀득 쫀득~ 괴혼",
+          "region": "NTSC-K",
+          "english_name": "Roll Roll Sticky Sticky - Katamari Damacy"
+        },
+        {
+          "serial": "SCKA-20135",
+          "name": "데굴 데굴~ 쫀득 쫀득~ 괴혼 [PlayStation 2 BigHit Series]",
+          "region": "NTSC-K",
+          "english_name": "Roll Roll Sticky Sticky - Katamari Damacy [PlayStation 2 BigHit Series]"
+        },
+        {
+          "serial": "SLES-53828",
+          "name": "We Love Katamari",
+          "region": "PAL-M4",
+          "english_name": ""
+        },
+        {
+          "serial": "SLPS-25467",
+          "name": "みんな大好き塊魂",
+          "region": "NTSC-J",
+          "english_name": "Minna Daisuki Katamari Damacy"
+        },
+        {
+          "serial": "SLPS-73241",
+          "name": "みんな大好き塊魂 [PlayStation2 the Best]",
+          "region": "NTSC-J",
+          "english_name": "Minna Daisuki Katamari Damacy [PlayStation2 the Best]"
+        },
+        {
+          "serial": "SLUS-21230",
+          "name": "We Love Katamari",
+          "region": "NTSC-U",
+          "english_name": ""
+        }
+      ]
+    }
+  ]
+}
