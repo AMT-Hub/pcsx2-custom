@@ -8,14 +8,15 @@ Discovery is scheduled hourly at **:53 UTC**. GitHub may delay or drop scheduled
 
 ## Check history
 
-- **Last successful check:** [2026-10-16T15:03:48.067566+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/38920810855/attempts/1) — event `schedule`.
-- **Last successful scheduled check:** [2026-10-16T15:03:48.067566+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/38920810855/attempts/1) — event `schedule`.
+- **Last successful check:** [2026-10-16T19:06:47.202489+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/38952417934/attempts/1) — event `schedule`.
+- **Last successful scheduled check:** [2026-10-16T19:06:47.202489+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/38952417934/attempts/1) — event `schedule`.
 
 Push/manual checks do not verify the scheduled trigger. If the scheduled timestamp is missing or more than three hours old, investigate scheduling in Actions. These are fixed timestamps, not a live health badge. [Machine-readable last check](last-check.json).
 
 ## Reports against the current baseline
 
-No newer official nightly has been reported against this baseline.
+- [v2.9.129 / 091ab68708a5](reports/v2.9.129/f1eb8f61b139df7db14915ebc454a1df90293a5c0ac4087f7a00a412f6f5deaf.md) — 2026-10-16T19:06:41.641308+00:00
+- [v2.9.128 / fdd6aca352cc](reports/v2.9.128/8a51383ea4aa3d0aab7d7fff89ee1d49539e1090e12115fd23364f85839f017f.md) — 2026-10-16T19:06:41.641308+00:00
 
 Older assessments remain under `reports/`; their baseline and source identity are recorded in each report. Unchanged candidates are not reported twice. Retagged releases, changed assets or changed review inputs produce a new candidate record. Each run assesses at most 10 unseen candidates, newest first; any backlog is stated in its summary. Successful-check timestamps update independently of candidate reports.
 

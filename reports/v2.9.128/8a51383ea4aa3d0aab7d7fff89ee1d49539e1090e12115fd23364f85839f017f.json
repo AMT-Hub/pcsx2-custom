@@ -1,0 +1,175 @@
+{
+  "ahead_by": 2,
+  "assessed_at": "2026-10-16T19:06:41.641308+00:00",
+  "behind_by": 0,
+  "build_permitted": false,
+  "changed_file_list_complete": true,
+  "changed_files": [
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2-qt/Translations/pcsx2-qt_en.ts",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/GSDrawingContext.cpp",
+      "previous_file": null,
+      "status": "modified"
+    }
+  ],
+  "comparison_status": "ahead",
+  "expected_windows_asset": "pcsx2-v2.9.128-windows-x64-Qt.7z",
+  "identity": {
+    "assets": [
+      {
+        "digest": "sha256:fca1afc08c5233c07a63656e4f63475ae526c30d392f8d8e411555d936066d8b",
+        "id": 647969099,
+        "name": "pcsx2-v2.9.128-linux-appimage-x64-Qt.AppImage",
+        "size": 60414456,
+        "state": "uploaded",
+        "updated_at": "2026-10-16T16:53:16Z"
+      },
+      {
+        "digest": "sha256:a50162fd907c06b39cd0eff8f13974dd004530632604411e57ddf0d0791626c1",
+        "id": 647969101,
+        "name": "pcsx2-v2.9.128-linux-flatpak-x64-Qt.flatpak",
+        "size": 28563800,
+        "state": "uploaded",
+        "updated_at": "2026-10-16T16:53:15Z"
+      },
+      {
+        "digest": "sha256:f02ef8c09626eb9e5b98bf1a25f63d6130ee821d0d62741888a29cc6d91151c3",
+        "id": 647969103,
+        "name": "pcsx2-v2.9.128-macos-Qt.tar.xz",
+        "size": 24512276,
+        "state": "uploaded",
+        "updated_at": "2026-10-16T16:53:15Z"
+      },
+      {
+        "digest": "sha256:bc29cf14ce2745255bd1e9fb87872997015d38d4375a88c9849313ec01768658",
+        "id": 647969096,
+        "name": "pcsx2-v2.9.128-windows-x64-Qt-symbols.7z",
+        "size": 21286748,
+        "state": "uploaded",
+        "updated_at": "2026-10-16T16:53:15Z"
+      },
+      {
+        "digest": "sha256:85b6f1b9d88cc14365793f2d1fba30ef2143571358f7ffd321a22ac71a746c73",
+        "id": 647969102,
+        "name": "pcsx2-v2.9.128-windows-x64-Qt.7z",
+        "size": 31952090,
+        "state": "uploaded",
+        "updated_at": "2026-10-16T16:53:15Z"
+      }
+    ],
+    "baseline_commit": "e35cb2c87590bc3d127b3bb4dd222b01e598c9a4",
+    "baseline_tag": "v2.9.127",
+    "commit": "fdd6aca352ccf104a462b1a2d0c19f43006e5612",
+    "policy_fingerprint": "15c3ecbf3c5911e3c07caef107ec3d0dc5f3b9f82f4c6e8d0f35dbb4842c545f",
+    "policy_version": 1,
+    "published_at": "2026-10-16T16:53:17Z",
+    "release_id": 415171189,
+    "tag": "v2.9.128"
+  },
+  "integration_checks": [
+    {
+      "actual": "629f3d675e82ad19e1bb4a2a8059a6d88b32db3947f2677949b69bbe0f2bf997",
+      "expected": "629f3d675e82ad19e1bb4a2a8059a6d88b32db3947f2677949b69bbe0f2bf997",
+      "file": "pcsx2-qt/AutoUpdaterDialog.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "a02e657cc1fdd50f48b68602df0463bc886f096e7753525a4f7c458dfb547c9d",
+      "expected": "a02e657cc1fdd50f48b68602df0463bc886f096e7753525a4f7c458dfb547c9d",
+      "file": "pcsx2-qt/DisplayWidget.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "a0b1009e66854e33920f3a106092ee41b7de29acd882b0935f3fb48c59fef042",
+      "expected": "a0b1009e66854e33920f3a106092ee41b7de29acd882b0935f3fb48c59fef042",
+      "file": "pcsx2-qt/GameList/GameListModel.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "1ffe8da8dc25575b38f5a3edf89cb494d015347751fe500955f314cd4d31e4c3",
+      "expected": "1ffe8da8dc25575b38f5a3edf89cb494d015347751fe500955f314cd4d31e4c3",
+      "file": "pcsx2-qt/GameList/GameListWidget.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "41b135ab43db859839acd8e4bb074842ea488d3bb5cb30bd012dd0db7e1596a7",
+      "expected": "41b135ab43db859839acd8e4bb074842ea488d3bb5cb30bd012dd0db7e1596a7",
+      "file": "pcsx2-qt/GameList/GameListWidget.h",
+      "status": "unchanged"
+    },
+    {
+      "actual": "9d641aba12be80a96fbd9060875af137800d81ab9cb687e2dd8b7e70f10cd3e7",
+      "expected": "9d641aba12be80a96fbd9060875af137800d81ab9cb687e2dd8b7e70f10cd3e7",
+      "file": "pcsx2-qt/MainWindow.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "9790442d27fc8603e696d1aa81fbcc208dfd396391d666f42114a2dff5cb59a8",
+      "expected": "9790442d27fc8603e696d1aa81fbcc208dfd396391d666f42114a2dff5cb59a8",
+      "file": "pcsx2-qt/MainWindow.h",
+      "status": "unchanged"
+    },
+    {
+      "actual": "37e9b3f09d42c7bb5e1a71bef3aa1ee2d2ff8630e4f7d6aa5248c0d6c79fd9ed",
+      "expected": "37e9b3f09d42c7bb5e1a71bef3aa1ee2d2ff8630e4f7d6aa5248c0d6c79fd9ed",
+      "file": "pcsx2-qt/QtHost.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "94cc3351e4a637da23b9b8a19ee7f6de3cdf14ebc93bd655f82f98b9ab503044",
+      "expected": "94cc3351e4a637da23b9b8a19ee7f6de3cdf14ebc93bd655f82f98b9ab503044",
+      "file": "pcsx2-qt/Settings/GameSummaryWidget.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "dd0b071b8a590e4f198b8ff09375db61c3bd63ec84ec596a7fe93a5674110d5a",
+      "expected": "dd0b071b8a590e4f198b8ff09375db61c3bd63ec84ec596a7fe93a5674110d5a",
+      "file": "pcsx2/GameList.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "4a3392d4701da9efd1c965718bf74a8e463c507c756b01eb9fae299b23ba2cc0",
+      "expected": "4a3392d4701da9efd1c965718bf74a8e463c507c756b01eb9fae299b23ba2cc0",
+      "file": "pcsx2/GameList.h",
+      "status": "unchanged"
+    },
+    {
+      "actual": "57532cc8ee102995e3ce8138bb45cfa83854f67affe9a4b86f9f81cbc3043e95",
+      "expected": "57532cc8ee102995e3ce8138bb45cfa83854f67affe9a4b86f9f81cbc3043e95",
+      "file": "pcsx2/VMManager.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "49d52e3ccc98037ef62f6405748f1884a76357afe338885c1acfbe6a747ca552",
+      "expected": "49d52e3ccc98037ef62f6405748f1884a76357afe338885c1acfbe6a747ca552",
+      "file": "pcsx2/ps2/BiosTools.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "7aa9e339f2f3efdc4b59c6a8d8f608b0dcca4170fcaf42299570d564be14ac83",
+      "expected": "7aa9e339f2f3efdc4b59c6a8d8f608b0dcca4170fcaf42299570d564be14ac83",
+      "file": "pcsx2/ps2/BiosTools.h",
+      "status": "unchanged"
+    }
+  ],
+  "limitations": [
+    "Path-based hints and file hashes are not behavioural compatibility tests.",
+    "Dependency binaries, official archives and release asset hashes are not verified here.",
+    "Human source review, custom build and Windows acceptance are still required."
+  ],
+  "release_approved": false,
+  "schema": 1,
+  "status": "review-required",
+  "warnings": [],
+  "windows_asset_available": true
+}
