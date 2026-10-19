@@ -1,32 +1,28 @@
 {
   "last_successful_check": {
     "baseline_tag": "v2.9.127",
-    "completed_at": "2026-10-19T17:53:49.258307+00:00",
+    "completed_at": "2026-10-19T22:41:20.109499+00:00",
     "discovery_complete": true,
     "event": "schedule",
     "latest_nightly_in_scan": "v2.9.130",
-    "new_reports": [
-      "v2.9.130"
-    ],
+    "new_reports": [],
     "pending_reports": 0,
     "run_attempt": 1,
-    "run_url": "https://github.com/AMT-Hub/pcsx2-custom/actions/runs/39297951203/attempts/1",
-    "scan_started_at": "2026-10-19T17:53:45.181983+00:00",
+    "run_url": "https://github.com/AMT-Hub/pcsx2-custom/actions/runs/39336654898/attempts/1",
+    "scan_started_at": "2026-10-19T22:41:18.030935+00:00",
     "source_commit": "a6db35d1770f2d78d3ec8f33df4b2888d171205b"
   },
   "last_successful_scheduled_check": {
     "baseline_tag": "v2.9.127",
-    "completed_at": "2026-10-19T17:53:49.258307+00:00",
+    "completed_at": "2026-10-19T22:41:20.109499+00:00",
     "discovery_complete": true,
     "event": "schedule",
     "latest_nightly_in_scan": "v2.9.130",
-    "new_reports": [
-      "v2.9.130"
-    ],
+    "new_reports": [],
     "pending_reports": 0,
     "run_attempt": 1,
-    "run_url": "https://github.com/AMT-Hub/pcsx2-custom/actions/runs/39297951203/attempts/1",
-    "scan_started_at": "2026-10-19T17:53:45.181983+00:00",
+    "run_url": "https://github.com/AMT-Hub/pcsx2-custom/actions/runs/39336654898/attempts/1",
+    "scan_started_at": "2026-10-19T22:41:18.030935+00:00",
     "source_commit": "a6db35d1770f2d78d3ec8f33df4b2888d171205b"
   },
   "schema": 1
