@@ -8,13 +8,17 @@ Discovery is scheduled hourly at **:53 UTC**. GitHub may delay or drop scheduled
 
 ## Check history
 
-- **Last successful check:** [2026-10-23T10:38:56.232048+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/39940541138/attempts/1) — event `schedule`.
-- **Last successful scheduled check:** [2026-10-23T10:38:56.232048+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/39940541138/attempts/1) — event `schedule`.
+- **Last successful check:** [2026-10-23T15:31:59.416927+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/39978948218/attempts/1) — event `schedule`.
+- **Last successful scheduled check:** [2026-10-23T15:31:59.416927+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/39978948218/attempts/1) — event `schedule`.
 
 Push/manual checks do not verify the scheduled trigger. If the scheduled timestamp is missing or more than three hours old, investigate scheduling in Actions. These are fixed timestamps, not a live health badge. [Machine-readable last check](last-check.json).
 
 ## Reports against the current baseline
 
+- [v2.9.142 / 5675313c6db3](reports/v2.9.142/f84732535a13e04c0621fcda0b5d1eb05a6c02f32376c4ce87bf2ae00b2e099b.md) — 2026-10-23T15:31:41.309291+00:00
+- [v2.9.141 / 0f85823654a8](reports/v2.9.141/b929093849f8b20908294ce1fd4c5b57ffe10532b0030dd8d22877de3aab93f2.md) — 2026-10-23T15:31:41.309291+00:00
+- [v2.9.140 / bc47f768e17f](reports/v2.9.140/293075353eb4fec2381cdc8e90d7eaf819efec61067f9d98f7faecec1d103e30.md) — 2026-10-23T15:31:41.309291+00:00
+- [v2.9.139 / 4c5c4c51b2f3](reports/v2.9.139/c76959127c69aa71bab1e874be91f83f714f1cee7d6f52b05aea683b34a535b9.md) — 2026-10-23T15:31:41.309291+00:00
 - [v2.9.138 / ab0b401f9972](reports/v2.9.138/f18572fdb28023078b205422f983f16e6756a86e7d93cb1a568299736de6e0ed.md) — 2026-10-21T22:52:32.522303+00:00
 - [v2.9.137 / b3402c13b104](reports/v2.9.137/adac40209d99d0d46db21f07a2a54184cb80eb80f0d1aa419dcda359cbca9eb8.md) — 2026-10-21T22:52:32.522303+00:00
 - [v2.9.136 / d2c5ca6fa0be](reports/v2.9.136/d576179c7e44614bbf8c2cba1dbb17311c0923ee3958555fd6201c6963a3ebd1.md) — 2026-10-21T19:45:17.315025+00:00
