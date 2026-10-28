@@ -1,0 +1,854 @@
+{
+  "ahead_by": 46,
+  "assessed_at": "2026-10-28T23:41:55.647367+00:00",
+  "behind_by": 0,
+  "build_permitted": false,
+  "changed_file_list_complete": true,
+  "changed_files": [
+    {
+      "areas": [
+        "Build / dependencies"
+      ],
+      "file": ".github/workflows/release_cut_new.yml",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Build / dependencies"
+      ],
+      "file": "3rdparty/discord-rpc/include/discord_rpc.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Build / dependencies"
+      ],
+      "file": "3rdparty/discord-rpc/src/serialization.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Build / dependencies",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "3rdparty/imgui/CHANGELOG.txt",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Build / dependencies",
+        "Portable settings / launch / updater integration",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "3rdparty/imgui/include/imconfig.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Build / dependencies",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "3rdparty/imgui/include/imgui.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Build / dependencies",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "3rdparty/imgui/include/imgui_internal.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Build / dependencies",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "3rdparty/imgui/src/imgui.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Build / dependencies",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "3rdparty/imgui/src/imgui_demo.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Build / dependencies",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "3rdparty/imgui/src/imgui_draw.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Build / dependencies",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "3rdparty/imgui/src/imgui_freetype.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Build / dependencies",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "3rdparty/imgui/src/imgui_tables.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Build / dependencies",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "3rdparty/imgui/src/imgui_widgets.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/GameIndex.yaml",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/applications-system.svg",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/back-icon.svg",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/desktop-mode.svg",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/drive-cdrom.svg",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/exit.svg",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/media-cdrom.svg",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/no-save.png",
+      "previous_file": null,
+      "status": "removed"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/no-save.svg",
+      "previous_file": null,
+      "status": "added"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/placeholder.png",
+      "previous_file": null,
+      "status": "removed"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/placeholder.svg",
+      "previous_file": null,
+      "status": "added"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/start-bios.svg",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/start-file.svg",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/fullscreenui/start-game.svg",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/icons/gear.svg",
+      "previous_file": null,
+      "status": "added"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/shaders/common/ffx_a.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/shaders/dx11/convert.fx",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/shaders/opengl/convert.glsl",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "bin/resources/shaders/vulkan/convert.glsl",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration"
+      ],
+      "file": "pcsx2-gsrunner/Main.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2-gsrunner/comparer.js",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2-gsrunner/test_check_dumps.py",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Sorting Titles / game list"
+      ],
+      "file": "pcsx2-qt/GameList/GameListModel.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Sorting Titles / game list"
+      ],
+      "file": "pcsx2-qt/GameList/GameListModel.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Sorting Titles / game list"
+      ],
+      "file": "pcsx2-qt/GameList/GameListWidget.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2-qt/MainWindow.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2-qt/MainWindow.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2-qt/QtHost.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration"
+      ],
+      "file": "pcsx2-qt/Settings/AchievementSettingsWidget.ui",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration"
+      ],
+      "file": "pcsx2-qt/Settings/OSDSettingsWidget.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration"
+      ],
+      "file": "pcsx2-qt/Settings/OSDSettingsWidget.ui",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration"
+      ],
+      "file": "pcsx2-qt/Settings/SettingsWindow.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration"
+      ],
+      "file": "pcsx2-qt/Settings/SettingsWindow.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2-qt/Translations/pcsx2-qt_en.ts",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2/Achievements.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration"
+      ],
+      "file": "pcsx2/Config.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2/Elfheader.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/GSDrawingContext.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/GSState.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/GSUtil.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/Renderers/Common/GSDevice.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/Renderers/Common/GSDevice.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/Renderers/Common/GSRenderer.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/Renderers/Common/GSRenderer.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/Renderers/HW/GSRendererHW.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/Renderers/HW/GSRendererHW.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/Renderers/HW/GSRendererHWMultiISA.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/Renderers/HW/GSTextureCache.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/Renderers/Metal/convert.metal",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/Renderers/Vulkan/GSDeviceVK.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/Renderers/Vulkan/GSDeviceVK.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/GS/Renderers/Vulkan/GSTextureVK.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Sorting Titles / game list"
+      ],
+      "file": "pcsx2/GameList.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Sorting Titles / game list"
+      ],
+      "file": "pcsx2/GameList.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2/Host.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/ImGui/FullscreenUI.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/ImGui/FullscreenUI.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/ImGui/FullscreenUI_Internal.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration",
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/ImGui/FullscreenUI_Settings.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/ImGui/ImGuiFullscreen.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/ImGui/ImGuiFullscreen.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/ImGui/ImGuiManager.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "ShaderGlass / graphics / fullscreen / pause UI"
+      ],
+      "file": "pcsx2/ImGui/ImGuiOverlays.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2/Patch.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2/Patch.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration"
+      ],
+      "file": "pcsx2/Pcsx2Config.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2/ShaderCacheVersion.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "BIOS / boot / disc handling"
+      ],
+      "file": "pcsx2/VMManager.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2/VMManager.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2/x86/iR3000A.cpp",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Other upstream code / data (review still required)"
+      ],
+      "file": "pcsx2/x86/iR3000A.h",
+      "previous_file": null,
+      "status": "modified"
+    },
+    {
+      "areas": [
+        "Portable settings / launch / updater integration"
+      ],
+      "file": "tests/ctest/core/StubHost.cpp",
+      "previous_file": null,
+      "status": "modified"
+    }
+  ],
+  "comparison_status": "ahead",
+  "expected_windows_asset": "pcsx2-v2.9.148-windows-x64-Qt.7z",
+  "identity": {
+    "assets": [
+      {
+        "digest": "sha256:cbc7dd56121a52fffd124a6e6ae5ea4a9d037def89664c68b550a22392fc8184",
+        "id": 686124144,
+        "name": "pcsx2-v2.9.148-linux-appimage-x64-Qt.AppImage",
+        "size": 60434936,
+        "state": "uploaded",
+        "updated_at": "2026-10-28T19:39:13Z"
+      },
+      {
+        "digest": "sha256:bb69d2fe8d0c94e13d39f9ed8162c4f726ac4bbb231fcbf26a384ef2ed573b93",
+        "id": 686124142,
+        "name": "pcsx2-v2.9.148-linux-flatpak-x64-Qt.flatpak",
+        "size": 28662160,
+        "state": "uploaded",
+        "updated_at": "2026-10-28T19:39:13Z"
+      },
+      {
+        "digest": "sha256:741e61c60080a5a9c85c05669500c7860bab39bd6fcf3ea2d43afd497aaf7f33",
+        "id": 686124143,
+        "name": "pcsx2-v2.9.148-macos-Qt.tar.xz",
+        "size": 24523720,
+        "state": "uploaded",
+        "updated_at": "2026-10-28T19:39:12Z"
+      },
+      {
+        "digest": "sha256:ebcc16fdd6e7d587acdb5c9f20c08c1f67ddc205a7b4109e124628cc6e4beead",
+        "id": 686124140,
+        "name": "pcsx2-v2.9.148-windows-x64-Qt-symbols.7z",
+        "size": 21318957,
+        "state": "uploaded",
+        "updated_at": "2026-10-28T19:39:12Z"
+      },
+      {
+        "digest": "sha256:9d0a12894abfc948cd97ca6f5adb847d93815f2d4912edd3607fdb203f4ac70e",
+        "id": 686124141,
+        "name": "pcsx2-v2.9.148-windows-x64-Qt.7z",
+        "size": 31964551,
+        "state": "uploaded",
+        "updated_at": "2026-10-28T19:39:12Z"
+      }
+    ],
+    "baseline_commit": "e35cb2c87590bc3d127b3bb4dd222b01e598c9a4",
+    "baseline_tag": "v2.9.127",
+    "commit": "1f67c53b6723fcd6a90041a5b296f0e34a6a3222",
+    "policy_fingerprint": "15c3ecbf3c5911e3c07caef107ec3d0dc5f3b9f82f4c6e8d0f35dbb4842c545f",
+    "policy_version": 1,
+    "published_at": "2026-10-28T19:39:14Z",
+    "release_id": 427093687,
+    "tag": "v2.9.148"
+  },
+  "integration_checks": [
+    {
+      "actual": "629f3d675e82ad19e1bb4a2a8059a6d88b32db3947f2677949b69bbe0f2bf997",
+      "expected": "629f3d675e82ad19e1bb4a2a8059a6d88b32db3947f2677949b69bbe0f2bf997",
+      "file": "pcsx2-qt/AutoUpdaterDialog.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "a02e657cc1fdd50f48b68602df0463bc886f096e7753525a4f7c458dfb547c9d",
+      "expected": "a02e657cc1fdd50f48b68602df0463bc886f096e7753525a4f7c458dfb547c9d",
+      "file": "pcsx2-qt/DisplayWidget.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "65f6ddab7c414dead95baee169291fa7b58f9a0a10dbcd154c00c8a9cfc0d951",
+      "expected": "a0b1009e66854e33920f3a106092ee41b7de29acd882b0935f3fb48c59fef042",
+      "file": "pcsx2-qt/GameList/GameListModel.cpp",
+      "status": "changed"
+    },
+    {
+      "actual": "75c7b11fc07b6f50d0f1c68929d4cd0fa3e51368ce544eb8ec57ec7b3f6ea11b",
+      "expected": "1ffe8da8dc25575b38f5a3edf89cb494d015347751fe500955f314cd4d31e4c3",
+      "file": "pcsx2-qt/GameList/GameListWidget.cpp",
+      "status": "changed"
+    },
+    {
+      "actual": "41b135ab43db859839acd8e4bb074842ea488d3bb5cb30bd012dd0db7e1596a7",
+      "expected": "41b135ab43db859839acd8e4bb074842ea488d3bb5cb30bd012dd0db7e1596a7",
+      "file": "pcsx2-qt/GameList/GameListWidget.h",
+      "status": "unchanged"
+    },
+    {
+      "actual": "8225d210d133d5ed3c3c8b9371ab194f893f4330fd120d5447c997bcac2abf2a",
+      "expected": "9d641aba12be80a96fbd9060875af137800d81ab9cb687e2dd8b7e70f10cd3e7",
+      "file": "pcsx2-qt/MainWindow.cpp",
+      "status": "changed"
+    },
+    {
+      "actual": "70412145deb2f85605d37d9122c7e370894163c07741a385053d617288127301",
+      "expected": "9790442d27fc8603e696d1aa81fbcc208dfd396391d666f42114a2dff5cb59a8",
+      "file": "pcsx2-qt/MainWindow.h",
+      "status": "changed"
+    },
+    {
+      "actual": "5494c7c2cc139058e94304410422ce3fb6a6b202669d607583a8bc41eb732061",
+      "expected": "37e9b3f09d42c7bb5e1a71bef3aa1ee2d2ff8630e4f7d6aa5248c0d6c79fd9ed",
+      "file": "pcsx2-qt/QtHost.cpp",
+      "status": "changed"
+    },
+    {
+      "actual": "94cc3351e4a637da23b9b8a19ee7f6de3cdf14ebc93bd655f82f98b9ab503044",
+      "expected": "94cc3351e4a637da23b9b8a19ee7f6de3cdf14ebc93bd655f82f98b9ab503044",
+      "file": "pcsx2-qt/Settings/GameSummaryWidget.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "7a6096b95c204ca71c1d26a3a3f240354070863c3379af4dcbb3ea2041cb3e1a",
+      "expected": "dd0b071b8a590e4f198b8ff09375db61c3bd63ec84ec596a7fe93a5674110d5a",
+      "file": "pcsx2/GameList.cpp",
+      "status": "changed"
+    },
+    {
+      "actual": "b759b4a0c01a3b47b6ee52b09de3d888c77ef2cbfa1219744be275c31dfa2fd7",
+      "expected": "4a3392d4701da9efd1c965718bf74a8e463c507c756b01eb9fae299b23ba2cc0",
+      "file": "pcsx2/GameList.h",
+      "status": "changed"
+    },
+    {
+      "actual": "853e794bd1e9a71de7b78859094e925bf501d6612370a5572b3d962957981866",
+      "expected": "57532cc8ee102995e3ce8138bb45cfa83854f67affe9a4b86f9f81cbc3043e95",
+      "file": "pcsx2/VMManager.cpp",
+      "status": "changed"
+    },
+    {
+      "actual": "49d52e3ccc98037ef62f6405748f1884a76357afe338885c1acfbe6a747ca552",
+      "expected": "49d52e3ccc98037ef62f6405748f1884a76357afe338885c1acfbe6a747ca552",
+      "file": "pcsx2/ps2/BiosTools.cpp",
+      "status": "unchanged"
+    },
+    {
+      "actual": "7aa9e339f2f3efdc4b59c6a8d8f608b0dcca4170fcaf42299570d564be14ac83",
+      "expected": "7aa9e339f2f3efdc4b59c6a8d8f608b0dcca4170fcaf42299570d564be14ac83",
+      "file": "pcsx2/ps2/BiosTools.h",
+      "status": "unchanged"
+    }
+  ],
+  "limitations": [
+    "Path-based hints and file hashes are not behavioural compatibility tests.",
+    "Dependency binaries, official archives and release asset hashes are not verified here.",
+    "Human source review, custom build and Windows acceptance are still required."
+  ],
+  "release_approved": false,
+  "schema": 1,
+  "status": "review-required",
+  "warnings": [],
+  "windows_asset_available": true
+}
