@@ -131,6 +131,15 @@
       "report": "reports/v2.9.151/8e866e22c45f717c1d6aca2a3e81a8c1bc39a976bdef4a8ea8fe36ad3dd43a53.md",
       "tag": "v2.9.151"
     },
+    "959b1f50b958e7ce265de06ac26dabbf7820552ff02c37f82438ecefedfdcaea": {
+      "assessed_at": "2026-11-06T23:35:15.538775+00:00",
+      "baseline_commit": "e35cb2c87590bc3d127b3bb4dd222b01e598c9a4",
+      "baseline_tag": "v2.9.127",
+      "commit": "a6dc70b106a00906188c52dcab3c6e43bc96a5a0",
+      "policy_fingerprint": "15c3ecbf3c5911e3c07caef107ec3d0dc5f3b9f82f4c6e8d0f35dbb4842c545f",
+      "report": "reports/v2.9.160/959b1f50b958e7ce265de06ac26dabbf7820552ff02c37f82438ecefedfdcaea.md",
+      "tag": "v2.9.160"
+    },
     "a08e7af2876678dfa1e40f5fa4ac234ddbb5d42759abfac70677f86b821c7965": {
       "assessed_at": "2026-11-01T10:52:25.591590+00:00",
       "baseline_commit": "e35cb2c87590bc3d127b3bb4dd222b01e598c9a4",
@@ -175,6 +184,15 @@
       "policy_fingerprint": "15c3ecbf3c5911e3c07caef107ec3d0dc5f3b9f82f4c6e8d0f35dbb4842c545f",
       "report": "reports/v2.9.146/b0357be84f8dba8e3aec23073b29b997c828f7b05acf323f0aae59ccf10c476c.md",
       "tag": "v2.9.146"
+    },
+    "b546ed909fc56f7683819cb9cdf3045fd8daaddbff737d6f842730c6899653ec": {
+      "assessed_at": "2026-11-06T23:35:15.538775+00:00",
+      "baseline_commit": "e35cb2c87590bc3d127b3bb4dd222b01e598c9a4",
+      "baseline_tag": "v2.9.127",
+      "commit": "cae3e344e3415e73877acee6fa4062ae0907a2ce",
+      "policy_fingerprint": "15c3ecbf3c5911e3c07caef107ec3d0dc5f3b9f82f4c6e8d0f35dbb4842c545f",
+      "report": "reports/v2.9.159/b546ed909fc56f7683819cb9cdf3045fd8daaddbff737d6f842730c6899653ec.md",
+      "tag": "v2.9.159"
     },
     "b929093849f8b20908294ce1fd4c5b57ffe10532b0030dd8d22877de3aab93f2": {
       "assessed_at": "2026-10-23T15:31:41.309291+00:00",
@@ -287,36 +305,34 @@
   },
   "last_successful_check": {
     "baseline_tag": "v2.9.127",
-    "completed_at": "2026-11-06T18:38:53.606176+00:00",
+    "completed_at": "2026-11-06T23:35:30.265702+00:00",
     "discovery_complete": true,
     "event": "schedule",
-    "latest_nightly_in_scan": "v2.9.158",
+    "latest_nightly_in_scan": "v2.9.160",
     "new_reports": [
-      "v2.9.158",
-      "v2.9.157",
-      "v2.9.156"
+      "v2.9.160",
+      "v2.9.159"
     ],
     "pending_reports": 0,
     "run_attempt": 1,
-    "run_url": "https://github.com/AMT-Hub/pcsx2-custom/actions/runs/42272436335/attempts/1",
-    "scan_started_at": "2026-11-06T18:38:30.872186+00:00",
+    "run_url": "https://github.com/AMT-Hub/pcsx2-custom/actions/runs/42312835558/attempts/1",
+    "scan_started_at": "2026-11-06T23:35:15.538775+00:00",
     "source_commit": "a6db35d1770f2d78d3ec8f33df4b2888d171205b"
   },
   "last_successful_scheduled_check": {
     "baseline_tag": "v2.9.127",
-    "completed_at": "2026-11-06T18:38:53.606176+00:00",
+    "completed_at": "2026-11-06T23:35:30.265702+00:00",
     "discovery_complete": true,
     "event": "schedule",
-    "latest_nightly_in_scan": "v2.9.158",
+    "latest_nightly_in_scan": "v2.9.160",
     "new_reports": [
-      "v2.9.158",
-      "v2.9.157",
-      "v2.9.156"
+      "v2.9.160",
+      "v2.9.159"
     ],
     "pending_reports": 0,
     "run_attempt": 1,
-    "run_url": "https://github.com/AMT-Hub/pcsx2-custom/actions/runs/42272436335/attempts/1",
-    "scan_started_at": "2026-11-06T18:38:30.872186+00:00",
+    "run_url": "https://github.com/AMT-Hub/pcsx2-custom/actions/runs/42312835558/attempts/1",
+    "scan_started_at": "2026-11-06T23:35:15.538775+00:00",
     "source_commit": "a6db35d1770f2d78d3ec8f33df4b2888d171205b"
   },
   "schema": 1
