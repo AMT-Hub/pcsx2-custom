@@ -8,8 +8,8 @@ Discovery is scheduled hourly at **:53 UTC**. GitHub may delay or drop scheduled
 
 ## Check history
 
-- **Last successful check:** [2026-11-11T08:34:53.163150+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/42988053755/attempts/1) — event `schedule`.
-- **Last successful scheduled check:** [2026-11-11T08:34:53.163150+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/42988053755/attempts/1) — event `schedule`.
+- **Last successful check:** [2026-11-11T16:45:04.768424+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/43061217381/attempts/1) — event `schedule`.
+- **Last successful scheduled check:** [2026-11-11T16:45:04.768424+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/43061217381/attempts/1) — event `schedule`.
 
 Push/manual checks do not verify the scheduled trigger. If the scheduled timestamp is missing or more than three hours old, investigate scheduling in Actions. These are fixed timestamps, not a live health badge. [Machine-readable last check](last-check.json).
 
@@ -18,6 +18,7 @@ Push/manual checks do not verify the scheduled trigger. If the scheduled timesta
 - [v2.9.172 / c8081bf5d63b](reports/v2.9.172/a83a1ebb38fcf0a91440a472da6d36fc4f63e34d6b5810490783ad33c4c7ad3d.md) — 2026-11-10T20:39:36.467053+00:00
 - [v2.9.171 / 2b5e9df7364c](reports/v2.9.171/31f67f10b75ff1346f2c30d2d3e99ec495392b72cd4c73fee2d7161933ad85fb.md) — 2026-11-10T20:39:36.467053+00:00
 - [v2.9.170 / a886f8efdf2e](reports/v2.9.170/9109cfc9a4ef82386667716c8ae2bc06b6ca9ddee139a52c92eb280d83e16c63.md) — 2026-11-10T20:39:36.467053+00:00
+- [v2.9.169 / 3f617368c23e](reports/v2.9.169/8224c37f4284b5bc0fd4856410f577b0a955b1dddc5937de8de14f0164a35dd2.md) — 2026-11-11T16:44:45.991622+00:00
 - [v2.9.168 / 0ac53afdc72d](reports/v2.9.168/d001179816b366a75395f0d41633a4b996103ebd3767729c7175fd9007c2f69c.md) — 2026-11-09T22:47:11.456270+00:00
 - [v2.9.167 / 8253ca6ca350](reports/v2.9.167/5f31785e9c721800760ba0bb2ff86894b9bb913eab3f8b25f05a1f694eaa94c7.md) — 2026-11-09T12:17:29.303854+00:00
 - [v2.9.166 / 4223d03c58f8](reports/v2.9.166/c842c76d068d6336f39c352621812fe942c19f701f3d8bec39f83d0b33987601.md) — 2026-11-09T03:26:47.686730+00:00
