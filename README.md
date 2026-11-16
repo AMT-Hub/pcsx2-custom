@@ -8,13 +8,15 @@ Discovery is scheduled hourly at **:53 UTC**. GitHub may delay or drop scheduled
 
 ## Check history
 
-- **Last successful check:** [2026-11-16T12:11:36.571131+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/43864171684/attempts/1) — event `schedule`.
-- **Last successful scheduled check:** [2026-11-16T12:11:36.571131+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/43864171684/attempts/1) — event `schedule`.
+- **Last successful check:** [2026-11-16T22:37:51.538287+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/43971722451/attempts/1) — event `schedule`.
+- **Last successful scheduled check:** [2026-11-16T22:37:51.538287+00:00](https://github.com/AMT-Hub/pcsx2-custom/actions/runs/43971722451/attempts/1) — event `schedule`.
 
 Push/manual checks do not verify the scheduled trigger. If the scheduled timestamp is missing or more than three hours old, investigate scheduling in Actions. These are fixed timestamps, not a live health badge. [Machine-readable last check](last-check.json).
 
 ## Reports against the current baseline
 
+- [v2.9.181 / 840774630f7a](reports/v2.9.181/1665b746b9a7162770a3dacd10142f816d95954eb5a65e0b9c810a2db96dace3.md) — 2026-11-16T22:37:33.516935+00:00
+- [v2.9.180 / f17c4c80f2c7](reports/v2.9.180/3ce86feb6b0cf3a8585a70fc3e6db7f9c2921a536587c152751c566b51701932.md) — 2026-11-16T22:37:33.516935+00:00
 - [v2.9.179 / 8d08f5337c87](reports/v2.9.179/5ebb2f591fcbf2f06fbdcbd0b24dcd9ceed203a6cfd665f29ae485b2c2eea896.md) — 2026-11-14T00:00:03.023061+00:00
 - [v2.9.178 / c83f7bd88f27](reports/v2.9.178/895de274fbecb00ffd6c1f85da33807f4249358bcac77268ecc3b7ce67e2db57.md) — 2026-11-13T18:15:40.652205+00:00
 - [v2.9.177 / 3a956301ca40](reports/v2.9.177/4a24671d007dd2dafa91983ef53ad032e3267e481df689cb6960190c8799cb1c.md) — 2026-11-13T18:15:40.652205+00:00
